@@ -1,0 +1,47 @@
+---
+title: "Data manipulation script"
+output: html_notebook
+---
+
+```{r}
+library(janitor)
+library(skimr)
+library(tidyverse)
+library(here)
+```
+
+```{r}
+# Read in stroke source data
+# Two sets of data: 
+#  1. Hospital activity related to strokes
+#  2. Stroke mortality data
+# Both datasets are produced at Health Board (hb) and Council Area (ca)
+
+activity_hb_raw <- read_csv(here("data/raw/stroke_activitybyhb.csv")) %>% 
+  clean_names()
+activity_ca_raw <- read_csv(here("data/raw/stroke_activitybyca.csv")) %>% 
+  clean_names()
+mortality_hb_raw <- read_csv(here("data/raw/stroke_mortalitybyhbr.csv")) %>% 
+  clean_names()
+mortalilty_ca_raw <- read_csv(here("data/raw/stroke_mortalitybyca.csv"))%>% 
+  clean_names()
+```
+
+```{r}
+# read in population estimates
+
+population_hb_raw <- read_csv(here("data/raw/population_est_hb.csv")) %>% 
+  clean_names()
+population_ca_raw <- read_csv(here("data/raw/population_est_ca.csv"))%>% 
+  clean_names()
+```
+
+```{r}
+# read in population projections
+
+population_proj_hb_raw <- read_csv(here("data/raw/population_proj_hb.csv")) %>% 
+  clean_names()
+population_proj_ca_raw <- read_csv(here("data/raw/population_proj_ca.csv")) %>% 
+  clean_names()
+```
+
