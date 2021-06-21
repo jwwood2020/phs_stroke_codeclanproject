@@ -241,17 +241,17 @@ The following objects are masked from ‘package:stats’:
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5dmVyc2UpXG5gYGAifQ== -->
 <pre class="r"><code>library(tidyverse)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUmVnaXN0ZXJlZCBTMyBtZXRob2RzIG92ZXJ3cml0dGVuIGJ5ICdkYnBseXInOlxuICBtZXRob2QgICAgICAgICBmcm9tXG4gIHByaW50LnRibF9sYXp5ICAgICBcbiAgcHJpbnQudGJsX3NxbCAgICAgIFxu4pSA4pSAIEF0dGFjaGluZyBwYWNrYWdlcyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlIDEuMy4wIOKUgOKUgFxu4pyTIGdncGxvdDIgMy4zLjMgICAgIOKckyBwdXJyciAgIDAuMy40XG7inJMgdGliYmxlICAzLjEuMCAgICAg4pyTIGRwbHlyICAgMS4wLjVcbuKckyB0aWR5ciAgIDEuMS4zICAgICDinJMgc3RyaW5nciAxLjQuMFxu4pyTIHJlYWRyICAgMS40LjAgICAgIOKckyBmb3JjYXRzIDAuNS4xXG7ilIDilIAgQ29uZmxpY3RzIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgCB0aWR5dmVyc2VfY29uZmxpY3RzKCkg4pSA4pSAXG54IGRwbHlyOjpmaWx0ZXIoKSBtYXNrcyBzdGF0czo6ZmlsdGVyKClcbnggZHBseXI6OmxhZygpICAgIG1hc2tzIHN0YXRzOjpsYWcoKVxuIn0= -->
+<!-- rnb-output-begin eyJkYXRhIjoiUmVnaXN0ZXJlZCBTMyBtZXRob2RzIG92ZXJ3cml0dGVuIGJ5ICdkYnBseXInOlxuICBtZXRob2QgICAgICAgICBmcm9tXG4gIHByaW50LnRibF9sYXp5ICAgICBcbiAgcHJpbnQudGJsX3NxbCAgICAgIFxu4pSA4pSAIEF0dGFjaGluZyBwYWNrYWdlcyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlIDEuMy4wIOKUgOKUgFxu4pyTIGdncGxvdDIgMy4zLjMgICAgIOKckyBwdXJyciAgIDAuMy40XG7inJMgdGliYmxlICAzLjEuMCAgICAg4pyTIGRwbHlyICAgMS4wLjVcbuKckyB0aWR5ciAgIDEuMS4zICAgICDinJMgc3RyaW5nciAxLjQuMFxu4pyTIHJlYWRyICAgMS40LjAgICAgIOKckyBmb3JjYXRzIDAuNS4xXG7ilIDilIAgQ29uZmxpY3RzIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgCB0aWR5dmVyc2VfY29uZmxpY3RzKCkg4pSA4pSAXG54IGRwbHlyOjpmaWx0ZXIoKSBtYXNrcyBzdGF0czo6ZmlsdGVyKClcbnggZHBseXI6OmxhZygpICAgIG1hc2tzIHN0YXRzOjpsYWcoKVxuIn0= -->
 <pre><code>Registered S3 methods overwritten by &#39;dbplyr&#39;:
   method         from
   print.tbl_lazy     
   print.tbl_sql      
-── Attaching packages ──────────────────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──
+── Attaching packages ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──
 ✓ ggplot2 3.3.3     ✓ purrr   0.3.4
 ✓ tibble  3.1.0     ✓ dplyr   1.0.5
 ✓ tidyr   1.1.3     ✓ stringr 1.4.0
 ✓ readr   1.4.0     ✓ forcats 0.5.1
-── Conflicts ─────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+── Conflicts ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 x dplyr::filter() masks stats::filter()
 x dplyr::lag()    masks stats::lag()</code></pre>
 <!-- rnb-output-end -->
@@ -265,153 +265,94 @@ x dplyr::lag()    masks stats::lag()</code></pre>
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBSZWFkIGluIHN0cm9rZSBzb3VyY2UgZGF0YVxuIyBUd28gc2V0cyBvZiBkYXRhOiBcbiMgIDEuIEhvc3BpdGFsIGFjdGl2aXR5IHJlbGF0ZWQgdG8gc3Ryb2tlc1xuIyAgMi4gU3Ryb2tlIG1vcnRhbGl0eSBkYXRhXG4jIEJvdGggZGF0YXNldHMgYXJlIHByb2R1Y2VkIGF0IEhlYWx0aCBCb2FyZCAoaGIpIGFuZCBDb3VuY2lsIEFyZWEgKGNhKVxuXG5hY3Rpdml0eV9oYl9yYXcgPC0gcmVhZF9jc3YoaGVyZShcImRhdGEvcmF3L3N0cm9rZV9hY3Rpdml0eWJ5aGIuY3N2XCIpKSAlPiUgXG4gIGNsZWFuX25hbWVzKClcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBSZWFkIGluIHN0cm9rZSBzb3VyY2UgZGF0YVxuIyBUd28gc2V0cyBvZiBkYXRhOiBcbiMgIDEuIEhvc3BpdGFsIGFjdGl2aXR5IHJlbGF0ZWQgdG8gc3Ryb2tlc1xuIyAgMi4gU3Ryb2tlIG1vcnRhbGl0eSBkYXRhXG4jIEJvdGggZGF0YXNldHMgYXJlIHByb2R1Y2VkIGF0IEhlYWx0aCBCb2FyZCAoaGIpIGFuZCBDb3VuY2lsIEFyZWEgKGNhKVxuIyBDb2x1bW5zIGVuZGluZyAncWYnIGFyZSBjb2RlcyByZWxhdGluZyB0byBkYXRhIHF1YWxpdHkgYW5kIGNhbiBiZSByZW1vdmVkXG5cbmFjdGl2aXR5X2hiX3JhdyA8LSByZWFkX2NzdihoZXJlKFwiZGF0YS9yYXcvc3Ryb2tlX2FjdGl2aXR5YnloYi5jc3ZcIikpICU+JSBcbiAgY2xlYW5fbmFtZXMoKSAlPiUgXG4gIHNlbGVjdCgtZW5kc193aXRoKFwicWZcIikpXG5hY3Rpdml0eV9jYV9yYXcgPC0gcmVhZF9jc3YoaGVyZShcImRhdGEvcmF3L3N0cm9rZV9hY3Rpdml0eWJ5Y2EuY3N2XCIpKSAlPiUgXG4gIGNsZWFuX25hbWVzKCkgJT4lIFxuICBzZWxlY3QoLWVuZHNfd2l0aChcInFmXCIpKVxubW9ydGFsaXR5X2hiX3JhdyA8LSByZWFkX2NzdihoZXJlKFwiZGF0YS9yYXcvc3Ryb2tlX21vcnRhbGl0eWJ5aGJyLmNzdlwiKSkgJT4lIFxuICBjbGVhbl9uYW1lcygpICU+JSBcbiAgc2VsZWN0KC1lbmRzX3dpdGgoXCJxZlwiKSlcbm1vcnRhbGlsdHlfY2FfcmF3IDwtIHJlYWRfY3N2KGhlcmUoXCJkYXRhL3Jhdy9zdHJva2VfbW9ydGFsaXR5YnljYS5jc3ZcIikpJT4lIFxuICBjbGVhbl9uYW1lcygpICU+JSBcbiAgc2VsZWN0KC1lbmRzX3dpdGgoXCJxZlwiKSlcbmBgYCJ9 -->
 <pre class="r"><code># Read in stroke source data
 # Two sets of data: 
 #  1. Hospital activity related to strokes
 #  2. Stroke mortality data
 # Both datasets are produced at Health Board (hb) and Council Area (ca)
+# Columns ending &#39;qf&#39; are codes relating to data quality and can be removed
 
 activity_hb_raw &lt;- read_csv(here(&quot;data/raw/stroke_activitybyhb.csv&quot;)) %&gt;% 
-  clean_names()</code></pre>
+  clean_names() %&gt;% 
+  select(-ends_with(&quot;qf&quot;))
+activity_ca_raw &lt;- read_csv(here(&quot;data/raw/stroke_activitybyca.csv&quot;)) %&gt;% 
+  clean_names() %&gt;% 
+  select(-ends_with(&quot;qf&quot;))
+mortality_hb_raw &lt;- read_csv(here(&quot;data/raw/stroke_mortalitybyhbr.csv&quot;)) %&gt;% 
+  clean_names() %&gt;% 
+  select(-ends_with(&quot;qf&quot;))
+mortalilty_ca_raw &lt;- read_csv(here(&quot;data/raw/stroke_mortalitybyca.csv&quot;))%&gt;% 
+  clean_names() %&gt;% 
+  select(-ends_with(&quot;qf&quot;))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBGaW5hbmNpYWxZZWFyID0gY29sX2NoYXJhY3RlcigpLFxuICBIQlIgPSBjb2xfY2hhcmFjdGVyKCksXG4gIEhCUlFGID0gY29sX2NoYXJhY3RlcigpLFxuICBBZG1pc3Npb25UeXBlID0gY29sX2NoYXJhY3RlcigpLFxuICBBZG1pc3Npb25UeXBlUUYgPSBjb2xfY2hhcmFjdGVyKCksXG4gIEFnZUdyb3VwID0gY29sX2NoYXJhY3RlcigpLFxuICBBZ2VHcm91cFFGID0gY29sX2NoYXJhY3RlcigpLFxuICBTZXggPSBjb2xfY2hhcmFjdGVyKCksXG4gIFNleFFGID0gY29sX2NoYXJhY3RlcigpLFxuICBEaWFnbm9zaXMgPSBjb2xfY2hhcmFjdGVyKCksXG4gIE51bWJlck9mRGlzY2hhcmdlcyA9IGNvbF9kb3VibGUoKSxcbiAgTnVtYmVyT2ZEaXNjaGFyZ2VzUUYgPSBjb2xfbG9naWNhbCgpLFxuICBDcnVkZVJhdGUgPSBjb2xfZG91YmxlKCksXG4gIENydWRlUmF0ZVFGID0gY29sX2xvZ2ljYWwoKSxcbiAgRUFTUiA9IGNvbF9kb3VibGUoKVxuKVxuXG43NDc4IHBhcnNpbmcgZmFpbHVyZXMuXG4gcm93ICAgICAgICAgICAgICAgICAgY29sICAgICAgICAgICBleHBlY3RlZCBhY3R1YWwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZpbGVcbjI2MTcgTnVtYmVyT2ZEaXNjaGFyZ2VzUUYgMS8wL1QvRi9UUlVFL0ZBTFNFICAgICAgYyAnL1VzZXJzL2pvaG53b29kL2NvZGVjbGFuX3N0cm9rZV9wcm9qZWN0L3Boc19zdHJva2VfY29kZWNsYW5wcm9qZWN0L2RhdGEvcmF3L3N0cm9rZV9hY3Rpdml0eWJ5aGIuY3N2J1xuMjYxNyBDcnVkZVJhdGVRRiAgICAgICAgICAxLzAvVC9GL1RSVUUvRkFMU0UgICAgICBjICcvVXNlcnMvam9obndvb2QvY29kZWNsYW5fc3Ryb2tlX3Byb2plY3QvcGhzX3N0cm9rZV9jb2RlY2xhbnByb2plY3QvZGF0YS9yYXcvc3Ryb2tlX2FjdGl2aXR5YnloYi5jc3YnXG4yNjE4IE51bWJlck9mRGlzY2hhcmdlc1FGIDEvMC9UL0YvVFJVRS9GQUxTRSAgICAgIGMgJy9Vc2Vycy9qb2hud29vZC9jb2RlY2xhbl9zdHJva2VfcHJvamVjdC9waHNfc3Ryb2tlX2NvZGVjbGFucHJvamVjdC9kYXRhL3Jhdy9zdHJva2VfYWN0aXZpdHlieWhiLmNzdidcbjI2MTggQ3J1ZGVSYXRlUUYgICAgICAgICAgMS8wL1QvRi9UUlVFL0ZBTFNFICAgICAgYyAnL1VzZXJzL2pvaG53b29kL2NvZGVjbGFuX3N0cm9rZV9wcm9qZWN0L3Boc19zdHJva2VfY29kZWNsYW5wcm9qZWN0L2RhdGEvcmF3L3N0cm9rZV9hY3Rpdml0eWJ5aGIuY3N2J1xuMjYxOSBOdW1iZXJPZkRpc2NoYXJnZXNRRiAxLzAvVC9GL1RSVUUvRkFMU0UgICAgICBjICcvVXNlcnMvam9obndvb2QvY29kZWNsYW5fc3Ryb2tlX3Byb2plY3QvcGhzX3N0cm9rZV9jb2RlY2xhbnByb2plY3QvZGF0YS9yYXcvc3Ryb2tlX2FjdGl2aXR5YnloYi5jc3YnXG4uLi4uIC4uLi4uLi4uLi4uLi4uLi4uLi4uIC4uLi4uLi4uLi4uLi4uLi4uLiAuLi4uLi4gLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi5cblNlZSBwcm9ibGVtcyguLi4pIGZvciBtb3JlIGRldGFpbHMuXG4ifQ== -->
-<pre><code>
-── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────
-cols(
-  FinancialYear = col_character(),
-  HBR = col_character(),
-  HBRQF = col_character(),
-  AdmissionType = col_character(),
-  AdmissionTypeQF = col_character(),
-  AgeGroup = col_character(),
-  AgeGroupQF = col_character(),
-  Sex = col_character(),
-  SexQF = col_character(),
-  Diagnosis = col_character(),
-  NumberOfDischarges = col_double(),
-  NumberOfDischargesQF = col_logical(),
-  CrudeRate = col_double(),
-  CrudeRateQF = col_logical(),
-  EASR = col_double()
-)
-
-7478 parsing failures.
- row                  col           expected actual                                                                                                  file
-2617 NumberOfDischargesQF 1/0/T/F/TRUE/FALSE      c &#39;/Users/johnwood/codeclan_stroke_project/phs_stroke_codeclanproject/data/raw/stroke_activitybyhb.csv&#39;
-2617 CrudeRateQF          1/0/T/F/TRUE/FALSE      c &#39;/Users/johnwood/codeclan_stroke_project/phs_stroke_codeclanproject/data/raw/stroke_activitybyhb.csv&#39;
-2618 NumberOfDischargesQF 1/0/T/F/TRUE/FALSE      c &#39;/Users/johnwood/codeclan_stroke_project/phs_stroke_codeclanproject/data/raw/stroke_activitybyhb.csv&#39;
-2618 CrudeRateQF          1/0/T/F/TRUE/FALSE      c &#39;/Users/johnwood/codeclan_stroke_project/phs_stroke_codeclanproject/data/raw/stroke_activitybyhb.csv&#39;
-2619 NumberOfDischargesQF 1/0/T/F/TRUE/FALSE      c &#39;/Users/johnwood/codeclan_stroke_project/phs_stroke_codeclanproject/data/raw/stroke_activitybyhb.csv&#39;
-.... .................... .................. ...... .....................................................................................................
-See problems(...) for more details.</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYWN0aXZpdHlfY2FfcmF3IDwtIHJlYWRfY3N2KGhlcmUoXCJkYXRhL3Jhdy9zdHJva2VfYWN0aXZpdHlieWNhLmNzdlwiKSkgJT4lIFxuICBjbGVhbl9uYW1lcygpXG5gYGAifQ== -->
-<pre class="r"><code>activity_ca_raw &lt;- read_csv(here(&quot;data/raw/stroke_activitybyca.csv&quot;)) %&gt;% 
-  clean_names()</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBGaW5hbmNpYWxZZWFyID0gY29sX2NoYXJhY3RlcigpLFxuICBDQSA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgQ0FRRiA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgQWRtaXNzaW9uVHlwZSA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgQWRtaXNzaW9uVHlwZVFGID0gY29sX2NoYXJhY3RlcigpLFxuICBBZ2VHcm91cCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgQWdlR3JvdXBRRiA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgU2V4ID0gY29sX2NoYXJhY3RlcigpLFxuICBTZXhRRiA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgRGlhZ25vc2lzID0gY29sX2NoYXJhY3RlcigpLFxuICBOdW1iZXJPZkRpc2NoYXJnZXMgPSBjb2xfZG91YmxlKCksXG4gIE51bWJlck9mRGlzY2FyZ2VzUUYgPSBjb2xfY2hhcmFjdGVyKCksXG4gIENydWRlUmF0ZSA9IGNvbF9kb3VibGUoKSxcbiAgQ3J1ZGVSYXRlUUYgPSBjb2xfY2hhcmFjdGVyKCksXG4gIEVBU1IgPSBjb2xfZG91YmxlKClcbilcbiJ9 -->
-<pre><code>
-── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────
-cols(
-  FinancialYear = col_character(),
-  CA = col_character(),
-  CAQF = col_character(),
-  AdmissionType = col_character(),
-  AdmissionTypeQF = col_character(),
-  AgeGroup = col_character(),
-  AgeGroupQF = col_character(),
-  Sex = col_character(),
-  SexQF = col_character(),
-  Diagnosis = col_character(),
-  NumberOfDischarges = col_double(),
-  NumberOfDiscargesQF = col_character(),
-  CrudeRate = col_double(),
-  CrudeRateQF = col_character(),
-  EASR = col_double()
-)</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubW9ydGFsaXR5X2hiX3JhdyA8LSByZWFkX2NzdihoZXJlKFwiZGF0YS9yYXcvc3Ryb2tlX21vcnRhbGl0eWJ5aGJyLmNzdlwiKSkgJT4lIFxuICBjbGVhbl9uYW1lcygpXG5gYGAifQ== -->
-<pre class="r"><code>mortality_hb_raw &lt;- read_csv(here(&quot;data/raw/stroke_mortalitybyhbr.csv&quot;)) %&gt;% 
-  clean_names()</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBZZWFyID0gY29sX2RvdWJsZSgpLFxuICBIQlIgPSBjb2xfY2hhcmFjdGVyKCksXG4gIEhCUlFGID0gY29sX2NoYXJhY3RlcigpLFxuICBBZ2VHcm91cCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgQWdlR3JvdXBRRiA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgU2V4ID0gY29sX2NoYXJhY3RlcigpLFxuICBTZXhRRiA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgRGlhZ25vc2lzID0gY29sX2NoYXJhY3RlcigpLFxuICBOdW1iZXJPZkRlYXRocyA9IGNvbF9kb3VibGUoKSxcbiAgTnVtYmVyT2ZEZWF0aHNRRiA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgQ3J1ZGVSYXRlID0gY29sX2RvdWJsZSgpLFxuICBDcnVkZVJhdGVRRiA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgRUFTUiA9IGNvbF9kb3VibGUoKVxuKVxuIn0= -->
-<pre><code>
-── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────
-cols(
-  Year = col_double(),
-  HBR = col_character(),
-  HBRQF = col_character(),
-  AgeGroup = col_character(),
-  AgeGroupQF = col_character(),
-  Sex = col_character(),
-  SexQF = col_character(),
-  Diagnosis = col_character(),
-  NumberOfDeaths = col_double(),
-  NumberOfDeathsQF = col_character(),
-  CrudeRate = col_double(),
-  CrudeRateQF = col_character(),
-  EASR = col_double()
-)</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubW9ydGFsaWx0eV9jYV9yYXcgPC0gcmVhZF9jc3YoaGVyZShcImRhdGEvcmF3L3N0cm9rZV9tb3J0YWxpdHlieWNhLmNzdlwiKSklPiUgXG4gIGNsZWFuX25hbWVzKClcbmBgYCJ9 -->
-<pre class="r"><code>mortalilty_ca_raw &lt;- read_csv(here(&quot;data/raw/stroke_mortalitybyca.csv&quot;))%&gt;% 
-  clean_names()</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBZZWFyID0gY29sX2RvdWJsZSgpLFxuICBDQSA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgQ0FRRiA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgQWdlR3JvdXAgPSBjb2xfY2hhcmFjdGVyKCksXG4gIEFnZUdyb3VwUUYgPSBjb2xfY2hhcmFjdGVyKCksXG4gIFNleCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgU2V4UUYgPSBjb2xfY2hhcmFjdGVyKCksXG4gIERpYWdub3NpcyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgTnVtYmVyT2ZEZWF0aHMgPSBjb2xfZG91YmxlKCksXG4gIE51bWJlck9mRGVhdGhzUUYgPSBjb2xfY2hhcmFjdGVyKCksXG4gIENydWRlUmF0ZSA9IGNvbF9kb3VibGUoKSxcbiAgQ3J1ZGVSYXRlUUYgPSBjb2xfY2hhcmFjdGVyKCksXG4gIEVBU1IgPSBjb2xfZG91YmxlKClcbilcbiJ9 -->
-<pre><code>
-── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────
-cols(
-  Year = col_double(),
-  CA = col_character(),
-  CAQF = col_character(),
-  AgeGroup = col_character(),
-  AgeGroupQF = col_character(),
-  Sex = col_character(),
-  SexQF = col_character(),
-  Diagnosis = col_character(),
-  NumberOfDeaths = col_double(),
-  NumberOfDeathsQF = col_character(),
-  CrudeRate = col_double(),
-  CrudeRateQF = col_character(),
-  EASR = col_double()
-)</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyByZWFkIGluIHBvcHVsYXRpb24gZXN0aW1hdGVzXG5cbnBvcHVsYXRpb25faGJfcmF3IDwtIHJlYWRfY3N2KGhlcmUoXCJkYXRhL3Jhdy9wb3B1bGF0aW9uX2VzdF9oYi5jc3ZcIikpICU+JSBcbiAgY2xlYW5fbmFtZXMoKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyByZWFkIGluIHBvcHVsYXRpb24gZXN0aW1hdGVzXG5cbnBvcHVsYXRpb25faGJfcmF3IDwtIHJlYWRfY3N2KGhlcmUoXCJkYXRhL3Jhdy9wb3B1bGF0aW9uX2VzdF9oYi5jc3ZcIikpICU+JSBcbiAgY2xlYW5fbmFtZXMoKSAlPiUgXG4gIHNlbGVjdCgtZW5kc193aXRoKFwicWZcIikpXG5wb3B1bGF0aW9uX2NhX3JhdyA8LSByZWFkX2NzdihoZXJlKFwiZGF0YS9yYXcvcG9wdWxhdGlvbl9lc3RfY2EuY3N2XCIpKSU+JSBcbiAgY2xlYW5fbmFtZXMoKSAlPiUgXG4gIHNlbGVjdCgtZW5kc193aXRoKFwicWZcIikpXG5gYGAifQ== -->
 <pre class="r"><code># read in population estimates
 
 population_hb_raw &lt;- read_csv(here(&quot;data/raw/population_est_hb.csv&quot;)) %&gt;% 
-  clean_names()</code></pre>
+  clean_names() %&gt;% 
+  select(-ends_with(&quot;qf&quot;))
+population_ca_raw &lt;- read_csv(here(&quot;data/raw/population_est_ca.csv&quot;))%&gt;% 
+  clean_names() %&gt;% 
+  select(-ends_with(&quot;qf&quot;))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICAuZGVmYXVsdCA9IGNvbF9kb3VibGUoKSxcbiAgSEIgPSBjb2xfY2hhcmFjdGVyKCksXG4gIEhCUUYgPSBjb2xfY2hhcmFjdGVyKCksXG4gIFNleCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgU2V4UUYgPSBjb2xfY2hhcmFjdGVyKClcbilcbuKEuSBVc2UgYHNwZWMoKWAgZm9yIHRoZSBmdWxsIGNvbHVtbiBzcGVjaWZpY2F0aW9ucy5cbiJ9 -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyByZWFkIGluIHBvcHVsYXRpb24gcHJvamVjdGlvbnNcblxucG9wdWxhdGlvbl9wcm9qX2hiX3JhdyA8LSByZWFkX2NzdihoZXJlKFwiZGF0YS9yYXcvcG9wdWxhdGlvbl9wcm9qX2hiLmNzdlwiKSkgJT4lIFxuICBjbGVhbl9uYW1lcygpICU+JSBcbiAgc2VsZWN0KC1lbmRzX3dpdGgoXCJxZlwiKSlcbnBvcHVsYXRpb25fcHJval9jYV9yYXcgPC0gcmVhZF9jc3YoaGVyZShcImRhdGEvcmF3L3BvcHVsYXRpb25fcHJval9jYS5jc3ZcIikpICU+JSBcbiAgY2xlYW5fbmFtZXMoKSAlPiUgXG4gIHNlbGVjdCgtZW5kc193aXRoKFwicWZcIikpXG5gYGAifQ== -->
+<pre class="r"><code># read in population projections
+
+population_proj_hb_raw &lt;- read_csv(here(&quot;data/raw/population_proj_hb.csv&quot;)) %&gt;% 
+  clean_names() %&gt;% 
+  select(-ends_with(&quot;qf&quot;))
+population_proj_ca_raw &lt;- read_csv(here(&quot;data/raw/population_proj_ca.csv&quot;)) %&gt;% 
+  clean_names() %&gt;% 
+  select(-ends_with(&quot;qf&quot;))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyByZWFkIGluIEhlYWx0aCBCb2FyZC9Db3VuY2lsIGlkIGxvb2t1cHMgXG5oYl9pZCA8LSByZWFkX2NzdihoZXJlKFwiZGF0YS9jbGVhbi9oZWFsdGhfYm9hcmRfaWQuY3N2XCIpKVxuYGBgIn0= -->
+<pre class="r"><code># read in Health Board/Council id lookups 
+hb_id &lt;- read_csv(here(&quot;data/clean/health_board_id.csv&quot;))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBoYl9jb2RlID0gY29sX2NoYXJhY3RlcigpLFxuICBoYl9uYW1lID0gY29sX2NoYXJhY3RlcigpXG4pXG4ifQ== -->
 <pre><code>
-── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────
+── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 cols(
-  .default = col_double(),
-  HB = col_character(),
-  HBQF = col_character(),
-  Sex = col_character(),
-  SexQF = col_character()
-)
-ℹ Use `spec()` for the full column specifications.</code></pre>
+  hb_code = col_character(),
+  hb_name = col_character()
+)</code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucG9wdWxhdGlvbl9jYV9yYXcgPC0gcmVhZF9jc3YoaGVyZShcImRhdGEvcmF3L3BvcHVsYXRpb25fZXN0X2NhLmNzdlwiKSklPiUgXG4gIGNsZWFuX25hbWVzKClcbmBgYCJ9 -->
-<pre class="r"><code>population_ca_raw &lt;- read_csv(here(&quot;data/raw/population_est_ca.csv&quot;))%&gt;% 
-  clean_names()</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2FfaWQgPC0gcmVhZF9jc3YoaGVyZShcImRhdGEvY2xlYW4vY291bmNpbF9pZC5jc3ZcIikpXG5gYGAifQ== -->
+<pre class="r"><code>ca_id &lt;- read_csv(here(&quot;data/clean/council_id.csv&quot;))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICAuZGVmYXVsdCA9IGNvbF9kb3VibGUoKSxcbiAgQ0EgPSBjb2xfY2hhcmFjdGVyKCksXG4gIENBUUYgPSBjb2xfY2hhcmFjdGVyKCksXG4gIFNleCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgU2V4UUYgPSBjb2xfY2hhcmFjdGVyKClcbilcbuKEuSBVc2UgYHNwZWMoKWAgZm9yIHRoZSBmdWxsIGNvbHVtbiBzcGVjaWZpY2F0aW9ucy5cbiJ9 -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBsYV9jb2RlID0gY29sX2NoYXJhY3RlcigpLFxuICBsYV9uYW1lID0gY29sX2NoYXJhY3RlcigpXG4pXG4ifQ== -->
 <pre><code>
-── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────
+── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 cols(
-  .default = col_double(),
-  CA = col_character(),
-  CAQF = col_character(),
-  Sex = col_character(),
-  SexQF = col_character()
+  la_code = col_character(),
+  la_name = col_character()
+)</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaWRfbG9va3VwcyA8LSByZWFkX2NzdihoZXJlKFwiZGF0YS9jbGVhbi9pZF9sb29rdXBzLmNzdlwiKSlcbmBgYCJ9 -->
+<pre class="r"><code>id_lookups &lt;- read_csv(here(&quot;data/clean/id_lookups.csv&quot;))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICAuZGVmYXVsdCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgdXIyX2NvZGUgPSBjb2xfZG91YmxlKCksXG4gIHVyM19jb2RlID0gY29sX2RvdWJsZSgpLFxuICB1cjZfY29kZSA9IGNvbF9kb3VibGUoKSxcbiAgdXI4X2NvZGUgPSBjb2xfZG91YmxlKClcbilcbuKEuSBVc2UgYHNwZWMoKWAgZm9yIHRoZSBmdWxsIGNvbHVtbiBzcGVjaWZpY2F0aW9ucy5cbiJ9 -->
+<pre><code>
+── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+cols(
+  .default = col_character(),
+  ur2_code = col_double(),
+  ur3_code = col_double(),
+  ur6_code = col_double(),
+  ur8_code = col_double()
 )
 ℹ Use `spec()` for the full column specifications.</code></pre>
 <!-- rnb-output-end -->
@@ -419,45 +360,31 @@ cols(
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyByZWFkIGluIHBvcHVsYXRpb24gcHJvamVjdGlvbnNcblxucG9wdWxhdGlvbl9wcm9qX2hiX3JhdyA8LSByZWFkX2NzdihoZXJlKFwiZGF0YS9yYXcvcG9wdWxhdGlvbl9wcm9qX2hiLmNzdlwiKSkgJT4lIFxuICBjbGVhbl9uYW1lcygpXG5gYGAifQ== -->
-<pre class="r"><code># read in population projections
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBNYW5pcHVsYXRlIGFjdGl2aXR5IGRhdGE6XG5cbmFjdGl2aXR5X2NhIDwtIGFjdGl2aXR5X2NhX3JhdyAlPiUgXG4gIGxlZnRfam9pbihjYV9pZCwgYnkgPSBjKFwiY2FcIiA9IFwibGFfY29kZVwiKSkgJT4lIFxuICBtdXRhdGUoeWVhciA9IHN0cl9zdWIoZmluYW5jaWFsX3llYXIsIDEsIDQpLFxuICAgICAgICAgbGFfbmFtZSA9IGlmX2Vsc2UoY2EgPT0gXCJTOTIwMDAwMDNcIiwgXCJTY290bGFuZFwiLCBsYV9uYW1lKVxuICAgICAgICAgKSAlPiUgXG4gIHNlbGVjdCgtZmluYW5jaWFsX3llYXIpICU+JSBcbiAgcmVsb2NhdGUoeWVhcilcblxuYWN0aXZpdHlfaGIgPC0gYWN0aXZpdHlfaGJfcmF3ICU+JSBcbiAgbGVmdF9qb2luKGhiX2lkLCBieSA9IGMoXCJoYnJcIiA9IFwiaGJfY29kZVwiKSkgJT4lIFxuICBtdXRhdGUoeWVhciA9IHN0cl9zdWIoZmluYW5jaWFsX3llYXIsIDEsIDQpLFxuICAgICAgICAgaGJfbmFtZSA9IGlmX2Vsc2UoaGJyID09IFwiUzkyMDAwMDAzXCIsIFwiU2NvdGxhbmRcIiwgaGJfbmFtZSlcbiAgICAgICAgICkgJT4lIFxuICBzZWxlY3QoLWZpbmFuY2lhbF95ZWFyKSAlPiUgXG4gIHJlbG9jYXRlKHllYXIpXG4gIFxuYGBgIn0= -->
+<pre class="r"><code># Manipulate activity data:
 
-population_proj_hb_raw &lt;- read_csv(here(&quot;data/raw/population_proj_hb.csv&quot;)) %&gt;% 
-  clean_names()</code></pre>
+activity_ca &lt;- activity_ca_raw %&gt;% 
+  left_join(ca_id, by = c(&quot;ca&quot; = &quot;la_code&quot;)) %&gt;% 
+  mutate(year = str_sub(financial_year, 1, 4),
+         la_name = if_else(ca == &quot;S92000003&quot;, &quot;Scotland&quot;, la_name)
+         ) %&gt;% 
+  select(-financial_year) %&gt;% 
+  relocate(year)
+
+activity_hb &lt;- activity_hb_raw %&gt;% 
+  left_join(hb_id, by = c(&quot;hbr&quot; = &quot;hb_code&quot;)) %&gt;% 
+  mutate(year = str_sub(financial_year, 1, 4),
+         hb_name = if_else(hbr == &quot;S92000003&quot;, &quot;Scotland&quot;, hb_name)
+         ) %&gt;% 
+  select(-financial_year) %&gt;% 
+  relocate(year)
+  </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICAuZGVmYXVsdCA9IGNvbF9kb3VibGUoKSxcbiAgSEIgPSBjb2xfY2hhcmFjdGVyKCksXG4gIEhCUUYgPSBjb2xfY2hhcmFjdGVyKCksXG4gIFNleCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgU2V4UUYgPSBjb2xfY2hhcmFjdGVyKClcbilcbuKEuSBVc2UgYHNwZWMoKWAgZm9yIHRoZSBmdWxsIGNvbHVtbiBzcGVjaWZpY2F0aW9ucy5cbiJ9 -->
-<pre><code>
-── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────
-cols(
-  .default = col_double(),
-  HB = col_character(),
-  HBQF = col_character(),
-  Sex = col_character(),
-  SexQF = col_character()
-)
-ℹ Use `spec()` for the full column specifications.</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucG9wdWxhdGlvbl9wcm9qX2NhX3JhdyA8LSByZWFkX2NzdihoZXJlKFwiZGF0YS9yYXcvcG9wdWxhdGlvbl9wcm9qX2NhLmNzdlwiKSkgJT4lIFxuICBjbGVhbl9uYW1lcygpXG5gYGAifQ== -->
-<pre class="r"><code>population_proj_ca_raw &lt;- read_csv(here(&quot;data/raw/population_proj_ca.csv&quot;)) %&gt;% 
-  clean_names()</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICAuZGVmYXVsdCA9IGNvbF9kb3VibGUoKSxcbiAgQ0EgPSBjb2xfY2hhcmFjdGVyKCksXG4gIENBUUYgPSBjb2xfY2hhcmFjdGVyKCksXG4gIFNleCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgU2V4UUYgPSBjb2xfY2hhcmFjdGVyKClcbilcbuKEuSBVc2UgYHNwZWMoKWAgZm9yIHRoZSBmdWxsIGNvbHVtbiBzcGVjaWZpY2F0aW9ucy5cbiJ9 -->
-<pre><code>
-── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────
-cols(
-  .default = col_double(),
-  CA = col_character(),
-  CAQF = col_character(),
-  Sex = col_character(),
-  SexQF = col_character()
-)
-ℹ Use `spec()` for the full column specifications.</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiRGF0YSBtYW5pcHVsYXRpb24gc2NyaXB0IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpgYGB7cn0KbGlicmFyeShqYW5pdG9yKQpsaWJyYXJ5KHNraW1yKQpsaWJyYXJ5KHRpZHl2ZXJzZSkKbGlicmFyeShoZXJlKQpgYGAKCmBgYHtyfQojIFJlYWQgaW4gc3Ryb2tlIHNvdXJjZSBkYXRhCiMgVHdvIHNldHMgb2YgZGF0YTogCiMgIDEuIEhvc3BpdGFsIGFjdGl2aXR5IHJlbGF0ZWQgdG8gc3Ryb2tlcwojICAyLiBTdHJva2UgbW9ydGFsaXR5IGRhdGEKIyBCb3RoIGRhdGFzZXRzIGFyZSBwcm9kdWNlZCBhdCBIZWFsdGggQm9hcmQgKGhiKSBhbmQgQ291bmNpbCBBcmVhIChjYSkKCmFjdGl2aXR5X2hiX3JhdyA8LSByZWFkX2NzdihoZXJlKCJkYXRhL3Jhdy9zdHJva2VfYWN0aXZpdHlieWhiLmNzdiIpKSAlPiUgCiAgY2xlYW5fbmFtZXMoKQphY3Rpdml0eV9jYV9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvc3Ryb2tlX2FjdGl2aXR5YnljYS5jc3YiKSkgJT4lIAogIGNsZWFuX25hbWVzKCkKbW9ydGFsaXR5X2hiX3JhdyA8LSByZWFkX2NzdihoZXJlKCJkYXRhL3Jhdy9zdHJva2VfbW9ydGFsaXR5YnloYnIuY3N2IikpICU+JSAKICBjbGVhbl9uYW1lcygpCm1vcnRhbGlsdHlfY2FfcmF3IDwtIHJlYWRfY3N2KGhlcmUoImRhdGEvcmF3L3N0cm9rZV9tb3J0YWxpdHlieWNhLmNzdiIpKSU+JSAKICBjbGVhbl9uYW1lcygpCmBgYAoKYGBge3J9CiMgcmVhZCBpbiBwb3B1bGF0aW9uIGVzdGltYXRlcwoKcG9wdWxhdGlvbl9oYl9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvcG9wdWxhdGlvbl9lc3RfaGIuY3N2IikpICU+JSAKICBjbGVhbl9uYW1lcygpCnBvcHVsYXRpb25fY2FfcmF3IDwtIHJlYWRfY3N2KGhlcmUoImRhdGEvcmF3L3BvcHVsYXRpb25fZXN0X2NhLmNzdiIpKSU+JSAKICBjbGVhbl9uYW1lcygpCmBgYAoKYGBge3J9CiMgcmVhZCBpbiBwb3B1bGF0aW9uIHByb2plY3Rpb25zCgpwb3B1bGF0aW9uX3Byb2pfaGJfcmF3IDwtIHJlYWRfY3N2KGhlcmUoImRhdGEvcmF3L3BvcHVsYXRpb25fcHJval9oYi5jc3YiKSkgJT4lIAogIGNsZWFuX25hbWVzKCkKcG9wdWxhdGlvbl9wcm9qX2NhX3JhdyA8LSByZWFkX2NzdihoZXJlKCJkYXRhL3Jhdy9wb3B1bGF0aW9uX3Byb2pfY2EuY3N2IikpICU+JSAKICBjbGVhbl9uYW1lcygpCmBgYAoK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiRGF0YSBtYW5pcHVsYXRpb24gc2NyaXB0IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpgYGB7cn0KbGlicmFyeShqYW5pdG9yKQpsaWJyYXJ5KHNraW1yKQpsaWJyYXJ5KHRpZHl2ZXJzZSkKbGlicmFyeShoZXJlKQpgYGAKCmBgYHtyfQojIFJlYWQgaW4gc3Ryb2tlIHNvdXJjZSBkYXRhCiMgVHdvIHNldHMgb2YgZGF0YTogCiMgIDEuIEhvc3BpdGFsIGFjdGl2aXR5IHJlbGF0ZWQgdG8gc3Ryb2tlcwojICAyLiBTdHJva2UgbW9ydGFsaXR5IGRhdGEKIyBCb3RoIGRhdGFzZXRzIGFyZSBwcm9kdWNlZCBhdCBIZWFsdGggQm9hcmQgKGhiKSBhbmQgQ291bmNpbCBBcmVhIChjYSkKIyBDb2x1bW5zIGVuZGluZyAncWYnIGFyZSBjb2RlcyByZWxhdGluZyB0byBkYXRhIHF1YWxpdHkgYW5kIGNhbiBiZSByZW1vdmVkCgphY3Rpdml0eV9oYl9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvc3Ryb2tlX2FjdGl2aXR5YnloYi5jc3YiKSkgJT4lIAogIGNsZWFuX25hbWVzKCkgJT4lIAogIHNlbGVjdCgtZW5kc193aXRoKCJxZiIpKQphY3Rpdml0eV9jYV9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvc3Ryb2tlX2FjdGl2aXR5YnljYS5jc3YiKSkgJT4lIAogIGNsZWFuX25hbWVzKCkgJT4lIAogIHNlbGVjdCgtZW5kc193aXRoKCJxZiIpKQptb3J0YWxpdHlfaGJfcmF3IDwtIHJlYWRfY3N2KGhlcmUoImRhdGEvcmF3L3N0cm9rZV9tb3J0YWxpdHlieWhici5jc3YiKSkgJT4lIAogIGNsZWFuX25hbWVzKCkgJT4lIAogIHNlbGVjdCgtZW5kc193aXRoKCJxZiIpKQptb3J0YWxpbHR5X2NhX3JhdyA8LSByZWFkX2NzdihoZXJlKCJkYXRhL3Jhdy9zdHJva2VfbW9ydGFsaXR5YnljYS5jc3YiKSklPiUgCiAgY2xlYW5fbmFtZXMoKSAlPiUgCiAgc2VsZWN0KC1lbmRzX3dpdGgoInFmIikpCmBgYAoKYGBge3J9CiMgcmVhZCBpbiBwb3B1bGF0aW9uIGVzdGltYXRlcwoKcG9wdWxhdGlvbl9oYl9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvcG9wdWxhdGlvbl9lc3RfaGIuY3N2IikpICU+JSAKICBjbGVhbl9uYW1lcygpICU+JSAKICBzZWxlY3QoLWVuZHNfd2l0aCgicWYiKSkKcG9wdWxhdGlvbl9jYV9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvcG9wdWxhdGlvbl9lc3RfY2EuY3N2IikpJT4lIAogIGNsZWFuX25hbWVzKCkgJT4lIAogIHNlbGVjdCgtZW5kc193aXRoKCJxZiIpKQpgYGAKCmBgYHtyfQojIHJlYWQgaW4gcG9wdWxhdGlvbiBwcm9qZWN0aW9ucwoKcG9wdWxhdGlvbl9wcm9qX2hiX3JhdyA8LSByZWFkX2NzdihoZXJlKCJkYXRhL3Jhdy9wb3B1bGF0aW9uX3Byb2pfaGIuY3N2IikpICU+JSAKICBjbGVhbl9uYW1lcygpICU+JSAKICBzZWxlY3QoLWVuZHNfd2l0aCgicWYiKSkKcG9wdWxhdGlvbl9wcm9qX2NhX3JhdyA8LSByZWFkX2NzdihoZXJlKCJkYXRhL3Jhdy9wb3B1bGF0aW9uX3Byb2pfY2EuY3N2IikpICU+JSAKICBjbGVhbl9uYW1lcygpICU+JSAKICBzZWxlY3QoLWVuZHNfd2l0aCgicWYiKSkKYGBgCgpgYGB7cn0KIyByZWFkIGluIEhlYWx0aCBCb2FyZC9Db3VuY2lsIGlkIGxvb2t1cHMgCmhiX2lkIDwtIHJlYWRfY3N2KGhlcmUoImRhdGEvY2xlYW4vaGVhbHRoX2JvYXJkX2lkLmNzdiIpKQpjYV9pZCA8LSByZWFkX2NzdihoZXJlKCJkYXRhL2NsZWFuL2NvdW5jaWxfaWQuY3N2IikpCmlkX2xvb2t1cHMgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9jbGVhbi9pZF9sb29rdXBzLmNzdiIpKQpgYGAKCgpgYGB7cn0KIyBNYW5pcHVsYXRlIGFjdGl2aXR5IGRhdGE6CgphY3Rpdml0eV9jYSA8LSBhY3Rpdml0eV9jYV9yYXcgJT4lIAogIGxlZnRfam9pbihjYV9pZCwgYnkgPSBjKCJjYSIgPSAibGFfY29kZSIpKSAlPiUgCiAgbXV0YXRlKHllYXIgPSBzdHJfc3ViKGZpbmFuY2lhbF95ZWFyLCAxLCA0KSwKICAgICAgICAgbGFfbmFtZSA9IGlmX2Vsc2UoY2EgPT0gIlM5MjAwMDAwMyIsICJTY290bGFuZCIsIGxhX25hbWUpCiAgICAgICAgICkgJT4lIAogIHNlbGVjdCgtZmluYW5jaWFsX3llYXIpICU+JSAKICByZWxvY2F0ZSh5ZWFyKQoKYWN0aXZpdHlfaGIgPC0gYWN0aXZpdHlfaGJfcmF3ICU+JSAKICBsZWZ0X2pvaW4oaGJfaWQsIGJ5ID0gYygiaGJyIiA9ICJoYl9jb2RlIikpICU+JSAKICBtdXRhdGUoeWVhciA9IHN0cl9zdWIoZmluYW5jaWFsX3llYXIsIDEsIDQpLAogICAgICAgICBoYl9uYW1lID0gaWZfZWxzZShoYnIgPT0gIlM5MjAwMDAwMyIsICJTY290bGFuZCIsIGhiX25hbWUpCiAgICAgICAgICkgJT4lIAogIHNlbGVjdCgtZmluYW5jaWFsX3llYXIpICU+JSAKICByZWxvY2F0ZSh5ZWFyKQogIApgYGAKCg==</div>
 
 
 
