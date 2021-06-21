@@ -318,73 +318,68 @@ population_proj_ca_raw &lt;- read_csv(here(&quot;data/raw/population_proj_ca.csv
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyByZWFkIGluIEhlYWx0aCBCb2FyZC9Db3VuY2lsIGlkIGxvb2t1cHMgXG5oYl9pZCA8LSByZWFkX2NzdihoZXJlKFwiZGF0YS9jbGVhbi9oZWFsdGhfYm9hcmRfaWQuY3N2XCIpKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyByZWFkIGluIEhlYWx0aCBCb2FyZC9Db3VuY2lsIGlkIGxvb2t1cHMgXG5oYl9pZCA8LSByZWFkX2NzdihoZXJlKFwiZGF0YS9jbGVhbi9oZWFsdGhfYm9hcmRfaWQuY3N2XCIpKVxuY2FfaWQgPC0gcmVhZF9jc3YoaGVyZShcImRhdGEvY2xlYW4vY291bmNpbF9pZC5jc3ZcIikpXG5pZF9sb29rdXBzIDwtIHJlYWRfY3N2KGhlcmUoXCJkYXRhL2NsZWFuL2lkX2xvb2t1cHMuY3N2XCIpKVxuYGBgIn0= -->
 <pre class="r"><code># read in Health Board/Council id lookups 
-hb_id &lt;- read_csv(here(&quot;data/clean/health_board_id.csv&quot;))</code></pre>
+hb_id &lt;- read_csv(here(&quot;data/clean/health_board_id.csv&quot;))
+ca_id &lt;- read_csv(here(&quot;data/clean/council_id.csv&quot;))
+id_lookups &lt;- read_csv(here(&quot;data/clean/id_lookups.csv&quot;))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBoYl9jb2RlID0gY29sX2NoYXJhY3RlcigpLFxuICBoYl9uYW1lID0gY29sX2NoYXJhY3RlcigpXG4pXG4ifQ== -->
-<pre><code>
-── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-cols(
-  hb_code = col_character(),
-  hb_name = col_character()
-)</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2FfaWQgPC0gcmVhZF9jc3YoaGVyZShcImRhdGEvY2xlYW4vY291bmNpbF9pZC5jc3ZcIikpXG5gYGAifQ== -->
-<pre class="r"><code>ca_id &lt;- read_csv(here(&quot;data/clean/council_id.csv&quot;))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBsYV9jb2RlID0gY29sX2NoYXJhY3RlcigpLFxuICBsYV9uYW1lID0gY29sX2NoYXJhY3RlcigpXG4pXG4ifQ== -->
-<pre><code>
-── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-cols(
-  la_code = col_character(),
-  la_name = col_character()
-)</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaWRfbG9va3VwcyA8LSByZWFkX2NzdihoZXJlKFwiZGF0YS9jbGVhbi9pZF9sb29rdXBzLmNzdlwiKSlcbmBgYCJ9 -->
-<pre class="r"><code>id_lookups &lt;- read_csv(here(&quot;data/clean/id_lookups.csv&quot;))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICAuZGVmYXVsdCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgdXIyX2NvZGUgPSBjb2xfZG91YmxlKCksXG4gIHVyM19jb2RlID0gY29sX2RvdWJsZSgpLFxuICB1cjZfY29kZSA9IGNvbF9kb3VibGUoKSxcbiAgdXI4X2NvZGUgPSBjb2xfZG91YmxlKClcbilcbuKEuSBVc2UgYHNwZWMoKWAgZm9yIHRoZSBmdWxsIGNvbHVtbiBzcGVjaWZpY2F0aW9ucy5cbiJ9 -->
-<pre><code>
-── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-cols(
-  .default = col_character(),
-  ur2_code = col_double(),
-  ur3_code = col_double(),
-  ur6_code = col_double(),
-  ur8_code = col_double()
-)
-ℹ Use `spec()` for the full column specifications.</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBNYW5pcHVsYXRlIGFjdGl2aXR5IGRhdGE6XG5cbmFjdGl2aXR5X2NhIDwtIGFjdGl2aXR5X2NhX3JhdyAlPiUgXG4gIGxlZnRfam9pbihjYV9pZCwgYnkgPSBjKFwiY2FcIiA9IFwibGFfY29kZVwiKSkgJT4lIFxuICBtdXRhdGUoeWVhciA9IHN0cl9zdWIoZmluYW5jaWFsX3llYXIsIDEsIDQpLFxuICAgICAgICAgbGFfbmFtZSA9IGlmX2Vsc2UoY2EgPT0gXCJTOTIwMDAwMDNcIiwgXCJTY290bGFuZFwiLCBsYV9uYW1lKVxuICAgICAgICAgKSAlPiUgXG4gIHNlbGVjdCgtZmluYW5jaWFsX3llYXIpICU+JSBcbiAgcmVsb2NhdGUoeWVhcilcblxuYWN0aXZpdHlfaGIgPC0gYWN0aXZpdHlfaGJfcmF3ICU+JSBcbiAgbGVmdF9qb2luKGhiX2lkLCBieSA9IGMoXCJoYnJcIiA9IFwiaGJfY29kZVwiKSkgJT4lIFxuICBtdXRhdGUoeWVhciA9IHN0cl9zdWIoZmluYW5jaWFsX3llYXIsIDEsIDQpLFxuICAgICAgICAgaGJfbmFtZSA9IGlmX2Vsc2UoaGJyID09IFwiUzkyMDAwMDAzXCIsIFwiU2NvdGxhbmRcIiwgaGJfbmFtZSlcbiAgICAgICAgICkgJT4lIFxuICBzZWxlY3QoLWZpbmFuY2lhbF95ZWFyKSAlPiUgXG4gIHJlbG9jYXRlKHllYXIpXG4gIFxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBHZXQgSGVhbHRoIEJvYWQgbmFtZSBmb3IgZWFjaCBsb2NhbCBjb3VuY2lsIGFyZWFcbmhiX2NhX2lkIDwtIGlkX2xvb2t1cHMgJT4lIFxuICBzZWxlY3QoXCJsYV9jb2RlXCIsIFwiaGJfbmFtZVwiKSAlPiUgXG4gIGRpc3RpbmN0KGxhX2NvZGUsIGhiX25hbWUpXG5gYGAifQ== -->
+<pre class="r"><code># Get Health Boad name for each local council area
+hb_ca_id &lt;- id_lookups %&gt;% 
+  select(&quot;la_code&quot;, &quot;hb_name&quot;) %&gt;% 
+  distinct(la_code, hb_name)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBNYW5pcHVsYXRlIGFjdGl2aXR5IGRhdGE6XG5hY3Rpdml0eV9oYiA8LSBhY3Rpdml0eV9oYl9yYXcgJT4lIFxuICBsZWZ0X2pvaW4oaGJfaWQsIGJ5ID0gYyhcImhiclwiID0gXCJoYl9jb2RlXCIpKSAlPiUgIyBnZXQgSGVhbHRoIEJvYXJkIG5hbWVcbiAgbXV0YXRlKHllYXIgPSBzdHJfc3ViKGZpbmFuY2lhbF95ZWFyLCAxLCA0KSxcbiAgICAgICAgIGhiX25hbWUgPSBpZl9lbHNlKGhiciA9PSBcIlM5MjAwMDAwM1wiLCBcIlNjb3RsYW5kXCIsIGhiX25hbWUpIFxuICAgICAgICAgKSAlPiUgXG4gIHNlbGVjdCgtZmluYW5jaWFsX3llYXIpICU+JSBcbiAgcmVsb2NhdGUoeWVhcilcblxuYWN0aXZpdHlfY2EgPC0gYWN0aXZpdHlfY2FfcmF3ICU+JSBcbiAgbGVmdF9qb2luKGNhX2lkLCBieSA9IGMoXCJjYVwiID0gXCJsYV9jb2RlXCIpKSAlPiUgICMgZ2V0IENvdW5jaWwgbmFtZVxuICBsZWZ0X2pvaW4oaGJfY2FfaWQsIGJ5ID0gYyhcImNhXCIgPSBcImxhX2NvZGVcIikpICU+JSAjIGdldCBIZWFsdGggQm9hcmQgbmFtZVxuICBtdXRhdGUoeWVhciA9IHN0cl9zdWIoZmluYW5jaWFsX3llYXIsIDEsIDQpLFxuICAgICAgICAgbGFfbmFtZSA9IGlmX2Vsc2UoY2EgPT0gXCJTOTIwMDAwMDNcIiwgXCJTY290bGFuZFwiLCBsYV9uYW1lKSxcbiAgICAgICAgIGhiX25hbWUgPSBpZl9lbHNlKGNhID09IFwiUzkyMDAwMDAzXCIsIFwiU2NvdGxhbmRcIiwgaGJfbmFtZSlcbiAgICAgICAgICkgJT4lIFxuICBzZWxlY3QoLWZpbmFuY2lhbF95ZWFyKSAlPiUgXG4gIHJlbG9jYXRlKHllYXIpXG5gYGAifQ== -->
 <pre class="r"><code># Manipulate activity data:
+activity_hb &lt;- activity_hb_raw %&gt;% 
+  left_join(hb_id, by = c(&quot;hbr&quot; = &quot;hb_code&quot;)) %&gt;% # get Health Board name
+  mutate(year = str_sub(financial_year, 1, 4),
+         hb_name = if_else(hbr == &quot;S92000003&quot;, &quot;Scotland&quot;, hb_name) 
+         ) %&gt;% 
+  select(-financial_year) %&gt;% 
+  relocate(year)
 
 activity_ca &lt;- activity_ca_raw %&gt;% 
-  left_join(ca_id, by = c(&quot;ca&quot; = &quot;la_code&quot;)) %&gt;% 
+  left_join(ca_id, by = c(&quot;ca&quot; = &quot;la_code&quot;)) %&gt;%  # get Council name
+  left_join(hb_ca_id, by = c(&quot;ca&quot; = &quot;la_code&quot;)) %&gt;% # get Health Board name
   mutate(year = str_sub(financial_year, 1, 4),
-         la_name = if_else(ca == &quot;S92000003&quot;, &quot;Scotland&quot;, la_name)
+         la_name = if_else(ca == &quot;S92000003&quot;, &quot;Scotland&quot;, la_name),
+         hb_name = if_else(ca == &quot;S92000003&quot;, &quot;Scotland&quot;, hb_name)
          ) %&gt;% 
   select(-financial_year) %&gt;% 
-  relocate(year)
+  relocate(year)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBNYW5pcHVsYXRlIG1vcnRhbGl0eSBkYXRhXG5tb3J0YWxpdHlfaGIgPC0gbW9ydGFsaXR5X2hiX3JhdyAlPiUgXG4gIGxlZnRfam9pbihoYl9pZCwgYnkgPSBjKFwiaGJyXCIgPSBcImhiX2NvZGVcIikpICU+JSAjIGdldCBIZWFsdGggQm9hcmQgbmFtZVxuICBtdXRhdGUoaGJfbmFtZSA9IGlmX2Vsc2UoaGJyID09IFwiUzkyMDAwMDAzXCIsIFwiU2NvdGxhbmRcIiwgaGJfbmFtZSkpXG5cbm1vcnRhbGl0eV9jYSA8LSBtb3J0YWxpbHR5X2NhX3JhdyAlPiUgXG4gIGxlZnRfam9pbihjYV9pZCwgYnkgPSBjKFwiY2FcIiA9IFwibGFfY29kZVwiKSkgJT4lICAjIGdldCBDb3VuY2lsIG5hbWVcbiAgbGVmdF9qb2luKGhiX2NhX2lkLCBieSA9IGMoXCJjYVwiID0gXCJsYV9jb2RlXCIpKSAlPiUgIyBnZXQgSGVhbHRoIEJvYXJkIG5hbWVcbiAgbXV0YXRlKGxhX25hbWUgPSBpZl9lbHNlKGNhID09IFwiUzkyMDAwMDAzXCIsIFwiU2NvdGxhbmRcIiwgbGFfbmFtZSksXG4gICAgICAgICBoYl9uYW1lID0gaWZfZWxzZShjYSA9PSBcIlM5MjAwMDAwM1wiLCBcIlNjb3RsYW5kXCIsIGhiX25hbWUpXG4gICAgICAgICApXG5gYGAifQ== -->
+<pre class="r"><code># Manipulate mortality data
+mortality_hb &lt;- mortality_hb_raw %&gt;% 
+  left_join(hb_id, by = c(&quot;hbr&quot; = &quot;hb_code&quot;)) %&gt;% # get Health Board name
+  mutate(hb_name = if_else(hbr == &quot;S92000003&quot;, &quot;Scotland&quot;, hb_name))
 
-activity_hb &lt;- activity_hb_raw %&gt;% 
-  left_join(hb_id, by = c(&quot;hbr&quot; = &quot;hb_code&quot;)) %&gt;% 
-  mutate(year = str_sub(financial_year, 1, 4),
-         hb_name = if_else(hbr == &quot;S92000003&quot;, &quot;Scotland&quot;, hb_name)
-         ) %&gt;% 
-  select(-financial_year) %&gt;% 
-  relocate(year)
-  </code></pre>
+mortality_ca &lt;- mortalilty_ca_raw %&gt;% 
+  left_join(ca_id, by = c(&quot;ca&quot; = &quot;la_code&quot;)) %&gt;%  # get Council name
+  left_join(hb_ca_id, by = c(&quot;ca&quot; = &quot;la_code&quot;)) %&gt;% # get Health Board name
+  mutate(la_name = if_else(ca == &quot;S92000003&quot;, &quot;Scotland&quot;, la_name),
+         hb_name = if_else(ca == &quot;S92000003&quot;, &quot;Scotland&quot;, hb_name)
+         )</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiRGF0YSBtYW5pcHVsYXRpb24gc2NyaXB0IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpgYGB7cn0KbGlicmFyeShqYW5pdG9yKQpsaWJyYXJ5KHNraW1yKQpsaWJyYXJ5KHRpZHl2ZXJzZSkKbGlicmFyeShoZXJlKQpgYGAKCmBgYHtyfQojIFJlYWQgaW4gc3Ryb2tlIHNvdXJjZSBkYXRhCiMgVHdvIHNldHMgb2YgZGF0YTogCiMgIDEuIEhvc3BpdGFsIGFjdGl2aXR5IHJlbGF0ZWQgdG8gc3Ryb2tlcwojICAyLiBTdHJva2UgbW9ydGFsaXR5IGRhdGEKIyBCb3RoIGRhdGFzZXRzIGFyZSBwcm9kdWNlZCBhdCBIZWFsdGggQm9hcmQgKGhiKSBhbmQgQ291bmNpbCBBcmVhIChjYSkKIyBDb2x1bW5zIGVuZGluZyAncWYnIGFyZSBjb2RlcyByZWxhdGluZyB0byBkYXRhIHF1YWxpdHkgYW5kIGNhbiBiZSByZW1vdmVkCgphY3Rpdml0eV9oYl9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvc3Ryb2tlX2FjdGl2aXR5YnloYi5jc3YiKSkgJT4lIAogIGNsZWFuX25hbWVzKCkgJT4lIAogIHNlbGVjdCgtZW5kc193aXRoKCJxZiIpKQphY3Rpdml0eV9jYV9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvc3Ryb2tlX2FjdGl2aXR5YnljYS5jc3YiKSkgJT4lIAogIGNsZWFuX25hbWVzKCkgJT4lIAogIHNlbGVjdCgtZW5kc193aXRoKCJxZiIpKQptb3J0YWxpdHlfaGJfcmF3IDwtIHJlYWRfY3N2KGhlcmUoImRhdGEvcmF3L3N0cm9rZV9tb3J0YWxpdHlieWhici5jc3YiKSkgJT4lIAogIGNsZWFuX25hbWVzKCkgJT4lIAogIHNlbGVjdCgtZW5kc193aXRoKCJxZiIpKQptb3J0YWxpbHR5X2NhX3JhdyA8LSByZWFkX2NzdihoZXJlKCJkYXRhL3Jhdy9zdHJva2VfbW9ydGFsaXR5YnljYS5jc3YiKSklPiUgCiAgY2xlYW5fbmFtZXMoKSAlPiUgCiAgc2VsZWN0KC1lbmRzX3dpdGgoInFmIikpCmBgYAoKYGBge3J9CiMgcmVhZCBpbiBwb3B1bGF0aW9uIGVzdGltYXRlcwoKcG9wdWxhdGlvbl9oYl9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvcG9wdWxhdGlvbl9lc3RfaGIuY3N2IikpICU+JSAKICBjbGVhbl9uYW1lcygpICU+JSAKICBzZWxlY3QoLWVuZHNfd2l0aCgicWYiKSkKcG9wdWxhdGlvbl9jYV9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvcG9wdWxhdGlvbl9lc3RfY2EuY3N2IikpJT4lIAogIGNsZWFuX25hbWVzKCkgJT4lIAogIHNlbGVjdCgtZW5kc193aXRoKCJxZiIpKQpgYGAKCmBgYHtyfQojIHJlYWQgaW4gcG9wdWxhdGlvbiBwcm9qZWN0aW9ucwoKcG9wdWxhdGlvbl9wcm9qX2hiX3JhdyA8LSByZWFkX2NzdihoZXJlKCJkYXRhL3Jhdy9wb3B1bGF0aW9uX3Byb2pfaGIuY3N2IikpICU+JSAKICBjbGVhbl9uYW1lcygpICU+JSAKICBzZWxlY3QoLWVuZHNfd2l0aCgicWYiKSkKcG9wdWxhdGlvbl9wcm9qX2NhX3JhdyA8LSByZWFkX2NzdihoZXJlKCJkYXRhL3Jhdy9wb3B1bGF0aW9uX3Byb2pfY2EuY3N2IikpICU+JSAKICBjbGVhbl9uYW1lcygpICU+JSAKICBzZWxlY3QoLWVuZHNfd2l0aCgicWYiKSkKYGBgCgpgYGB7cn0KIyByZWFkIGluIEhlYWx0aCBCb2FyZC9Db3VuY2lsIGlkIGxvb2t1cHMgCmhiX2lkIDwtIHJlYWRfY3N2KGhlcmUoImRhdGEvY2xlYW4vaGVhbHRoX2JvYXJkX2lkLmNzdiIpKQpjYV9pZCA8LSByZWFkX2NzdihoZXJlKCJkYXRhL2NsZWFuL2NvdW5jaWxfaWQuY3N2IikpCmlkX2xvb2t1cHMgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9jbGVhbi9pZF9sb29rdXBzLmNzdiIpKQpgYGAKCgpgYGB7cn0KIyBNYW5pcHVsYXRlIGFjdGl2aXR5IGRhdGE6CgphY3Rpdml0eV9jYSA8LSBhY3Rpdml0eV9jYV9yYXcgJT4lIAogIGxlZnRfam9pbihjYV9pZCwgYnkgPSBjKCJjYSIgPSAibGFfY29kZSIpKSAlPiUgCiAgbXV0YXRlKHllYXIgPSBzdHJfc3ViKGZpbmFuY2lhbF95ZWFyLCAxLCA0KSwKICAgICAgICAgbGFfbmFtZSA9IGlmX2Vsc2UoY2EgPT0gIlM5MjAwMDAwMyIsICJTY290bGFuZCIsIGxhX25hbWUpCiAgICAgICAgICkgJT4lIAogIHNlbGVjdCgtZmluYW5jaWFsX3llYXIpICU+JSAKICByZWxvY2F0ZSh5ZWFyKQoKYWN0aXZpdHlfaGIgPC0gYWN0aXZpdHlfaGJfcmF3ICU+JSAKICBsZWZ0X2pvaW4oaGJfaWQsIGJ5ID0gYygiaGJyIiA9ICJoYl9jb2RlIikpICU+JSAKICBtdXRhdGUoeWVhciA9IHN0cl9zdWIoZmluYW5jaWFsX3llYXIsIDEsIDQpLAogICAgICAgICBoYl9uYW1lID0gaWZfZWxzZShoYnIgPT0gIlM5MjAwMDAwMyIsICJTY290bGFuZCIsIGhiX25hbWUpCiAgICAgICAgICkgJT4lIAogIHNlbGVjdCgtZmluYW5jaWFsX3llYXIpICU+JSAKICByZWxvY2F0ZSh5ZWFyKQogIApgYGAKCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiRGF0YSBtYW5pcHVsYXRpb24gc2NyaXB0IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpgYGB7cn0KbGlicmFyeShqYW5pdG9yKQpsaWJyYXJ5KHNraW1yKQpsaWJyYXJ5KHRpZHl2ZXJzZSkKbGlicmFyeShoZXJlKQpgYGAKCmBgYHtyfQojIFJlYWQgaW4gc3Ryb2tlIHNvdXJjZSBkYXRhCiMgVHdvIHNldHMgb2YgZGF0YTogCiMgIDEuIEhvc3BpdGFsIGFjdGl2aXR5IHJlbGF0ZWQgdG8gc3Ryb2tlcwojICAyLiBTdHJva2UgbW9ydGFsaXR5IGRhdGEKIyBCb3RoIGRhdGFzZXRzIGFyZSBwcm9kdWNlZCBhdCBIZWFsdGggQm9hcmQgKGhiKSBhbmQgQ291bmNpbCBBcmVhIChjYSkKIyBDb2x1bW5zIGVuZGluZyAncWYnIGFyZSBjb2RlcyByZWxhdGluZyB0byBkYXRhIHF1YWxpdHkgYW5kIGNhbiBiZSByZW1vdmVkCgphY3Rpdml0eV9oYl9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvc3Ryb2tlX2FjdGl2aXR5YnloYi5jc3YiKSkgJT4lIAogIGNsZWFuX25hbWVzKCkgJT4lIAogIHNlbGVjdCgtZW5kc193aXRoKCJxZiIpKQphY3Rpdml0eV9jYV9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvc3Ryb2tlX2FjdGl2aXR5YnljYS5jc3YiKSkgJT4lIAogIGNsZWFuX25hbWVzKCkgJT4lIAogIHNlbGVjdCgtZW5kc193aXRoKCJxZiIpKQptb3J0YWxpdHlfaGJfcmF3IDwtIHJlYWRfY3N2KGhlcmUoImRhdGEvcmF3L3N0cm9rZV9tb3J0YWxpdHlieWhici5jc3YiKSkgJT4lIAogIGNsZWFuX25hbWVzKCkgJT4lIAogIHNlbGVjdCgtZW5kc193aXRoKCJxZiIpKQptb3J0YWxpbHR5X2NhX3JhdyA8LSByZWFkX2NzdihoZXJlKCJkYXRhL3Jhdy9zdHJva2VfbW9ydGFsaXR5YnljYS5jc3YiKSklPiUgCiAgY2xlYW5fbmFtZXMoKSAlPiUgCiAgc2VsZWN0KC1lbmRzX3dpdGgoInFmIikpCmBgYAoKYGBge3J9CiMgcmVhZCBpbiBwb3B1bGF0aW9uIGVzdGltYXRlcwoKcG9wdWxhdGlvbl9oYl9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvcG9wdWxhdGlvbl9lc3RfaGIuY3N2IikpICU+JSAKICBjbGVhbl9uYW1lcygpICU+JSAKICBzZWxlY3QoLWVuZHNfd2l0aCgicWYiKSkKcG9wdWxhdGlvbl9jYV9yYXcgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9yYXcvcG9wdWxhdGlvbl9lc3RfY2EuY3N2IikpJT4lIAogIGNsZWFuX25hbWVzKCkgJT4lIAogIHNlbGVjdCgtZW5kc193aXRoKCJxZiIpKQpgYGAKCmBgYHtyfQojIHJlYWQgaW4gcG9wdWxhdGlvbiBwcm9qZWN0aW9ucwoKcG9wdWxhdGlvbl9wcm9qX2hiX3JhdyA8LSByZWFkX2NzdihoZXJlKCJkYXRhL3Jhdy9wb3B1bGF0aW9uX3Byb2pfaGIuY3N2IikpICU+JSAKICBjbGVhbl9uYW1lcygpICU+JSAKICBzZWxlY3QoLWVuZHNfd2l0aCgicWYiKSkKcG9wdWxhdGlvbl9wcm9qX2NhX3JhdyA8LSByZWFkX2NzdihoZXJlKCJkYXRhL3Jhdy9wb3B1bGF0aW9uX3Byb2pfY2EuY3N2IikpICU+JSAKICBjbGVhbl9uYW1lcygpICU+JSAKICBzZWxlY3QoLWVuZHNfd2l0aCgicWYiKSkKYGBgCgpgYGB7cn0KIyByZWFkIGluIEhlYWx0aCBCb2FyZC9Db3VuY2lsIGlkIGxvb2t1cHMgCmhiX2lkIDwtIHJlYWRfY3N2KGhlcmUoImRhdGEvY2xlYW4vaGVhbHRoX2JvYXJkX2lkLmNzdiIpKQpjYV9pZCA8LSByZWFkX2NzdihoZXJlKCJkYXRhL2NsZWFuL2NvdW5jaWxfaWQuY3N2IikpCmlkX2xvb2t1cHMgPC0gcmVhZF9jc3YoaGVyZSgiZGF0YS9jbGVhbi9pZF9sb29rdXBzLmNzdiIpKQpgYGAKCmBgYHtyfQojIEdldCBIZWFsdGggQm9hZCBuYW1lIGZvciBlYWNoIGxvY2FsIGNvdW5jaWwgYXJlYQpoYl9jYV9pZCA8LSBpZF9sb29rdXBzICU+JSAKICBzZWxlY3QoImxhX2NvZGUiLCAiaGJfbmFtZSIpICU+JSAKICBkaXN0aW5jdChsYV9jb2RlLCBoYl9uYW1lKQpgYGAKCgoKYGBge3J9CiMgTWFuaXB1bGF0ZSBhY3Rpdml0eSBkYXRhOgphY3Rpdml0eV9oYiA8LSBhY3Rpdml0eV9oYl9yYXcgJT4lIAogIGxlZnRfam9pbihoYl9pZCwgYnkgPSBjKCJoYnIiID0gImhiX2NvZGUiKSkgJT4lICMgZ2V0IEhlYWx0aCBCb2FyZCBuYW1lCiAgbXV0YXRlKHllYXIgPSBzdHJfc3ViKGZpbmFuY2lhbF95ZWFyLCAxLCA0KSwKICAgICAgICAgaGJfbmFtZSA9IGlmX2Vsc2UoaGJyID09ICJTOTIwMDAwMDMiLCAiU2NvdGxhbmQiLCBoYl9uYW1lKSAKICAgICAgICAgKSAlPiUgCiAgc2VsZWN0KC1maW5hbmNpYWxfeWVhcikgJT4lIAogIHJlbG9jYXRlKHllYXIpCgphY3Rpdml0eV9jYSA8LSBhY3Rpdml0eV9jYV9yYXcgJT4lIAogIGxlZnRfam9pbihjYV9pZCwgYnkgPSBjKCJjYSIgPSAibGFfY29kZSIpKSAlPiUgICMgZ2V0IENvdW5jaWwgbmFtZQogIGxlZnRfam9pbihoYl9jYV9pZCwgYnkgPSBjKCJjYSIgPSAibGFfY29kZSIpKSAlPiUgIyBnZXQgSGVhbHRoIEJvYXJkIG5hbWUKICBtdXRhdGUoeWVhciA9IHN0cl9zdWIoZmluYW5jaWFsX3llYXIsIDEsIDQpLAogICAgICAgICBsYV9uYW1lID0gaWZfZWxzZShjYSA9PSAiUzkyMDAwMDAzIiwgIlNjb3RsYW5kIiwgbGFfbmFtZSksCiAgICAgICAgIGhiX25hbWUgPSBpZl9lbHNlKGNhID09ICJTOTIwMDAwMDMiLCAiU2NvdGxhbmQiLCBoYl9uYW1lKQogICAgICAgICApICU+JSAKICBzZWxlY3QoLWZpbmFuY2lhbF95ZWFyKSAlPiUgCiAgcmVsb2NhdGUoeWVhcikKYGBgCgpgYGB7cn0KIyBNYW5pcHVsYXRlIG1vcnRhbGl0eSBkYXRhCm1vcnRhbGl0eV9oYiA8LSBtb3J0YWxpdHlfaGJfcmF3ICU+JSAKICBsZWZ0X2pvaW4oaGJfaWQsIGJ5ID0gYygiaGJyIiA9ICJoYl9jb2RlIikpICU+JSAjIGdldCBIZWFsdGggQm9hcmQgbmFtZQogIG11dGF0ZShoYl9uYW1lID0gaWZfZWxzZShoYnIgPT0gIlM5MjAwMDAwMyIsICJTY290bGFuZCIsIGhiX25hbWUpKQoKbW9ydGFsaXR5X2NhIDwtIG1vcnRhbGlsdHlfY2FfcmF3ICU+JSAKICBsZWZ0X2pvaW4oY2FfaWQsIGJ5ID0gYygiY2EiID0gImxhX2NvZGUiKSkgJT4lICAjIGdldCBDb3VuY2lsIG5hbWUKICBsZWZ0X2pvaW4oaGJfY2FfaWQsIGJ5ID0gYygiY2EiID0gImxhX2NvZGUiKSkgJT4lICMgZ2V0IEhlYWx0aCBCb2FyZCBuYW1lCiAgbXV0YXRlKGxhX25hbWUgPSBpZl9lbHNlKGNhID09ICJTOTIwMDAwMDMiLCAiU2NvdGxhbmQiLCBsYV9uYW1lKSwKICAgICAgICAgaGJfbmFtZSA9IGlmX2Vsc2UoY2EgPT0gIlM5MjAwMDAwMyIsICJTY290bGFuZCIsIGhiX25hbWUpCiAgICAgICAgICkKYGBgCgo=</div>
 
 
 

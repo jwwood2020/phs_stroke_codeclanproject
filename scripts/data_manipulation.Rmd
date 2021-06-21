@@ -61,25 +61,47 @@ ca_id <- read_csv(here("data/clean/council_id.csv"))
 id_lookups <- read_csv(here("data/clean/id_lookups.csv"))
 ```
 
+```{r}
+# Get Health Boad name for each local council area
+hb_ca_id <- id_lookups %>% 
+  select("la_code", "hb_name") %>% 
+  distinct(la_code, hb_name)
+```
+
+
 
 ```{r}
 # Manipulate activity data:
+activity_hb <- activity_hb_raw %>% 
+  left_join(hb_id, by = c("hbr" = "hb_code")) %>% # get Health Board name
+  mutate(year = str_sub(financial_year, 1, 4),
+         hb_name = if_else(hbr == "S92000003", "Scotland", hb_name) 
+         ) %>% 
+  select(-financial_year) %>% 
+  relocate(year)
 
 activity_ca <- activity_ca_raw %>% 
-  left_join(ca_id, by = c("ca" = "la_code")) %>% 
+  left_join(ca_id, by = c("ca" = "la_code")) %>%  # get Council name
+  left_join(hb_ca_id, by = c("ca" = "la_code")) %>% # get Health Board name
   mutate(year = str_sub(financial_year, 1, 4),
-         la_name = if_else(ca == "S92000003", "Scotland", la_name)
+         la_name = if_else(ca == "S92000003", "Scotland", la_name),
+         hb_name = if_else(ca == "S92000003", "Scotland", hb_name)
          ) %>% 
   select(-financial_year) %>% 
   relocate(year)
+```
 
-activity_hb <- activity_hb_raw %>% 
-  left_join(hb_id, by = c("hbr" = "hb_code")) %>% 
-  mutate(year = str_sub(financial_year, 1, 4),
-         hb_name = if_else(hbr == "S92000003", "Scotland", hb_name)
-         ) %>% 
-  select(-financial_year) %>% 
-  relocate(year)
-  
+```{r}
+# Manipulate mortality data
+mortality_hb <- mortality_hb_raw %>% 
+  left_join(hb_id, by = c("hbr" = "hb_code")) %>% # get Health Board name
+  mutate(hb_name = if_else(hbr == "S92000003", "Scotland", hb_name))
+
+mortality_ca <- mortalilty_ca_raw %>% 
+  left_join(ca_id, by = c("ca" = "la_code")) %>%  # get Council name
+  left_join(hb_ca_id, by = c("ca" = "la_code")) %>% # get Health Board name
+  mutate(la_name = if_else(ca == "S92000003", "Scotland", la_name),
+         hb_name = if_else(ca == "S92000003", "Scotland", hb_name)
+         )
 ```
 
