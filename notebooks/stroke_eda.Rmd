@@ -1,0 +1,131 @@
+---
+title: "Stroke - exploratory data analysis"
+output: html_notebook
+---
+
+```{r}
+# Load libraries
+library(skimr)
+library(here)
+library(tidyverse)
+```
+
+```{r}
+# Read in stroke hospital data
+strokes_hb <- read_csv(here("data/clean/activity_hb.csv"))
+strokes_ca <- read_csv(here("data/clean/activity_ca.csv"))
+```
+
+```{r}
+strokes_hb %>% 
+  distinct(admission_type)
+
+strokes_hb %>% 
+  distinct(age_group)
+
+strokes_hb %>% 
+  distinct(diagnosis)
+
+```
+Possible sources of analysis:
+- by diagnosis
+- by age group
+Unlikely to use by admission type.
+
+```{r}
+strokes_hb %>% 
+  filter(hb_name == "Scotland" & 
+           admission_type == "All" &
+           age_group =="All" & 
+           sex == "All" & 
+           year == "2018" ) %>% 
+  group_by(diagnosis, sex, age_group) %>% 
+  summarise(discharges = sum(number_of_discharges))
+
+```
+
+```{r}
+strokes_hb %>% 
+  filter(hb_name == "Scotland"  & 
+           admission_type == "All" &
+           age_group =="All" & 
+           year == "2018") %>% 
+  group_by(diagnosis, sex, age_group) %>% 
+  summarise(discharges = sum(number_of_discharges))
+
+```
+
+```{r}
+strokes_hb %>% 
+  filter(hb_name == "Scotland"  & 
+           admission_type == "All" & 
+           year == "2018") %>% 
+  group_by(diagnosis, sex, age_group) %>% 
+  summarise(discharges = sum(number_of_discharges))
+```
+
+Initial plots to see shape of data:
+
+```{r}
+strokes_hb %>% 
+  skim()
+```
+```{r}
+skim(mortality_ca)
+```
+
+```{r}
+mortality_hb %>% 
+  filter(is.na(number_of_deaths)) %>% 
+  distinct(hb_name)
+```
+
+```{r}
+population_proj_hb %>% 
+  skim()
+```
+
+```{r}
+population_proj_ca %>% 
+  distinct(year)
+```
+
+```{r}
+activity_hb %>% 
+  filter(hbr == "S92000003" &
+           admission_type == "All" &
+           age_group == "All" &
+           sex == "All"
+         ) %>% 
+  ggplot(aes(x = year, y = number_of_discharges, group = diagnosis)) +
+  geom_line()
+```
+
+```{r}
+mortality_hb %>% 
+  filter(hbr == "S92000003" &
+           age_group == "All" &
+           sex == "All"
+         ) %>% 
+  ggplot(aes(x = year, y = number_of_deaths, group = diagnosis)) +
+  geom_line()
+```
+
+```{r}
+activity_hb %>% 
+  filter(hb_name == "Scotland" &
+           admission_type == "All" &
+           age_group == "All" &
+           sex != "All") %>% 
+  group_by(year, sex, diagnosis) %>% 
+  summarise(total_cases = sum(number_of_discharges))
+```
+ 
+```{r}
+mortality_hb %>% 
+  filter(hb_name == "Scotland" & age_group == "All" & sex != "All") %>% 
+  group_by(year, sex, diagnosis) %>% 
+  summarise(total_deaths = sum(number_of_deaths))
+```
+ 
+ 
