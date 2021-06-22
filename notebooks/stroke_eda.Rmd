@@ -71,22 +71,31 @@ strokes_hb %>%
   skim()
 ```
 ```{r}
+mortality_ca <- read_csv(here("data/clean/mortality_ca.csv"))
 skim(mortality_ca)
 ```
 
 ```{r}
+mortality_hb <- read_csv(here("data/clean/mortality_hb.csv")) 
+
 mortality_hb %>% 
   filter(is.na(number_of_deaths)) %>% 
   distinct(hb_name)
 ```
 
 ```{r}
-population_proj_hb %>% 
-  skim()
+population_hb <- read_csv(here("data/clean/population_hb.csv"))
+```
+
+
+```{r}
+population_proj_hb <- read_csv(here("data/clean/population_proj_hb.csv")) 
+
+skim(population_proj_hb)
 ```
 
 ```{r}
-population_proj_ca %>% 
+population_proj_hb %>% 
   distinct(year)
 ```
 
