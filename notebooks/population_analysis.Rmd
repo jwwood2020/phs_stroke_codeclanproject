@@ -3,3 +3,178 @@ title: "Population analysis"
 output: html_notebook
 ---
 
+```{r}
+library(tidyverse)
+library(gganimate)
+library(here)
+```
+
+```{r}
+# Read in cleaned population datasets
+
+pop_hb <- read_csv(here("data/clean/population_hb.csv"))
+pop_ca <- read_csv(here("data/clean/population_ca.csv"))
+pop_proj_hb <- read_csv(here("data/clean/population_proj_hb.csv"))
+pop_proj_ca <- read_csv(here("data//clean/population_proj_ca.csv"))
+```
+
+```{r}
+# Population estimates run from 1981 to 2019
+# Population projections run from 2018 to 2043
+# Drop 2018/2019 from projections and bind to population estimates
+
+pop_proj_hb <- pop_proj_hb %>% 
+  filter(year > 2019)
+
+pop_hb <- pop_hb %>% 
+  bind_rows(pop_proj_hb)
+
+pop_by_ages_hb <- pop_hb %>% 
+  filter(age != "all_ages") %>% 
+  mutate(age = if_else(age == "90plus", "90", age),
+         age = as.numeric(age),
+         age_band1 = case_when(
+           age <= 18 ~ "0 - 18",
+           age <= 30 ~ "18 - 30",
+           age <= 40 ~ "31 - 40",
+           age <= 50 ~ "41 - 50",
+           age <= 60 ~ "51 - 60",
+           age <= 70 ~ "61 - 70",
+           age <= 80 ~ "71 - 80",
+           age <  90 ~ "81 - 90",
+           TRUE      ~ "90+"
+         ),
+         age_band2 = case_when(
+           age < 45 ~ "0-44 years",
+           age < 65 ~ "45-64 years",
+           age < 75 ~ "65-74 years",
+           TRUE     ~ "75plus years"
+         ),
+         age_band3 = case_when(
+           age < 75 ~ "under75 years",
+           TRUE     ~ "75plus years"
+         )
+  )
+
+pop_all_ages_hb <- pop_hb %>% 
+  filter(age == "all_ages")
+
+
+pop_proj_ca <- pop_proj_ca %>% 
+  filter(year > 2019)
+
+pop_ca <- pop_ca %>% 
+  bind_rows(pop_proj_ca)
+
+pop_by_ages_ca <- pop_ca %>% 
+  filter(age != "all_ages") %>% 
+  mutate(age = if_else(age == "90plus", "90", age),
+         age = as.numeric(age),
+         age_band1 = case_when(
+           age <= 18 ~ "0 - 18",
+           age <= 30 ~ "18 - 30",
+           age <= 40 ~ "31 - 40",
+           age <= 50 ~ "41 - 50",
+           age <= 60 ~ "51 - 60",
+           age <= 70 ~ "61 - 70",
+           age <= 80 ~ "71 - 80",
+           age <  90 ~ "81 - 90",
+           TRUE      ~ "90+"
+         ),
+         age_band2 = case_when(
+           age < 45 ~ "0-44 years",
+           age < 65 ~ "45-64 years",
+           age < 75 ~ "65-74 years",
+           TRUE     ~ "75plus years"
+         ),
+         age_band3 = case_when(
+           age < 75 ~ "under75 years",
+           TRUE     ~ "75plus years"
+         )
+  )
+
+pop_all_ages_ca <- pop_ca %>% 
+  filter(age == "all_ages")
+```
+
+```{r}
+# Summarise health board populations
+
+total_pop_hb <- pop_hb %>% 
+  filter(year == 2018 & age == "all_ages")  %>% # Stroke data runs up to 2018 so use this population estimate
+  group_by(hb_name, sex) %>% 
+  summarise(total_pop = sum(count))
+```
+
+```{r}
+# Chart of health board populations
+# Need to sort ordering
+
+total_pop_hb %>% 
+  filter(sex == "All" & hb_name != "Scotland") %>% 
+  ggplot(aes(x = reorder(hb_name, total_pop),
+             y = total_pop)) +
+  geom_col() +
+  coord_flip()
+```
+
+
+```{r}
+# Chart of Scotland population over time 
+
+pop_hb %>% 
+  filter(hb_name == "Scotland" & 
+           sex == "All" & 
+           age == "all_ages") %>% 
+  ggplot(aes(x = year, y = count)) +
+  geom_line()
+```
+
+```{r}
+# Population pyramid
+pop_pyramid_scotland <- pop_by_ages_hb %>% 
+  filter(hb_name == "Scotland" &
+           sex != "All") %>% 
+  group_by(year, sex, age_band1) %>% 
+  summarise(population = sum(count))
+
+pop_pyramid_scotland %>% 
+  filter(year %in% c(1981, 2001, 2021, 2041)) %>% 
+  ggplot(aes(x = age_band1,
+             fill = sex,
+             y = ifelse(test = sex == "Male",
+                        yes = -population,
+                        no = population)
+             )
+         ) + 
+  geom_bar(stat = "identity") +
+  scale_y_continuous(labels = abs, 
+                     limits = 2e6 * c(-1,1)
+                     ) +
+  coord_flip() +
+  facet_wrap(~ year)
+
+```
+
+
+```{r}
+anim <- pop_pyramid_scotland %>% 
+  ggplot(aes(x = age_band1,
+             fill = sex,
+             y = ifelse(test = sex == "Male",
+                        yes = -population,
+                        no = population)
+             )
+         ) + 
+  geom_bar(stat = "identity") +
+  scale_y_continuous(labels = abs, 
+                     limits = 2e6 * c(-1,1)
+                     ) +
+  coord_flip() +
+  transition_states(year, transition_length = 2, state_length = 1)
+```
+
+```{r}
+anim
+```
+
