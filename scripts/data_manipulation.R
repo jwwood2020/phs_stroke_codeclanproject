@@ -9,6 +9,7 @@ library(tidyverse)
 
 
 # Read stroke data --------------------------------------------------------
+
 # Two sets of data: 
 #  1. Hospital activity related to strokes
 #  2. Stroke mortality data
@@ -157,12 +158,106 @@ population_proj_ca <- population_proj_ca_raw %>%
   select(-id)
 
 
+# Bind population estimate and projection datasets ------------------------
+
+# Population estimates run from 1981 to 2019
+# Population projections run from 2018 to 2043
+# Drop 2018/2019 from projections and bind to population estimates
+# Add three age bands:
+# 1. Banding for population pyramids
+# 2. Banding based on stroke data 
+# 3. Banding over/under 75
+
+population_proj_hb <- population_proj_hb %>% 
+  filter(year > 2019)
+
+population_hb <- population_hb %>% 
+  bind_rows(population_proj_hb)
+
+population_by_ages_hb <- population_hb %>% 
+  filter(age != "all_ages") %>% 
+  mutate(age = if_else(age == "90plus", "90", age),
+         age = as.numeric(age),
+         age_band1 = case_when(
+           age <=  4 ~ "0 - 9",
+           age <=  9 ~ "05 - 9",
+           age <= 14 ~ "10 - 14",
+           age <= 19 ~ "15 - 19",
+           age <= 24 ~ "20 - 24",
+           age <= 29 ~ "25 - 29",
+           age <= 34 ~ "30 - 34",
+           age <= 39 ~ "35 - 39",
+           age <= 44 ~ "40 - 44",
+           age <= 49 ~ "45 - 49",
+           age <= 54 ~ "50 - 54",
+           age <= 59 ~ "55 - 59",
+           age <= 64 ~ "60 - 64",
+           age <= 69 ~ "65 - 69",
+           age <= 74 ~ "70 - 74",
+           age <= 79 ~ "75 - 79",
+           age <= 84 ~ "80 - 84",
+           age <= 89 ~ "85 - 89",
+           TRUE      ~ "90+"
+         ),
+         age_band2 = case_when(
+           age < 45 ~ "0-44 years",
+           age < 65 ~ "45-64 years",
+           age < 75 ~ "65-74 years",
+           TRUE     ~ "75plus years"
+         ),
+         age_band3 = case_when(
+           age < 75 ~ "under75 years",
+           TRUE     ~ "75plus years"
+         )
+  )
+
+population_all_ages_hb <- population_hb %>% 
+  filter(age == "all_ages")
+
+
+population_proj_ca <- population_proj_ca %>% 
+  filter(year > 2019)
+
+population_ca <- population_ca %>% 
+  bind_rows(population_proj_ca)
+
+population_by_ages_ca <- population_ca %>% 
+  filter(age != "all_ages") %>% 
+  mutate(age = if_else(age == "90plus", "90", age),
+         age = as.numeric(age),
+         age_band1 = case_when(
+           age <= 18 ~ "0 - 18",
+           age <= 30 ~ "18 - 30",
+           age <= 40 ~ "31 - 40",
+           age <= 50 ~ "41 - 50",
+           age <= 60 ~ "51 - 60",
+           age <= 70 ~ "61 - 70",
+           age <= 80 ~ "71 - 80",
+           age <  90 ~ "81 - 90",
+           TRUE      ~ "90+"
+         ),
+         age_band2 = case_when(
+           age < 45 ~ "0-44 years",
+           age < 65 ~ "45-64 years",
+           age < 75 ~ "65-74 years",
+           TRUE     ~ "75plus years"
+         ),
+         age_band3 = case_when(
+           age < 75 ~ "under75 years",
+           TRUE     ~ "75plus years"
+         )
+  )
+
+population_all_ages_ca <- population_ca %>% 
+  filter(age == "all_ages")
+
+
 # Write .csv  -------------------------------------------------------------
 write_csv(activity_hb, "data/clean/activity_hb.csv")
 write_csv(activity_ca, "data/clean/activity_ca.csv")
 write_csv(mortality_hb, "data/clean/mortality_hb.csv")
 write_csv(mortality_ca, "data/clean/mortality_ca.csv")
-write_csv(population_hb, "data/clean/population_hb.csv")
-write_csv(population_ca, "data/clean/population_ca.csv")
-write_csv(population_proj_hb, "data/clean/population_proj_hb.csv")
-write_csv(population_proj_ca, "data/clean/population_proj_ca.csv")
+write_csv(population_all_ages_hb, "data/clean/population_total_hb.csv")
+write_csv(population_by_ages_hb, "data/clean/population_ages_hb.csv")
+write_csv(population_all_ages_ca, "data/clean/population_total_ca.csv")
+write_csv(population_by_ages_ca, "data/clean/population_ages_ca.csv")

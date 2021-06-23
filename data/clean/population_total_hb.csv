@@ -1,0 +1,2836 @@
+year,hb,sex,age,count,hb_name
+1981,S92000003,All,all_ages,5180200,Scotland
+1981,S92000003,Female,all_ages,2685340,Scotland
+1981,S92000003,Male,all_ages,2494860,Scotland
+1981,S08000015,All,all_ages,377854,NHS Ayrshire and Arran
+1981,S08000015,Female,all_ages,196774,NHS Ayrshire and Arran
+1981,S08000015,Male,all_ages,181080,NHS Ayrshire and Arran
+1981,S08000016,All,all_ages,101256,NHS Borders
+1981,S08000016,Female,all_ages,53045,NHS Borders
+1981,S08000016,Male,all_ages,48211,NHS Borders
+1981,S08000017,All,all_ages,145502,NHS Dumfries and Galloway
+1981,S08000017,Female,all_ages,75128,NHS Dumfries and Galloway
+1981,S08000017,Male,all_ages,70374,NHS Dumfries and Galloway
+1981,S08000019,All,all_ages,273625,NHS Forth Valley
+1981,S08000019,Female,all_ages,140890,NHS Forth Valley
+1981,S08000019,Male,all_ages,132735,NHS Forth Valley
+1981,S08000020,All,all_ages,484899,NHS Grampian
+1981,S08000020,Female,all_ages,248372,NHS Grampian
+1981,S08000020,Male,all_ages,236527,NHS Grampian
+1981,S08000022,All,all_ages,285851,NHS Highland
+1981,S08000022,Female,all_ages,145953,NHS Highland
+1981,S08000022,Male,all_ages,139898,NHS Highland
+1981,S08000024,All,all_ages,749481,NHS Lothian
+1981,S08000024,Female,all_ages,391241,NHS Lothian
+1981,S08000024,Male,all_ages,358240,NHS Lothian
+1981,S08000025,All,all_ages,19182,NHS Orkney
+1981,S08000025,Female,all_ages,9701,NHS Orkney
+1981,S08000025,Male,all_ages,9481,NHS Orkney
+1981,S08000026,All,all_ages,26347,NHS Shetland
+1981,S08000026,Female,all_ages,11882,NHS Shetland
+1981,S08000026,Male,all_ages,14465,NHS Shetland
+1981,S08000028,All,all_ages,31548,NHS Western Isles
+1981,S08000028,Female,all_ages,15804,NHS Western Isles
+1981,S08000028,Male,all_ages,15744,NHS Western Isles
+1981,S08000029,All,all_ages,341589,NHS Fife
+1981,S08000029,Female,all_ages,176158,NHS Fife
+1981,S08000029,Male,all_ages,165431,NHS Fife
+1981,S08000030,All,all_ages,397055,NHS Tayside
+1981,S08000030,Female,all_ages,208130,NHS Tayside
+1981,S08000030,Male,all_ages,188925,NHS Tayside
+1981,S08000031,All,all_ages,1294362,NHS Greater Glasgow and Clyde
+1981,S08000031,Female,all_ages,676267,NHS Greater Glasgow and Clyde
+1981,S08000031,Male,all_ages,618095,NHS Greater Glasgow and Clyde
+1981,S08000032,All,all_ages,651649,NHS Lanarkshire
+1981,S08000032,Female,all_ages,335995,NHS Lanarkshire
+1981,S08000032,Male,all_ages,315654,NHS Lanarkshire
+1982,S92000003,All,all_ages,5164540,Scotland
+1982,S92000003,Female,all_ages,2677205,Scotland
+1982,S92000003,Male,all_ages,2487335,Scotland
+1982,S08000015,All,all_ages,376850,NHS Ayrshire and Arran
+1982,S08000015,Female,all_ages,196147,NHS Ayrshire and Arran
+1982,S08000015,Male,all_ages,180703,NHS Ayrshire and Arran
+1982,S08000016,All,all_ages,101080,NHS Borders
+1982,S08000016,Female,all_ages,52900,NHS Borders
+1982,S08000016,Male,all_ages,48180,NHS Borders
+1982,S08000017,All,all_ages,145350,NHS Dumfries and Galloway
+1982,S08000017,Female,all_ages,75003,NHS Dumfries and Galloway
+1982,S08000017,Male,all_ages,70347,NHS Dumfries and Galloway
+1982,S08000019,All,all_ages,273270,NHS Forth Valley
+1982,S08000019,Female,all_ages,140618,NHS Forth Valley
+1982,S08000019,Male,all_ages,132652,NHS Forth Valley
+1982,S08000020,All,all_ages,490230,NHS Grampian
+1982,S08000020,Female,all_ages,251075,NHS Grampian
+1982,S08000020,Male,all_ages,239155,NHS Grampian
+1982,S08000022,All,all_ages,285920,NHS Highland
+1982,S08000022,Female,all_ages,145795,NHS Highland
+1982,S08000022,Male,all_ages,140125,NHS Highland
+1982,S08000024,All,all_ages,748460,NHS Lothian
+1982,S08000024,Female,all_ages,391087,NHS Lothian
+1982,S08000024,Male,all_ages,357373,NHS Lothian
+1982,S08000025,All,all_ages,19100,NHS Orkney
+1982,S08000025,Female,all_ages,9705,NHS Orkney
+1982,S08000025,Male,all_ages,9395,NHS Orkney
+1982,S08000026,All,all_ages,24100,NHS Shetland
+1982,S08000026,Female,all_ages,11686,NHS Shetland
+1982,S08000026,Male,all_ages,12414,NHS Shetland
+1982,S08000028,All,all_ages,31490,NHS Western Isles
+1982,S08000028,Female,all_ages,15785,NHS Western Isles
+1982,S08000028,Male,all_ages,15705,NHS Western Isles
+1982,S08000029,All,all_ages,342300,NHS Fife
+1982,S08000029,Female,all_ages,176271,NHS Fife
+1982,S08000029,Male,all_ages,166029,NHS Fife
+1982,S08000030,All,all_ages,395680,NHS Tayside
+1982,S08000030,Female,all_ages,207041,NHS Tayside
+1982,S08000030,Male,all_ages,188639,NHS Tayside
+1982,S08000031,All,all_ages,1281920,NHS Greater Glasgow and Clyde
+1982,S08000031,Female,all_ages,669504,NHS Greater Glasgow and Clyde
+1982,S08000031,Male,all_ages,612416,NHS Greater Glasgow and Clyde
+1982,S08000032,All,all_ages,648790,NHS Lanarkshire
+1982,S08000032,Female,all_ages,334588,NHS Lanarkshire
+1982,S08000032,Male,all_ages,314202,NHS Lanarkshire
+1983,S92000003,All,all_ages,5148120,Scotland
+1983,S92000003,Female,all_ages,2669045,Scotland
+1983,S92000003,Male,all_ages,2479075,Scotland
+1983,S08000015,All,all_ages,376300,NHS Ayrshire and Arran
+1983,S08000015,Female,all_ages,195938,NHS Ayrshire and Arran
+1983,S08000015,Male,all_ages,180362,NHS Ayrshire and Arran
+1983,S08000016,All,all_ages,101050,NHS Borders
+1983,S08000016,Female,all_ages,52820,NHS Borders
+1983,S08000016,Male,all_ages,48230,NHS Borders
+1983,S08000017,All,all_ages,145310,NHS Dumfries and Galloway
+1983,S08000017,Female,all_ages,74934,NHS Dumfries and Galloway
+1983,S08000017,Male,all_ages,70376,NHS Dumfries and Galloway
+1983,S08000019,All,all_ages,272950,NHS Forth Valley
+1983,S08000019,Female,all_ages,140378,NHS Forth Valley
+1983,S08000019,Male,all_ages,132572,NHS Forth Valley
+1983,S08000020,All,all_ages,494180,NHS Grampian
+1983,S08000020,Female,all_ages,252739,NHS Grampian
+1983,S08000020,Male,all_ages,241441,NHS Grampian
+1983,S08000022,All,all_ages,287460,NHS Highland
+1983,S08000022,Female,all_ages,146564,NHS Highland
+1983,S08000022,Male,all_ages,140896,NHS Highland
+1983,S08000024,All,all_ages,744730,NHS Lothian
+1983,S08000024,Female,all_ages,389486,NHS Lothian
+1983,S08000024,Male,all_ages,355244,NHS Lothian
+1983,S08000025,All,all_ages,19190,NHS Orkney
+1983,S08000025,Female,all_ages,9748,NHS Orkney
+1983,S08000025,Male,all_ages,9442,NHS Orkney
+1983,S08000026,All,all_ages,22300,NHS Shetland
+1983,S08000026,Female,all_ages,11552,NHS Shetland
+1983,S08000026,Male,all_ages,10748,NHS Shetland
+1983,S08000028,All,all_ages,31380,NHS Western Isles
+1983,S08000028,Female,all_ages,15716,NHS Western Isles
+1983,S08000028,Male,all_ages,15664,NHS Western Isles
+1983,S08000029,All,all_ages,343800,NHS Fife
+1983,S08000029,Female,all_ages,176795,NHS Fife
+1983,S08000029,Male,all_ages,167005,NHS Fife
+1983,S08000030,All,all_ages,393870,NHS Tayside
+1983,S08000030,Female,all_ages,205951,NHS Tayside
+1983,S08000030,Male,all_ages,187919,NHS Tayside
+1983,S08000031,All,all_ages,1268700,NHS Greater Glasgow and Clyde
+1983,S08000031,Female,all_ages,662818,NHS Greater Glasgow and Clyde
+1983,S08000031,Male,all_ages,605882,NHS Greater Glasgow and Clyde
+1983,S08000032,All,all_ages,646900,NHS Lanarkshire
+1983,S08000032,Female,all_ages,333606,NHS Lanarkshire
+1983,S08000032,Male,all_ages,313294,NHS Lanarkshire
+1984,S92000003,All,all_ages,5138880,Scotland
+1984,S92000003,Female,all_ages,2664257,Scotland
+1984,S92000003,Male,all_ages,2474623,Scotland
+1984,S08000015,All,all_ages,376250,NHS Ayrshire and Arran
+1984,S08000015,Female,all_ages,196082,NHS Ayrshire and Arran
+1984,S08000015,Male,all_ages,180168,NHS Ayrshire and Arran
+1984,S08000016,All,all_ages,101230,NHS Borders
+1984,S08000016,Female,all_ages,52916,NHS Borders
+1984,S08000016,Male,all_ages,48314,NHS Borders
+1984,S08000017,All,all_ages,145360,NHS Dumfries and Galloway
+1984,S08000017,Female,all_ages,74965,NHS Dumfries and Galloway
+1984,S08000017,Male,all_ages,70395,NHS Dumfries and Galloway
+1984,S08000019,All,all_ages,272890,NHS Forth Valley
+1984,S08000019,Female,all_ages,140423,NHS Forth Valley
+1984,S08000019,Male,all_ages,132467,NHS Forth Valley
+1984,S08000020,All,all_ages,497530,NHS Grampian
+1984,S08000020,Female,all_ages,254492,NHS Grampian
+1984,S08000020,Male,all_ages,243038,NHS Grampian
+1984,S08000022,All,all_ages,288980,NHS Highland
+1984,S08000022,Female,all_ages,147344,NHS Highland
+1984,S08000022,Male,all_ages,141636,NHS Highland
+1984,S08000024,All,all_ages,744690,NHS Lothian
+1984,S08000024,Female,all_ages,388934,NHS Lothian
+1984,S08000024,Male,all_ages,355756,NHS Lothian
+1984,S08000025,All,all_ages,19190,NHS Orkney
+1984,S08000025,Female,all_ages,9758,NHS Orkney
+1984,S08000025,Male,all_ages,9432,NHS Orkney
+1984,S08000026,All,all_ages,22200,NHS Shetland
+1984,S08000026,Female,all_ages,11432,NHS Shetland
+1984,S08000026,Male,all_ages,10768,NHS Shetland
+1984,S08000028,All,all_ages,31180,NHS Western Isles
+1984,S08000028,Female,all_ages,15607,NHS Western Isles
+1984,S08000028,Male,all_ages,15573,NHS Western Isles
+1984,S08000029,All,all_ages,345300,NHS Fife
+1984,S08000029,Female,all_ages,177566,NHS Fife
+1984,S08000029,Male,all_ages,167734,NHS Fife
+1984,S08000030,All,all_ages,392060,NHS Tayside
+1984,S08000030,Female,all_ages,204751,NHS Tayside
+1984,S08000030,Male,all_ages,187309,NHS Tayside
+1984,S08000031,All,all_ages,1257400,NHS Greater Glasgow and Clyde
+1984,S08000031,Female,all_ages,657325,NHS Greater Glasgow and Clyde
+1984,S08000031,Male,all_ages,600075,NHS Greater Glasgow and Clyde
+1984,S08000032,All,all_ages,644620,NHS Lanarkshire
+1984,S08000032,Female,all_ages,332662,NHS Lanarkshire
+1984,S08000032,Male,all_ages,311958,NHS Lanarkshire
+1985,S92000003,All,all_ages,5127890,Scotland
+1985,S92000003,Female,all_ages,2658376,Scotland
+1985,S92000003,Male,all_ages,2469514,Scotland
+1985,S08000015,All,all_ages,375590,NHS Ayrshire and Arran
+1985,S08000015,Female,all_ages,195906,NHS Ayrshire and Arran
+1985,S08000015,Male,all_ages,179684,NHS Ayrshire and Arran
+1985,S08000016,All,all_ages,101610,NHS Borders
+1985,S08000016,Female,all_ages,53082,NHS Borders
+1985,S08000016,Male,all_ages,48528,NHS Borders
+1985,S08000017,All,all_ages,145420,NHS Dumfries and Galloway
+1985,S08000017,Female,all_ages,75005,NHS Dumfries and Galloway
+1985,S08000017,Male,all_ages,70415,NHS Dumfries and Galloway
+1985,S08000019,All,all_ages,272450,NHS Forth Valley
+1985,S08000019,Female,all_ages,140328,NHS Forth Valley
+1985,S08000019,Male,all_ages,132122,NHS Forth Valley
+1985,S08000020,All,all_ages,500960,NHS Grampian
+1985,S08000020,Female,all_ages,255819,NHS Grampian
+1985,S08000020,Male,all_ages,245141,NHS Grampian
+1985,S08000022,All,all_ages,290610,NHS Highland
+1985,S08000022,Female,all_ages,148112,NHS Highland
+1985,S08000022,Male,all_ages,142498,NHS Highland
+1985,S08000024,All,all_ages,743660,NHS Lothian
+1985,S08000024,Female,all_ages,388520,NHS Lothian
+1985,S08000024,Male,all_ages,355140,NHS Lothian
+1985,S08000025,All,all_ages,19180,NHS Orkney
+1985,S08000025,Female,all_ages,9741,NHS Orkney
+1985,S08000025,Male,all_ages,9439,NHS Orkney
+1985,S08000026,All,all_ages,22300,NHS Shetland
+1985,S08000026,Female,all_ages,11369,NHS Shetland
+1985,S08000026,Male,all_ages,10931,NHS Shetland
+1985,S08000028,All,all_ages,31070,NHS Western Isles
+1985,S08000028,Female,all_ages,15584,NHS Western Isles
+1985,S08000028,Male,all_ages,15486,NHS Western Isles
+1985,S08000029,All,all_ages,345400,NHS Fife
+1985,S08000029,Female,all_ages,177628,NHS Fife
+1985,S08000029,Male,all_ages,167772,NHS Fife
+1985,S08000030,All,all_ages,391640,NHS Tayside
+1985,S08000030,Female,all_ages,204314,NHS Tayside
+1985,S08000030,Male,all_ages,187326,NHS Tayside
+1985,S08000031,All,all_ages,1246970,NHS Greater Glasgow and Clyde
+1985,S08000031,Female,all_ages,652063,NHS Greater Glasgow and Clyde
+1985,S08000031,Male,all_ages,594907,NHS Greater Glasgow and Clyde
+1985,S08000032,All,all_ages,641030,NHS Lanarkshire
+1985,S08000032,Female,all_ages,330905,NHS Lanarkshire
+1985,S08000032,Male,all_ages,310125,NHS Lanarkshire
+1986,S92000003,All,all_ages,5111760,Scotland
+1986,S92000003,Female,all_ages,2649449,Scotland
+1986,S92000003,Male,all_ages,2462311,Scotland
+1986,S08000015,All,all_ages,375420,NHS Ayrshire and Arran
+1986,S08000015,Female,all_ages,195707,NHS Ayrshire and Arran
+1986,S08000015,Male,all_ages,179713,NHS Ayrshire and Arran
+1986,S08000016,All,all_ages,101580,NHS Borders
+1986,S08000016,Female,all_ages,53020,NHS Borders
+1986,S08000016,Male,all_ages,48560,NHS Borders
+1986,S08000017,All,all_ages,145170,NHS Dumfries and Galloway
+1986,S08000017,Female,all_ages,74923,NHS Dumfries and Galloway
+1986,S08000017,Male,all_ages,70247,NHS Dumfries and Galloway
+1986,S08000019,All,all_ages,271930,NHS Forth Valley
+1986,S08000019,Female,all_ages,140091,NHS Forth Valley
+1986,S08000019,Male,all_ages,131839,NHS Forth Valley
+1986,S08000020,All,all_ages,503700,NHS Grampian
+1986,S08000020,Female,all_ages,256904,NHS Grampian
+1986,S08000020,Male,all_ages,246796,NHS Grampian
+1986,S08000022,All,all_ages,291620,NHS Highland
+1986,S08000022,Female,all_ages,148591,NHS Highland
+1986,S08000022,Male,all_ages,143029,NHS Highland
+1986,S08000024,All,all_ages,740350,NHS Lothian
+1986,S08000024,Female,all_ages,386889,NHS Lothian
+1986,S08000024,Male,all_ages,353461,NHS Lothian
+1986,S08000025,All,all_ages,19080,NHS Orkney
+1986,S08000025,Female,all_ages,9723,NHS Orkney
+1986,S08000025,Male,all_ages,9357,NHS Orkney
+1986,S08000026,All,all_ages,22400,NHS Shetland
+1986,S08000026,Female,all_ages,11347,NHS Shetland
+1986,S08000026,Male,all_ages,11053,NHS Shetland
+1986,S08000028,All,all_ages,30970,NHS Western Isles
+1986,S08000028,Female,all_ages,15507,NHS Western Isles
+1986,S08000028,Male,all_ages,15463,NHS Western Isles
+1986,S08000029,All,all_ages,345490,NHS Fife
+1986,S08000029,Female,all_ages,177425,NHS Fife
+1986,S08000029,Male,all_ages,168065,NHS Fife
+1986,S08000030,All,all_ages,389920,NHS Tayside
+1986,S08000030,Female,all_ages,203240,NHS Tayside
+1986,S08000030,Male,all_ages,186680,NHS Tayside
+1986,S08000031,All,all_ages,1237430,NHS Greater Glasgow and Clyde
+1986,S08000031,Female,all_ages,647294,NHS Greater Glasgow and Clyde
+1986,S08000031,Male,all_ages,590136,NHS Greater Glasgow and Clyde
+1986,S08000032,All,all_ages,636700,NHS Lanarkshire
+1986,S08000032,Female,all_ages,328788,NHS Lanarkshire
+1986,S08000032,Male,all_ages,307912,NHS Lanarkshire
+1987,S92000003,All,all_ages,5099020,Scotland
+1987,S92000003,Female,all_ages,2643617,Scotland
+1987,S92000003,Male,all_ages,2455403,Scotland
+1987,S08000015,All,all_ages,375470,NHS Ayrshire and Arran
+1987,S08000015,Female,all_ages,195951,NHS Ayrshire and Arran
+1987,S08000015,Male,all_ages,179519,NHS Ayrshire and Arran
+1987,S08000016,All,all_ages,101860,NHS Borders
+1987,S08000016,Female,all_ages,53091,NHS Borders
+1987,S08000016,Male,all_ages,48769,NHS Borders
+1987,S08000017,All,all_ages,145220,NHS Dumfries and Galloway
+1987,S08000017,Female,all_ages,74958,NHS Dumfries and Galloway
+1987,S08000017,Male,all_ages,70262,NHS Dumfries and Galloway
+1987,S08000019,All,all_ages,272090,NHS Forth Valley
+1987,S08000019,Female,all_ages,140404,NHS Forth Valley
+1987,S08000019,Male,all_ages,131686,NHS Forth Valley
+1987,S08000020,All,all_ages,503630,NHS Grampian
+1987,S08000020,Female,all_ages,256858,NHS Grampian
+1987,S08000020,Male,all_ages,246772,NHS Grampian
+1987,S08000022,All,all_ages,291670,NHS Highland
+1987,S08000022,Female,all_ages,148654,NHS Highland
+1987,S08000022,Male,all_ages,143016,NHS Highland
+1987,S08000024,All,all_ages,741310,NHS Lothian
+1987,S08000024,Female,all_ages,387191,NHS Lothian
+1987,S08000024,Male,all_ages,354119,NHS Lothian
+1987,S08000025,All,all_ages,19070,NHS Orkney
+1987,S08000025,Female,all_ages,9706,NHS Orkney
+1987,S08000025,Male,all_ages,9364,NHS Orkney
+1987,S08000026,All,all_ages,22400,NHS Shetland
+1987,S08000026,Female,all_ages,11287,NHS Shetland
+1987,S08000026,Male,all_ages,11113,NHS Shetland
+1987,S08000028,All,all_ages,30460,NHS Western Isles
+1987,S08000028,Female,all_ages,15237,NHS Western Isles
+1987,S08000028,Male,all_ages,15223,NHS Western Isles
+1987,S08000029,All,all_ages,345480,NHS Fife
+1987,S08000029,Female,all_ages,177490,NHS Fife
+1987,S08000029,Male,all_ages,167990,NHS Fife
+1987,S08000030,All,all_ages,389500,NHS Tayside
+1987,S08000030,Female,all_ages,202967,NHS Tayside
+1987,S08000030,Male,all_ages,186533,NHS Tayside
+1987,S08000031,All,all_ages,1225800,NHS Greater Glasgow and Clyde
+1987,S08000031,Female,all_ages,641483,NHS Greater Glasgow and Clyde
+1987,S08000031,Male,all_ages,584317,NHS Greater Glasgow and Clyde
+1987,S08000032,All,all_ages,635060,NHS Lanarkshire
+1987,S08000032,Female,all_ages,328340,NHS Lanarkshire
+1987,S08000032,Male,all_ages,306720,NHS Lanarkshire
+1988,S92000003,All,all_ages,5077440,Scotland
+1988,S92000003,Female,all_ages,2633121,Scotland
+1988,S92000003,Male,all_ages,2444319,Scotland
+1988,S08000015,All,all_ages,374900,NHS Ayrshire and Arran
+1988,S08000015,Female,all_ages,195890,NHS Ayrshire and Arran
+1988,S08000015,Male,all_ages,179010,NHS Ayrshire and Arran
+1988,S08000016,All,all_ages,102130,NHS Borders
+1988,S08000016,Female,all_ages,53261,NHS Borders
+1988,S08000016,Male,all_ages,48869,NHS Borders
+1988,S08000017,All,all_ages,145360,NHS Dumfries and Galloway
+1988,S08000017,Female,all_ages,75105,NHS Dumfries and Galloway
+1988,S08000017,Male,all_ages,70255,NHS Dumfries and Galloway
+1988,S08000019,All,all_ages,271340,NHS Forth Valley
+1988,S08000019,Female,all_ages,140169,NHS Forth Valley
+1988,S08000019,Male,all_ages,131171,NHS Forth Valley
+1988,S08000020,All,all_ages,502370,NHS Grampian
+1988,S08000020,Female,all_ages,256096,NHS Grampian
+1988,S08000020,Male,all_ages,246274,NHS Grampian
+1988,S08000022,All,all_ages,292940,NHS Highland
+1988,S08000022,Female,all_ages,149043,NHS Highland
+1988,S08000022,Male,all_ages,143897,NHS Highland
+1988,S08000024,All,all_ages,739040,NHS Lothian
+1988,S08000024,Female,all_ages,386095,NHS Lothian
+1988,S08000024,Male,all_ages,352945,NHS Lothian
+1988,S08000025,All,all_ages,19170,NHS Orkney
+1988,S08000025,Female,all_ages,9752,NHS Orkney
+1988,S08000025,Male,all_ages,9418,NHS Orkney
+1988,S08000026,All,all_ages,22300,NHS Shetland
+1988,S08000026,Female,all_ages,11157,NHS Shetland
+1988,S08000026,Male,all_ages,11143,NHS Shetland
+1988,S08000028,All,all_ages,30260,NHS Western Isles
+1988,S08000028,Female,all_ages,15141,NHS Western Isles
+1988,S08000028,Male,all_ages,15119,NHS Western Isles
+1988,S08000029,All,all_ages,345170,NHS Fife
+1988,S08000029,Female,all_ages,177559,NHS Fife
+1988,S08000029,Male,all_ages,167611,NHS Fife
+1988,S08000030,All,all_ages,388490,NHS Tayside
+1988,S08000030,Female,all_ages,202573,NHS Tayside
+1988,S08000030,Male,all_ages,185917,NHS Tayside
+1988,S08000031,All,all_ages,1212240,NHS Greater Glasgow and Clyde
+1988,S08000031,Female,all_ages,634442,NHS Greater Glasgow and Clyde
+1988,S08000031,Male,all_ages,577798,NHS Greater Glasgow and Clyde
+1988,S08000032,All,all_ages,631730,NHS Lanarkshire
+1988,S08000032,Female,all_ages,326838,NHS Lanarkshire
+1988,S08000032,Male,all_ages,304892,NHS Lanarkshire
+1989,S92000003,All,all_ages,5078190,Scotland
+1989,S92000003,Female,all_ages,2635025,Scotland
+1989,S92000003,Male,all_ages,2443165,Scotland
+1989,S08000015,All,all_ages,375120,NHS Ayrshire and Arran
+1989,S08000015,Female,all_ages,196127,NHS Ayrshire and Arran
+1989,S08000015,Male,all_ages,178993,NHS Ayrshire and Arran
+1989,S08000016,All,all_ages,102600,NHS Borders
+1989,S08000016,Female,all_ages,53501,NHS Borders
+1989,S08000016,Male,all_ages,49099,NHS Borders
+1989,S08000017,All,all_ages,146710,NHS Dumfries and Galloway
+1989,S08000017,Female,all_ages,75866,NHS Dumfries and Galloway
+1989,S08000017,Male,all_ages,70844,NHS Dumfries and Galloway
+1989,S08000019,All,all_ages,271070,NHS Forth Valley
+1989,S08000019,Female,all_ages,140249,NHS Forth Valley
+1989,S08000019,Male,all_ages,130821,NHS Forth Valley
+1989,S08000020,All,all_ages,506300,NHS Grampian
+1989,S08000020,Female,all_ages,258286,NHS Grampian
+1989,S08000020,Male,all_ages,248014,NHS Grampian
+1989,S08000022,All,all_ages,294340,NHS Highland
+1989,S08000022,Female,all_ages,149647,NHS Highland
+1989,S08000022,Male,all_ages,144693,NHS Highland
+1989,S08000024,All,all_ages,742670,NHS Lothian
+1989,S08000024,Female,all_ages,387622,NHS Lothian
+1989,S08000024,Male,all_ages,355048,NHS Lothian
+1989,S08000025,All,all_ages,19270,NHS Orkney
+1989,S08000025,Female,all_ages,9830,NHS Orkney
+1989,S08000025,Male,all_ages,9440,NHS Orkney
+1989,S08000026,All,all_ages,22200,NHS Shetland
+1989,S08000026,Female,all_ages,11050,NHS Shetland
+1989,S08000026,Male,all_ages,11150,NHS Shetland
+1989,S08000028,All,all_ages,29950,NHS Western Isles
+1989,S08000028,Female,all_ages,15018,NHS Western Isles
+1989,S08000028,Male,all_ages,14932,NHS Western Isles
+1989,S08000029,All,all_ages,345970,NHS Fife
+1989,S08000029,Female,all_ages,178151,NHS Fife
+1989,S08000029,Male,all_ages,167819,NHS Fife
+1989,S08000030,All,all_ages,387970,NHS Tayside
+1989,S08000030,Female,all_ages,202375,NHS Tayside
+1989,S08000030,Male,all_ages,185595,NHS Tayside
+1989,S08000031,All,all_ages,1202410,NHS Greater Glasgow and Clyde
+1989,S08000031,Female,all_ages,630098,NHS Greater Glasgow and Clyde
+1989,S08000031,Male,all_ages,572312,NHS Greater Glasgow and Clyde
+1989,S08000032,All,all_ages,631610,NHS Lanarkshire
+1989,S08000032,Female,all_ages,327205,NHS Lanarkshire
+1989,S08000032,Male,all_ages,304405,NHS Lanarkshire
+1990,S92000003,All,all_ages,5081270,Scotland
+1990,S92000003,Female,all_ages,2637405,Scotland
+1990,S92000003,Male,all_ages,2443865,Scotland
+1990,S08000015,All,all_ages,375220,NHS Ayrshire and Arran
+1990,S08000015,Female,all_ages,196148,NHS Ayrshire and Arran
+1990,S08000015,Male,all_ages,179072,NHS Ayrshire and Arran
+1990,S08000016,All,all_ages,103370,NHS Borders
+1990,S08000016,Female,all_ages,53888,NHS Borders
+1990,S08000016,Male,all_ages,49482,NHS Borders
+1990,S08000017,All,all_ages,147150,NHS Dumfries and Galloway
+1990,S08000017,Female,all_ages,76132,NHS Dumfries and Galloway
+1990,S08000017,Male,all_ages,71018,NHS Dumfries and Galloway
+1990,S08000019,All,all_ages,271810,NHS Forth Valley
+1990,S08000019,Female,all_ages,140841,NHS Forth Valley
+1990,S08000019,Male,all_ages,130969,NHS Forth Valley
+1990,S08000020,All,all_ages,508750,NHS Grampian
+1990,S08000020,Female,all_ages,259409,NHS Grampian
+1990,S08000020,Male,all_ages,249341,NHS Grampian
+1990,S08000022,All,all_ages,295780,NHS Highland
+1990,S08000022,Female,all_ages,150409,NHS Highland
+1990,S08000022,Male,all_ages,145371,NHS Highland
+1990,S08000024,All,all_ages,745280,NHS Lothian
+1990,S08000024,Female,all_ages,388904,NHS Lothian
+1990,S08000024,Male,all_ages,356376,NHS Lothian
+1990,S08000025,All,all_ages,19360,NHS Orkney
+1990,S08000025,Female,all_ages,9890,NHS Orkney
+1990,S08000025,Male,all_ages,9470,NHS Orkney
+1990,S08000026,All,all_ages,22390,NHS Shetland
+1990,S08000026,Female,all_ages,11100,NHS Shetland
+1990,S08000026,Male,all_ages,11290,NHS Shetland
+1990,S08000028,All,all_ages,29740,NHS Western Isles
+1990,S08000028,Female,all_ages,14918,NHS Western Isles
+1990,S08000028,Male,all_ages,14822,NHS Western Isles
+1990,S08000029,All,all_ages,346970,NHS Fife
+1990,S08000029,Female,all_ages,178891,NHS Fife
+1990,S08000029,Male,all_ages,168079,NHS Fife
+1990,S08000030,All,all_ages,390050,NHS Tayside
+1990,S08000030,Female,all_ages,203403,NHS Tayside
+1990,S08000030,Male,all_ages,186647,NHS Tayside
+1990,S08000031,All,all_ages,1193880,NHS Greater Glasgow and Clyde
+1990,S08000031,Female,all_ages,626068,NHS Greater Glasgow and Clyde
+1990,S08000031,Male,all_ages,567812,NHS Greater Glasgow and Clyde
+1990,S08000032,All,all_ages,631520,NHS Lanarkshire
+1990,S08000032,Female,all_ages,327404,NHS Lanarkshire
+1990,S08000032,Male,all_ages,304116,NHS Lanarkshire
+1991,S92000003,All,all_ages,5083330,Scotland
+1991,S92000003,Female,all_ages,2638815,Scotland
+1991,S92000003,Male,all_ages,2444515,Scotland
+1991,S08000015,All,all_ages,375200,NHS Ayrshire and Arran
+1991,S08000015,Female,all_ages,196240,NHS Ayrshire and Arran
+1991,S08000015,Male,all_ages,178960,NHS Ayrshire and Arran
+1991,S08000016,All,all_ages,103830,NHS Borders
+1991,S08000016,Female,all_ages,54047,NHS Borders
+1991,S08000016,Male,all_ages,49783,NHS Borders
+1991,S08000017,All,all_ages,147170,NHS Dumfries and Galloway
+1991,S08000017,Female,all_ages,76153,NHS Dumfries and Galloway
+1991,S08000017,Male,all_ages,71017,NHS Dumfries and Galloway
+1991,S08000019,All,all_ages,271530,NHS Forth Valley
+1991,S08000019,Female,all_ages,140760,NHS Forth Valley
+1991,S08000019,Male,all_ages,130770,NHS Forth Valley
+1991,S08000020,All,all_ages,513980,NHS Grampian
+1991,S08000020,Female,all_ages,261651,NHS Grampian
+1991,S08000020,Male,all_ages,252329,NHS Grampian
+1991,S08000022,All,all_ages,297310,NHS Highland
+1991,S08000022,Female,all_ages,151387,NHS Highland
+1991,S08000022,Male,all_ages,145923,NHS Highland
+1991,S08000024,All,all_ages,745330,NHS Lothian
+1991,S08000024,Female,all_ages,388894,NHS Lothian
+1991,S08000024,Male,all_ages,356436,NHS Lothian
+1991,S08000025,All,all_ages,19520,NHS Orkney
+1991,S08000025,Female,all_ages,9954,NHS Orkney
+1991,S08000025,Male,all_ages,9566,NHS Orkney
+1991,S08000026,All,all_ages,22530,NHS Shetland
+1991,S08000026,Female,all_ages,11109,NHS Shetland
+1991,S08000026,Male,all_ages,11421,NHS Shetland
+1991,S08000028,All,all_ages,29330,NHS Western Isles
+1991,S08000028,Female,all_ages,14747,NHS Western Isles
+1991,S08000028,Male,all_ages,14583,NHS Western Isles
+1991,S08000029,All,all_ages,347360,NHS Fife
+1991,S08000029,Female,all_ages,179366,NHS Fife
+1991,S08000029,Male,all_ages,167994,NHS Fife
+1991,S08000030,All,all_ages,391320,NHS Tayside
+1991,S08000030,Female,all_ages,203941,NHS Tayside
+1991,S08000030,Male,all_ages,187379,NHS Tayside
+1991,S08000031,All,all_ages,1189490,NHS Greater Glasgow and Clyde
+1991,S08000031,Female,all_ages,623931,NHS Greater Glasgow and Clyde
+1991,S08000031,Male,all_ages,565559,NHS Greater Glasgow and Clyde
+1991,S08000032,All,all_ages,629430,NHS Lanarkshire
+1991,S08000032,Female,all_ages,326635,NHS Lanarkshire
+1991,S08000032,Male,all_ages,302795,NHS Lanarkshire
+1992,S92000003,All,all_ages,5085620,Scotland
+1992,S92000003,Female,all_ages,2640348,Scotland
+1992,S92000003,Male,all_ages,2445272,Scotland
+1992,S08000015,All,all_ages,374610,NHS Ayrshire and Arran
+1992,S08000015,Female,all_ages,195851,NHS Ayrshire and Arran
+1992,S08000015,Male,all_ages,178759,NHS Ayrshire and Arran
+1992,S08000016,All,all_ages,104540,NHS Borders
+1992,S08000016,Female,all_ages,54528,NHS Borders
+1992,S08000016,Male,all_ages,50012,NHS Borders
+1992,S08000017,All,all_ages,147650,NHS Dumfries and Galloway
+1992,S08000017,Female,all_ages,76384,NHS Dumfries and Galloway
+1992,S08000017,Male,all_ages,71266,NHS Dumfries and Galloway
+1992,S08000019,All,all_ages,271620,NHS Forth Valley
+1992,S08000019,Female,all_ages,140860,NHS Forth Valley
+1992,S08000019,Male,all_ages,130760,NHS Forth Valley
+1992,S08000020,All,all_ages,521490,NHS Grampian
+1992,S08000020,Female,all_ages,265267,NHS Grampian
+1992,S08000020,Male,all_ages,256223,NHS Grampian
+1992,S08000022,All,all_ages,297350,NHS Highland
+1992,S08000022,Female,all_ages,151785,NHS Highland
+1992,S08000022,Male,all_ages,145565,NHS Highland
+1992,S08000024,All,all_ages,744730,NHS Lothian
+1992,S08000024,Female,all_ages,388379,NHS Lothian
+1992,S08000024,Male,all_ages,356351,NHS Lothian
+1992,S08000025,All,all_ages,19670,NHS Orkney
+1992,S08000025,Female,all_ages,10005,NHS Orkney
+1992,S08000025,Male,all_ages,9665,NHS Orkney
+1992,S08000026,All,all_ages,22600,NHS Shetland
+1992,S08000026,Female,all_ages,11147,NHS Shetland
+1992,S08000026,Male,all_ages,11453,NHS Shetland
+1992,S08000028,All,all_ages,29240,NHS Western Isles
+1992,S08000028,Female,all_ages,14693,NHS Western Isles
+1992,S08000028,Male,all_ages,14547,NHS Western Isles
+1992,S08000029,All,all_ages,347910,NHS Fife
+1992,S08000029,Female,all_ages,179681,NHS Fife
+1992,S08000029,Male,all_ages,168229,NHS Fife
+1992,S08000030,All,all_ages,394160,NHS Tayside
+1992,S08000030,Female,all_ages,205345,NHS Tayside
+1992,S08000030,Male,all_ages,188815,NHS Tayside
+1992,S08000031,All,all_ages,1180990,NHS Greater Glasgow and Clyde
+1992,S08000031,Female,all_ages,619732,NHS Greater Glasgow and Clyde
+1992,S08000031,Male,all_ages,561258,NHS Greater Glasgow and Clyde
+1992,S08000032,All,all_ages,629060,NHS Lanarkshire
+1992,S08000032,Female,all_ages,326691,NHS Lanarkshire
+1992,S08000032,Male,all_ages,302369,NHS Lanarkshire
+1993,S92000003,All,all_ages,5092460,Scotland
+1993,S92000003,Female,all_ages,2644041,Scotland
+1993,S92000003,Male,all_ages,2448419,Scotland
+1993,S08000015,All,all_ages,374480,NHS Ayrshire and Arran
+1993,S08000015,Female,all_ages,195814,NHS Ayrshire and Arran
+1993,S08000015,Male,all_ages,178666,NHS Ayrshire and Arran
+1993,S08000016,All,all_ages,105040,NHS Borders
+1993,S08000016,Female,all_ages,54773,NHS Borders
+1993,S08000016,Male,all_ages,50267,NHS Borders
+1993,S08000017,All,all_ages,147940,NHS Dumfries and Galloway
+1993,S08000017,Female,all_ages,76498,NHS Dumfries and Galloway
+1993,S08000017,Male,all_ages,71442,NHS Dumfries and Galloway
+1993,S08000019,All,all_ages,272060,NHS Forth Valley
+1993,S08000019,Female,all_ages,141216,NHS Forth Valley
+1993,S08000019,Male,all_ages,130844,NHS Forth Valley
+1993,S08000020,All,all_ages,527870,NHS Grampian
+1993,S08000020,Female,all_ages,268387,NHS Grampian
+1993,S08000020,Male,all_ages,259483,NHS Grampian
+1993,S08000022,All,all_ages,297910,NHS Highland
+1993,S08000022,Female,all_ages,152369,NHS Highland
+1993,S08000022,Male,all_ages,145541,NHS Highland
+1993,S08000024,All,all_ages,747890,NHS Lothian
+1993,S08000024,Female,all_ages,389655,NHS Lothian
+1993,S08000024,Male,all_ages,358235,NHS Lothian
+1993,S08000025,All,all_ages,19710,NHS Orkney
+1993,S08000025,Female,all_ages,9998,NHS Orkney
+1993,S08000025,Male,all_ages,9712,NHS Orkney
+1993,S08000026,All,all_ages,22760,NHS Shetland
+1993,S08000026,Female,all_ages,11231,NHS Shetland
+1993,S08000026,Male,all_ages,11529,NHS Shetland
+1993,S08000028,All,all_ages,29260,NHS Western Isles
+1993,S08000028,Female,all_ages,14725,NHS Western Isles
+1993,S08000028,Male,all_ages,14535,NHS Western Isles
+1993,S08000029,All,all_ages,349260,NHS Fife
+1993,S08000029,Female,all_ages,180226,NHS Fife
+1993,S08000029,Male,all_ages,169034,NHS Fife
+1993,S08000030,All,all_ages,395480,NHS Tayside
+1993,S08000030,Female,all_ages,205937,NHS Tayside
+1993,S08000030,Male,all_ages,189543,NHS Tayside
+1993,S08000031,All,all_ages,1174650,NHS Greater Glasgow and Clyde
+1993,S08000031,Female,all_ages,616871,NHS Greater Glasgow and Clyde
+1993,S08000031,Male,all_ages,557779,NHS Greater Glasgow and Clyde
+1993,S08000032,All,all_ages,628150,NHS Lanarkshire
+1993,S08000032,Female,all_ages,326341,NHS Lanarkshire
+1993,S08000032,Male,all_ages,301809,NHS Lanarkshire
+1994,S92000003,All,all_ages,5102210,Scotland
+1994,S92000003,Female,all_ages,2648868,Scotland
+1994,S92000003,Male,all_ages,2453342,Scotland
+1994,S08000015,All,all_ages,374350,NHS Ayrshire and Arran
+1994,S08000015,Female,all_ages,195845,NHS Ayrshire and Arran
+1994,S08000015,Male,all_ages,178505,NHS Ayrshire and Arran
+1994,S08000016,All,all_ages,105450,NHS Borders
+1994,S08000016,Female,all_ages,54939,NHS Borders
+1994,S08000016,Male,all_ages,50511,NHS Borders
+1994,S08000017,All,all_ages,148130,NHS Dumfries and Galloway
+1994,S08000017,Female,all_ages,76548,NHS Dumfries and Galloway
+1994,S08000017,Male,all_ages,71582,NHS Dumfries and Galloway
+1994,S08000019,All,all_ages,272850,NHS Forth Valley
+1994,S08000019,Female,all_ages,141563,NHS Forth Valley
+1994,S08000019,Male,all_ages,131287,NHS Forth Valley
+1994,S08000020,All,all_ages,532910,NHS Grampian
+1994,S08000020,Female,all_ages,270786,NHS Grampian
+1994,S08000020,Male,all_ages,262124,NHS Grampian
+1994,S08000022,All,all_ages,299290,NHS Highland
+1994,S08000022,Female,all_ages,153008,NHS Highland
+1994,S08000022,Male,all_ages,146282,NHS Highland
+1994,S08000024,All,all_ages,752330,NHS Lothian
+1994,S08000024,Female,all_ages,391925,NHS Lothian
+1994,S08000024,Male,all_ages,360405,NHS Lothian
+1994,S08000025,All,all_ages,19750,NHS Orkney
+1994,S08000025,Female,all_ages,10024,NHS Orkney
+1994,S08000025,Male,all_ages,9726,NHS Orkney
+1994,S08000026,All,all_ages,22790,NHS Shetland
+1994,S08000026,Female,all_ages,11233,NHS Shetland
+1994,S08000026,Male,all_ages,11557,NHS Shetland
+1994,S08000028,All,all_ages,29120,NHS Western Isles
+1994,S08000028,Female,all_ages,14633,NHS Western Isles
+1994,S08000028,Male,all_ages,14487,NHS Western Isles
+1994,S08000029,All,all_ages,350190,NHS Fife
+1994,S08000029,Female,all_ages,181008,NHS Fife
+1994,S08000029,Male,all_ages,169182,NHS Fife
+1994,S08000030,All,all_ages,395980,NHS Tayside
+1994,S08000030,Female,all_ages,205913,NHS Tayside
+1994,S08000030,Male,all_ages,190067,NHS Tayside
+1994,S08000031,All,all_ages,1170020,NHS Greater Glasgow and Clyde
+1994,S08000031,Female,all_ages,614524,NHS Greater Glasgow and Clyde
+1994,S08000031,Male,all_ages,555496,NHS Greater Glasgow and Clyde
+1994,S08000032,All,all_ages,629050,NHS Lanarkshire
+1994,S08000032,Female,all_ages,326919,NHS Lanarkshire
+1994,S08000032,Male,all_ages,302131,NHS Lanarkshire
+1995,S92000003,All,all_ages,5103690,Scotland
+1995,S92000003,Female,all_ages,2650337,Scotland
+1995,S92000003,Male,all_ages,2453353,Scotland
+1995,S08000015,All,all_ages,374210,NHS Ayrshire and Arran
+1995,S08000015,Female,all_ages,195769,NHS Ayrshire and Arran
+1995,S08000015,Male,all_ages,178441,NHS Ayrshire and Arran
+1995,S08000016,All,all_ages,105940,NHS Borders
+1995,S08000016,Female,all_ages,55130,NHS Borders
+1995,S08000016,Male,all_ages,50810,NHS Borders
+1995,S08000017,All,all_ages,148520,NHS Dumfries and Galloway
+1995,S08000017,Female,all_ages,76765,NHS Dumfries and Galloway
+1995,S08000017,Male,all_ages,71755,NHS Dumfries and Galloway
+1995,S08000019,All,all_ages,273670,NHS Forth Valley
+1995,S08000019,Female,all_ages,142013,NHS Forth Valley
+1995,S08000019,Male,all_ages,131657,NHS Forth Valley
+1995,S08000020,All,all_ages,533820,NHS Grampian
+1995,S08000020,Female,all_ages,271249,NHS Grampian
+1995,S08000020,Male,all_ages,262571,NHS Grampian
+1995,S08000022,All,all_ages,300170,NHS Highland
+1995,S08000022,Female,all_ages,153319,NHS Highland
+1995,S08000022,Male,all_ages,146851,NHS Highland
+1995,S08000024,All,all_ages,758030,NHS Lothian
+1995,S08000024,Female,all_ages,394702,NHS Lothian
+1995,S08000024,Male,all_ages,363328,NHS Lothian
+1995,S08000025,All,all_ages,19810,NHS Orkney
+1995,S08000025,Female,all_ages,10040,NHS Orkney
+1995,S08000025,Male,all_ages,9770,NHS Orkney
+1995,S08000026,All,all_ages,22970,NHS Shetland
+1995,S08000026,Female,all_ages,11341,NHS Shetland
+1995,S08000026,Male,all_ages,11629,NHS Shetland
+1995,S08000028,All,all_ages,28810,NHS Western Isles
+1995,S08000028,Female,all_ages,14525,NHS Western Isles
+1995,S08000028,Male,all_ages,14285,NHS Western Isles
+1995,S08000029,All,all_ages,349720,NHS Fife
+1995,S08000029,Female,all_ages,181169,NHS Fife
+1995,S08000029,Male,all_ages,168551,NHS Fife
+1995,S08000030,All,all_ages,397240,NHS Tayside
+1995,S08000030,Female,all_ages,206640,NHS Tayside
+1995,S08000030,Male,all_ages,190600,NHS Tayside
+1995,S08000031,All,all_ages,1162400,NHS Greater Glasgow and Clyde
+1995,S08000031,Female,all_ages,610894,NHS Greater Glasgow and Clyde
+1995,S08000031,Male,all_ages,551506,NHS Greater Glasgow and Clyde
+1995,S08000032,All,all_ages,628380,NHS Lanarkshire
+1995,S08000032,Female,all_ages,326781,NHS Lanarkshire
+1995,S08000032,Male,all_ages,301599,NHS Lanarkshire
+1996,S92000003,All,all_ages,5092190,Scotland
+1996,S92000003,Female,all_ages,2645170,Scotland
+1996,S92000003,Male,all_ages,2447020,Scotland
+1996,S08000015,All,all_ages,373150,NHS Ayrshire and Arran
+1996,S08000015,Female,all_ages,195119,NHS Ayrshire and Arran
+1996,S08000015,Male,all_ages,178031,NHS Ayrshire and Arran
+1996,S08000016,All,all_ages,105860,NHS Borders
+1996,S08000016,Female,all_ages,55050,NHS Borders
+1996,S08000016,Male,all_ages,50810,NHS Borders
+1996,S08000017,All,all_ages,148520,NHS Dumfries and Galloway
+1996,S08000017,Female,all_ages,76752,NHS Dumfries and Galloway
+1996,S08000017,Male,all_ages,71768,NHS Dumfries and Galloway
+1996,S08000019,All,all_ages,274660,NHS Forth Valley
+1996,S08000019,Female,all_ages,142461,NHS Forth Valley
+1996,S08000019,Male,all_ages,132199,NHS Forth Valley
+1996,S08000020,All,all_ages,532770,NHS Grampian
+1996,S08000020,Female,all_ages,270964,NHS Grampian
+1996,S08000020,Male,all_ages,261806,NHS Grampian
+1996,S08000022,All,all_ages,300390,NHS Highland
+1996,S08000022,Female,all_ages,153489,NHS Highland
+1996,S08000022,Male,all_ages,146901,NHS Highland
+1996,S08000024,All,all_ages,760940,NHS Lothian
+1996,S08000024,Female,all_ages,395862,NHS Lothian
+1996,S08000024,Male,all_ages,365078,NHS Lothian
+1996,S08000025,All,all_ages,19730,NHS Orkney
+1996,S08000025,Female,all_ages,9990,NHS Orkney
+1996,S08000025,Male,all_ages,9740,NHS Orkney
+1996,S08000026,All,all_ages,22860,NHS Shetland
+1996,S08000026,Female,all_ages,11273,NHS Shetland
+1996,S08000026,Male,all_ages,11587,NHS Shetland
+1996,S08000028,All,all_ages,28600,NHS Western Isles
+1996,S08000028,Female,all_ages,14466,NHS Western Isles
+1996,S08000028,Male,all_ages,14134,NHS Western Isles
+1996,S08000029,All,all_ages,347430,NHS Fife
+1996,S08000029,Female,all_ages,180621,NHS Fife
+1996,S08000029,Male,all_ages,166809,NHS Fife
+1996,S08000030,All,all_ages,395900,NHS Tayside
+1996,S08000030,Female,all_ages,206023,NHS Tayside
+1996,S08000030,Male,all_ages,189877,NHS Tayside
+1996,S08000031,All,all_ages,1154320,NHS Greater Glasgow and Clyde
+1996,S08000031,Female,all_ages,606934,NHS Greater Glasgow and Clyde
+1996,S08000031,Male,all_ages,547386,NHS Greater Glasgow and Clyde
+1996,S08000032,All,all_ages,627060,NHS Lanarkshire
+1996,S08000032,Female,all_ages,326166,NHS Lanarkshire
+1996,S08000032,Male,all_ages,300894,NHS Lanarkshire
+1997,S92000003,All,all_ages,5083340,Scotland
+1997,S92000003,Female,all_ages,2641018,Scotland
+1997,S92000003,Male,all_ages,2442322,Scotland
+1997,S08000015,All,all_ages,372750,NHS Ayrshire and Arran
+1997,S08000015,Female,all_ages,194994,NHS Ayrshire and Arran
+1997,S08000015,Male,all_ages,177756,NHS Ayrshire and Arran
+1997,S08000016,All,all_ages,105960,NHS Borders
+1997,S08000016,Female,all_ages,55074,NHS Borders
+1997,S08000016,Male,all_ages,50886,NHS Borders
+1997,S08000017,All,all_ages,148520,NHS Dumfries and Galloway
+1997,S08000017,Female,all_ages,76722,NHS Dumfries and Galloway
+1997,S08000017,Male,all_ages,71798,NHS Dumfries and Galloway
+1997,S08000019,All,all_ages,275950,NHS Forth Valley
+1997,S08000019,Female,all_ages,143172,NHS Forth Valley
+1997,S08000019,Male,all_ages,132778,NHS Forth Valley
+1997,S08000020,All,all_ages,530480,NHS Grampian
+1997,S08000020,Female,all_ages,269595,NHS Grampian
+1997,S08000020,Male,all_ages,260885,NHS Grampian
+1997,S08000022,All,all_ages,300280,NHS Highland
+1997,S08000022,Female,all_ages,153308,NHS Highland
+1997,S08000022,Male,all_ages,146972,NHS Highland
+1997,S08000024,All,all_ages,764780,NHS Lothian
+1997,S08000024,Female,all_ages,397907,NHS Lothian
+1997,S08000024,Male,all_ages,366873,NHS Lothian
+1997,S08000025,All,all_ages,19770,NHS Orkney
+1997,S08000025,Female,all_ages,10008,NHS Orkney
+1997,S08000025,Male,all_ages,9762,NHS Orkney
+1997,S08000026,All,all_ages,22830,NHS Shetland
+1997,S08000026,Female,all_ages,11297,NHS Shetland
+1997,S08000026,Male,all_ages,11533,NHS Shetland
+1997,S08000028,All,all_ages,27910,NHS Western Isles
+1997,S08000028,Female,all_ages,14097,NHS Western Isles
+1997,S08000028,Male,all_ages,13813,NHS Western Isles
+1997,S08000029,All,all_ages,346540,NHS Fife
+1997,S08000029,Female,all_ages,180186,NHS Fife
+1997,S08000029,Male,all_ages,166354,NHS Fife
+1997,S08000030,All,all_ages,395330,NHS Tayside
+1997,S08000030,Female,all_ages,205793,NHS Tayside
+1997,S08000030,Male,all_ages,189537,NHS Tayside
+1997,S08000031,All,all_ages,1145290,NHS Greater Glasgow and Clyde
+1997,S08000031,Female,all_ages,602636,NHS Greater Glasgow and Clyde
+1997,S08000031,Male,all_ages,542654,NHS Greater Glasgow and Clyde
+1997,S08000032,All,all_ages,626950,NHS Lanarkshire
+1997,S08000032,Female,all_ages,326229,NHS Lanarkshire
+1997,S08000032,Male,all_ages,300721,NHS Lanarkshire
+1998,S92000003,All,all_ages,5077070,Scotland
+1998,S92000003,Female,all_ages,2638079,Scotland
+1998,S92000003,Male,all_ages,2438991,Scotland
+1998,S08000015,All,all_ages,371790,NHS Ayrshire and Arran
+1998,S08000015,Female,all_ages,194676,NHS Ayrshire and Arran
+1998,S08000015,Male,all_ages,177114,NHS Ayrshire and Arran
+1998,S08000016,All,all_ages,106040,NHS Borders
+1998,S08000016,Female,all_ages,55096,NHS Borders
+1998,S08000016,Male,all_ages,50944,NHS Borders
+1998,S08000017,All,all_ages,148740,NHS Dumfries and Galloway
+1998,S08000017,Female,all_ages,76831,NHS Dumfries and Galloway
+1998,S08000017,Male,all_ages,71909,NHS Dumfries and Galloway
+1998,S08000019,All,all_ages,276970,NHS Forth Valley
+1998,S08000019,Female,all_ages,143713,NHS Forth Valley
+1998,S08000019,Male,all_ages,133257,NHS Forth Valley
+1998,S08000020,All,all_ages,528670,NHS Grampian
+1998,S08000020,Female,all_ages,268253,NHS Grampian
+1998,S08000020,Male,all_ages,260417,NHS Grampian
+1998,S08000022,All,all_ages,300520,NHS Highland
+1998,S08000022,Female,all_ages,153431,NHS Highland
+1998,S08000022,Male,all_ages,147089,NHS Highland
+1998,S08000024,All,all_ages,767920,NHS Lothian
+1998,S08000024,Female,all_ages,399517,NHS Lothian
+1998,S08000024,Male,all_ages,368403,NHS Lothian
+1998,S08000025,All,all_ages,19590,NHS Orkney
+1998,S08000025,Female,all_ages,9917,NHS Orkney
+1998,S08000025,Male,all_ages,9673,NHS Orkney
+1998,S08000026,All,all_ages,22700,NHS Shetland
+1998,S08000026,Female,all_ages,11259,NHS Shetland
+1998,S08000026,Male,all_ages,11441,NHS Shetland
+1998,S08000028,All,all_ages,27540,NHS Western Isles
+1998,S08000028,Female,all_ages,13934,NHS Western Isles
+1998,S08000028,Male,all_ages,13606,NHS Western Isles
+1998,S08000029,All,all_ages,346540,NHS Fife
+1998,S08000029,Female,all_ages,180247,NHS Fife
+1998,S08000029,Male,all_ages,166293,NHS Fife
+1998,S08000030,All,all_ages,394050,NHS Tayside
+1998,S08000030,Female,all_ages,205053,NHS Tayside
+1998,S08000030,Male,all_ages,188997,NHS Tayside
+1998,S08000031,All,all_ages,1140490,NHS Greater Glasgow and Clyde
+1998,S08000031,Female,all_ages,600487,NHS Greater Glasgow and Clyde
+1998,S08000031,Male,all_ages,540003,NHS Greater Glasgow and Clyde
+1998,S08000032,All,all_ages,625510,NHS Lanarkshire
+1998,S08000032,Female,all_ages,325665,NHS Lanarkshire
+1998,S08000032,Male,all_ages,299845,NHS Lanarkshire
+1999,S92000003,All,all_ages,5071950,Scotland
+1999,S92000003,Female,all_ages,2635415,Scotland
+1999,S92000003,Male,all_ages,2436535,Scotland
+1999,S08000015,All,all_ages,370560,NHS Ayrshire and Arran
+1999,S08000015,Female,all_ages,193971,NHS Ayrshire and Arran
+1999,S08000015,Male,all_ages,176589,NHS Ayrshire and Arran
+1999,S08000016,All,all_ages,105810,NHS Borders
+1999,S08000016,Female,all_ages,54884,NHS Borders
+1999,S08000016,Male,all_ages,50926,NHS Borders
+1999,S08000017,All,all_ages,148230,NHS Dumfries and Galloway
+1999,S08000017,Female,all_ages,76619,NHS Dumfries and Galloway
+1999,S08000017,Male,all_ages,71611,NHS Dumfries and Galloway
+1999,S08000019,All,all_ages,278260,NHS Forth Valley
+1999,S08000019,Female,all_ages,144394,NHS Forth Valley
+1999,S08000019,Male,all_ages,133866,NHS Forth Valley
+1999,S08000020,All,all_ages,528670,NHS Grampian
+1999,S08000020,Female,all_ages,268025,NHS Grampian
+1999,S08000020,Male,all_ages,260645,NHS Grampian
+1999,S08000022,All,all_ages,300840,NHS Highland
+1999,S08000022,Female,all_ages,153434,NHS Highland
+1999,S08000022,Male,all_ages,147406,NHS Highland
+1999,S08000024,All,all_ages,771690,NHS Lothian
+1999,S08000024,Female,all_ages,401582,NHS Lothian
+1999,S08000024,Male,all_ages,370108,NHS Lothian
+1999,S08000025,All,all_ages,19420,NHS Orkney
+1999,S08000025,Female,all_ages,9801,NHS Orkney
+1999,S08000025,Male,all_ages,9619,NHS Orkney
+1999,S08000026,All,all_ages,22510,NHS Shetland
+1999,S08000026,Female,all_ages,11168,NHS Shetland
+1999,S08000026,Male,all_ages,11342,NHS Shetland
+1999,S08000028,All,all_ages,27210,NHS Western Isles
+1999,S08000028,Female,all_ages,13778,NHS Western Isles
+1999,S08000028,Male,all_ages,13432,NHS Western Isles
+1999,S08000029,All,all_ages,347030,NHS Fife
+1999,S08000029,Female,all_ages,180457,NHS Fife
+1999,S08000029,Male,all_ages,166573,NHS Fife
+1999,S08000030,All,all_ages,392730,NHS Tayside
+1999,S08000030,Female,all_ages,204327,NHS Tayside
+1999,S08000030,Male,all_ages,188403,NHS Tayside
+1999,S08000031,All,all_ages,1134250,NHS Greater Glasgow and Clyde
+1999,S08000031,Female,all_ages,597546,NHS Greater Glasgow and Clyde
+1999,S08000031,Male,all_ages,536704,NHS Greater Glasgow and Clyde
+1999,S08000032,All,all_ages,624740,NHS Lanarkshire
+1999,S08000032,Female,all_ages,325429,NHS Lanarkshire
+1999,S08000032,Male,all_ages,299311,NHS Lanarkshire
+2000,S92000003,All,all_ages,5062940,Scotland
+2000,S92000003,Female,all_ages,2631014,Scotland
+2000,S92000003,Male,all_ages,2431926,Scotland
+2000,S08000015,All,all_ages,368770,NHS Ayrshire and Arran
+2000,S08000015,Female,all_ages,192937,NHS Ayrshire and Arran
+2000,S08000015,Male,all_ages,175833,NHS Ayrshire and Arran
+2000,S08000016,All,all_ages,106250,NHS Borders
+2000,S08000016,Female,all_ages,55146,NHS Borders
+2000,S08000016,Male,all_ages,51104,NHS Borders
+2000,S08000017,All,all_ages,147540,NHS Dumfries and Galloway
+2000,S08000017,Female,all_ages,76330,NHS Dumfries and Galloway
+2000,S08000017,Male,all_ages,71210,NHS Dumfries and Galloway
+2000,S08000019,All,all_ages,278980,NHS Forth Valley
+2000,S08000019,Female,all_ages,144804,NHS Forth Valley
+2000,S08000019,Male,all_ages,134176,NHS Forth Valley
+2000,S08000020,All,all_ages,527080,NHS Grampian
+2000,S08000020,Female,all_ages,266818,NHS Grampian
+2000,S08000020,Male,all_ages,260262,NHS Grampian
+2000,S08000022,All,all_ages,300180,NHS Highland
+2000,S08000022,Female,all_ages,152984,NHS Highland
+2000,S08000022,Male,all_ages,147196,NHS Highland
+2000,S08000024,All,all_ages,776500,NHS Lothian
+2000,S08000024,Female,all_ages,404228,NHS Lothian
+2000,S08000024,Male,all_ages,372272,NHS Lothian
+2000,S08000025,All,all_ages,19290,NHS Orkney
+2000,S08000025,Female,all_ages,9782,NHS Orkney
+2000,S08000025,Male,all_ages,9508,NHS Orkney
+2000,S08000026,All,all_ages,22180,NHS Shetland
+2000,S08000026,Female,all_ages,11007,NHS Shetland
+2000,S08000026,Male,all_ages,11173,NHS Shetland
+2000,S08000028,All,all_ages,26790,NHS Western Isles
+2000,S08000028,Female,all_ages,13566,NHS Western Isles
+2000,S08000028,Male,all_ages,13224,NHS Western Isles
+2000,S08000029,All,all_ages,348340,NHS Fife
+2000,S08000029,Female,all_ages,181235,NHS Fife
+2000,S08000029,Male,all_ages,167105,NHS Fife
+2000,S08000030,All,all_ages,390430,NHS Tayside
+2000,S08000030,Female,all_ages,203098,NHS Tayside
+2000,S08000030,Male,all_ages,187332,NHS Tayside
+2000,S08000031,All,all_ages,1126950,NHS Greater Glasgow and Clyde
+2000,S08000031,Female,all_ages,593999,NHS Greater Glasgow and Clyde
+2000,S08000031,Male,all_ages,532951,NHS Greater Glasgow and Clyde
+2000,S08000032,All,all_ages,623660,NHS Lanarkshire
+2000,S08000032,Female,all_ages,325080,NHS Lanarkshire
+2000,S08000032,Male,all_ages,298580,NHS Lanarkshire
+2001,S92000003,All,all_ages,5064200,Scotland
+2001,S92000003,Female,all_ages,2630467,Scotland
+2001,S92000003,Male,all_ages,2433733,Scotland
+2001,S08000015,All,all_ages,368290,NHS Ayrshire and Arran
+2001,S08000015,Female,all_ages,192743,NHS Ayrshire and Arran
+2001,S08000015,Male,all_ages,175547,NHS Ayrshire and Arran
+2001,S08000016,All,all_ages,106950,NHS Borders
+2001,S08000016,Female,all_ages,55483,NHS Borders
+2001,S08000016,Male,all_ages,51467,NHS Borders
+2001,S08000017,All,all_ages,147780,NHS Dumfries and Galloway
+2001,S08000017,Female,all_ages,76471,NHS Dumfries and Galloway
+2001,S08000017,Male,all_ages,71309,NHS Dumfries and Galloway
+2001,S08000019,All,all_ages,279540,NHS Forth Valley
+2001,S08000019,Female,all_ages,145075,NHS Forth Valley
+2001,S08000019,Male,all_ages,134465,NHS Forth Valley
+2001,S08000020,All,all_ages,525850,NHS Grampian
+2001,S08000020,Female,all_ages,266178,NHS Grampian
+2001,S08000020,Male,all_ages,259672,NHS Grampian
+2001,S08000022,All,all_ages,300220,NHS Highland
+2001,S08000022,Female,all_ages,153061,NHS Highland
+2001,S08000022,Male,all_ages,147159,NHS Highland
+2001,S08000024,All,all_ages,779180,NHS Lothian
+2001,S08000024,Female,all_ages,405699,NHS Lothian
+2001,S08000024,Male,all_ages,373481,NHS Lothian
+2001,S08000025,All,all_ages,19220,NHS Orkney
+2001,S08000025,Female,all_ages,9733,NHS Orkney
+2001,S08000025,Male,all_ages,9487,NHS Orkney
+2001,S08000026,All,all_ages,21960,NHS Shetland
+2001,S08000026,Female,all_ages,10905,NHS Shetland
+2001,S08000026,Male,all_ages,11055,NHS Shetland
+2001,S08000028,All,all_ages,26450,NHS Western Isles
+2001,S08000028,Female,all_ages,13394,NHS Western Isles
+2001,S08000028,Male,all_ages,13056,NHS Western Isles
+2001,S08000029,All,all_ages,349770,NHS Fife
+2001,S08000029,Female,all_ages,182005,NHS Fife
+2001,S08000029,Male,all_ages,167765,NHS Fife
+2001,S08000030,All,all_ages,388780,NHS Tayside
+2001,S08000030,Female,all_ages,202152,NHS Tayside
+2001,S08000030,Male,all_ages,186628,NHS Tayside
+2001,S08000031,All,all_ages,1126690,NHS Greater Glasgow and Clyde
+2001,S08000031,Female,all_ages,592300,NHS Greater Glasgow and Clyde
+2001,S08000031,Male,all_ages,534390,NHS Greater Glasgow and Clyde
+2001,S08000032,All,all_ages,623520,NHS Lanarkshire
+2001,S08000032,Female,all_ages,325268,NHS Lanarkshire
+2001,S08000032,Male,all_ages,298252,NHS Lanarkshire
+2002,S92000003,All,all_ages,5066000,Scotland
+2002,S92000003,Female,all_ages,2630365,Scotland
+2002,S92000003,Male,all_ages,2435635,Scotland
+2002,S08000015,All,all_ages,367500,NHS Ayrshire and Arran
+2002,S08000015,Female,all_ages,192500,NHS Ayrshire and Arran
+2002,S08000015,Male,all_ages,175000,NHS Ayrshire and Arran
+2002,S08000016,All,all_ages,107530,NHS Borders
+2002,S08000016,Female,all_ages,55657,NHS Borders
+2002,S08000016,Male,all_ages,51873,NHS Borders
+2002,S08000017,All,all_ages,147670,NHS Dumfries and Galloway
+2002,S08000017,Female,all_ages,76346,NHS Dumfries and Galloway
+2002,S08000017,Male,all_ages,71324,NHS Dumfries and Galloway
+2002,S08000019,All,all_ages,280690,NHS Forth Valley
+2002,S08000019,Female,all_ages,145716,NHS Forth Valley
+2002,S08000019,Male,all_ages,134974,NHS Forth Valley
+2002,S08000020,All,all_ages,527200,NHS Grampian
+2002,S08000020,Female,all_ages,266738,NHS Grampian
+2002,S08000020,Male,all_ages,260462,NHS Grampian
+2002,S08000022,All,all_ages,300780,NHS Highland
+2002,S08000022,Female,all_ages,153050,NHS Highland
+2002,S08000022,Male,all_ages,147730,NHS Highland
+2002,S08000024,All,all_ages,779810,NHS Lothian
+2002,S08000024,Female,all_ages,405661,NHS Lothian
+2002,S08000024,Male,all_ages,374149,NHS Lothian
+2002,S08000025,All,all_ages,19330,NHS Orkney
+2002,S08000025,Female,all_ages,9786,NHS Orkney
+2002,S08000025,Male,all_ages,9544,NHS Orkney
+2002,S08000026,All,all_ages,22000,NHS Shetland
+2002,S08000026,Female,all_ages,10935,NHS Shetland
+2002,S08000026,Male,all_ages,11065,NHS Shetland
+2002,S08000028,All,all_ages,26350,NHS Western Isles
+2002,S08000028,Female,all_ages,13389,NHS Western Isles
+2002,S08000028,Male,all_ages,12961,NHS Western Isles
+2002,S08000029,All,all_ages,350740,NHS Fife
+2002,S08000029,Female,all_ages,182649,NHS Fife
+2002,S08000029,Male,all_ages,168091,NHS Fife
+2002,S08000030,All,all_ages,388310,NHS Tayside
+2002,S08000030,Female,all_ages,201949,NHS Tayside
+2002,S08000030,Male,all_ages,186361,NHS Tayside
+2002,S08000031,All,all_ages,1122800,NHS Greater Glasgow and Clyde
+2002,S08000031,Female,all_ages,589910,NHS Greater Glasgow and Clyde
+2002,S08000031,Male,all_ages,532890,NHS Greater Glasgow and Clyde
+2002,S08000032,All,all_ages,625290,NHS Lanarkshire
+2002,S08000032,Female,all_ages,326079,NHS Lanarkshire
+2002,S08000032,Male,all_ages,299211,NHS Lanarkshire
+2003,S92000003,All,all_ages,5068500,Scotland
+2003,S92000003,Female,all_ages,2630412,Scotland
+2003,S92000003,Male,all_ages,2438088,Scotland
+2003,S08000015,All,all_ages,367710,NHS Ayrshire and Arran
+2003,S08000015,Female,all_ages,192526,NHS Ayrshire and Arran
+2003,S08000015,Male,all_ages,175184,NHS Ayrshire and Arran
+2003,S08000016,All,all_ages,108390,NHS Borders
+2003,S08000016,Female,all_ages,56096,NHS Borders
+2003,S08000016,Male,all_ages,52294,NHS Borders
+2003,S08000017,All,all_ages,147860,NHS Dumfries and Galloway
+2003,S08000017,Female,all_ages,76398,NHS Dumfries and Galloway
+2003,S08000017,Male,all_ages,71462,NHS Dumfries and Galloway
+2003,S08000019,All,all_ages,282030,NHS Forth Valley
+2003,S08000019,Female,all_ages,146240,NHS Forth Valley
+2003,S08000019,Male,all_ages,135790,NHS Forth Valley
+2003,S08000020,All,all_ages,529360,NHS Grampian
+2003,S08000020,Female,all_ages,267745,NHS Grampian
+2003,S08000020,Male,all_ages,261615,NHS Grampian
+2003,S08000022,All,all_ages,302570,NHS Highland
+2003,S08000022,Female,all_ages,154112,NHS Highland
+2003,S08000022,Male,all_ages,148458,NHS Highland
+2003,S08000024,All,all_ages,778910,NHS Lothian
+2003,S08000024,Female,all_ages,404628,NHS Lothian
+2003,S08000024,Male,all_ages,374282,NHS Lothian
+2003,S08000025,All,all_ages,19540,NHS Orkney
+2003,S08000025,Female,all_ages,9885,NHS Orkney
+2003,S08000025,Male,all_ages,9655,NHS Orkney
+2003,S08000026,All,all_ages,21950,NHS Shetland
+2003,S08000026,Female,all_ages,10885,NHS Shetland
+2003,S08000026,Male,all_ages,11065,NHS Shetland
+2003,S08000028,All,all_ages,26430,NHS Western Isles
+2003,S08000028,Female,all_ages,13439,NHS Western Isles
+2003,S08000028,Male,all_ages,12991,NHS Western Isles
+2003,S08000029,All,all_ages,351360,NHS Fife
+2003,S08000029,Female,all_ages,182633,NHS Fife
+2003,S08000029,Male,all_ages,168727,NHS Fife
+2003,S08000030,All,all_ages,388740,NHS Tayside
+2003,S08000030,Female,all_ages,202261,NHS Tayside
+2003,S08000030,Male,all_ages,186479,NHS Tayside
+2003,S08000031,All,all_ages,1116470,NHS Greater Glasgow and Clyde
+2003,S08000031,Female,all_ages,586626,NHS Greater Glasgow and Clyde
+2003,S08000031,Male,all_ages,529844,NHS Greater Glasgow and Clyde
+2003,S08000032,All,all_ages,627180,NHS Lanarkshire
+2003,S08000032,Female,all_ages,326938,NHS Lanarkshire
+2003,S08000032,Male,all_ages,300242,NHS Lanarkshire
+2004,S92000003,All,all_ages,5084300,Scotland
+2004,S92000003,Female,all_ages,2637697,Scotland
+2004,S92000003,Male,all_ages,2446603,Scotland
+2004,S08000015,All,all_ages,368550,NHS Ayrshire and Arran
+2004,S08000015,Female,all_ages,192823,NHS Ayrshire and Arran
+2004,S08000015,Male,all_ages,175727,NHS Ayrshire and Arran
+2004,S08000016,All,all_ages,109450,NHS Borders
+2004,S08000016,Female,all_ages,56571,NHS Borders
+2004,S08000016,Male,all_ages,52879,NHS Borders
+2004,S08000017,All,all_ages,148700,NHS Dumfries and Galloway
+2004,S08000017,Female,all_ages,76819,NHS Dumfries and Galloway
+2004,S08000017,Male,all_ages,71881,NHS Dumfries and Galloway
+2004,S08000019,All,all_ages,283900,NHS Forth Valley
+2004,S08000019,Female,all_ages,147095,NHS Forth Valley
+2004,S08000019,Male,all_ages,136805,NHS Forth Valley
+2004,S08000020,All,all_ages,531890,NHS Grampian
+2004,S08000020,Female,all_ages,269321,NHS Grampian
+2004,S08000020,Male,all_ages,262569,NHS Grampian
+2004,S08000022,All,all_ages,305140,NHS Highland
+2004,S08000022,Female,all_ages,156046,NHS Highland
+2004,S08000022,Male,all_ages,149094,NHS Highland
+2004,S08000024,All,all_ages,781810,NHS Lothian
+2004,S08000024,Female,all_ages,405798,NHS Lothian
+2004,S08000024,Male,all_ages,376012,NHS Lothian
+2004,S08000025,All,all_ages,19830,NHS Orkney
+2004,S08000025,Female,all_ages,10044,NHS Orkney
+2004,S08000025,Male,all_ages,9786,NHS Orkney
+2004,S08000026,All,all_ages,22090,NHS Shetland
+2004,S08000026,Female,all_ages,10976,NHS Shetland
+2004,S08000026,Male,all_ages,11114,NHS Shetland
+2004,S08000028,All,all_ages,26650,NHS Western Isles
+2004,S08000028,Female,all_ages,13584,NHS Western Isles
+2004,S08000028,Male,all_ages,13066,NHS Western Isles
+2004,S08000029,All,all_ages,353050,NHS Fife
+2004,S08000029,Female,all_ages,183349,NHS Fife
+2004,S08000029,Male,all_ages,169701,NHS Fife
+2004,S08000030,All,all_ages,390170,NHS Tayside
+2004,S08000030,Female,all_ages,202969,NHS Tayside
+2004,S08000030,Male,all_ages,187201,NHS Tayside
+2004,S08000031,All,all_ages,1112010,NHS Greater Glasgow and Clyde
+2004,S08000031,Female,all_ages,583626,NHS Greater Glasgow and Clyde
+2004,S08000031,Male,all_ages,528384,NHS Greater Glasgow and Clyde
+2004,S08000032,All,all_ages,631060,NHS Lanarkshire
+2004,S08000032,Female,all_ages,328676,NHS Lanarkshire
+2004,S08000032,Male,all_ages,302384,NHS Lanarkshire
+2005,S92000003,All,all_ages,5110200,Scotland
+2005,S92000003,Female,all_ages,2648926,Scotland
+2005,S92000003,Male,all_ages,2461274,Scotland
+2005,S08000015,All,all_ages,369000,NHS Ayrshire and Arran
+2005,S08000015,Female,all_ages,193003,NHS Ayrshire and Arran
+2005,S08000015,Male,all_ages,175997,NHS Ayrshire and Arran
+2005,S08000016,All,all_ages,110250,NHS Borders
+2005,S08000016,Female,all_ages,56944,NHS Borders
+2005,S08000016,Male,all_ages,53306,NHS Borders
+2005,S08000017,All,all_ages,149620,NHS Dumfries and Galloway
+2005,S08000017,Female,all_ages,77238,NHS Dumfries and Galloway
+2005,S08000017,Male,all_ages,72382,NHS Dumfries and Galloway
+2005,S08000019,All,all_ages,286800,NHS Forth Valley
+2005,S08000019,Female,all_ages,148458,NHS Forth Valley
+2005,S08000019,Male,all_ages,138342,NHS Forth Valley
+2005,S08000020,All,all_ages,536360,NHS Grampian
+2005,S08000020,Female,all_ages,271770,NHS Grampian
+2005,S08000020,Male,all_ages,264590,NHS Grampian
+2005,S08000022,All,all_ages,308400,NHS Highland
+2005,S08000022,Female,all_ages,157789,NHS Highland
+2005,S08000022,Male,all_ages,150611,NHS Highland
+2005,S08000024,All,all_ages,787260,NHS Lothian
+2005,S08000024,Female,all_ages,408055,NHS Lothian
+2005,S08000024,Male,all_ages,379205,NHS Lothian
+2005,S08000025,All,all_ages,20070,NHS Orkney
+2005,S08000025,Female,all_ages,10184,NHS Orkney
+2005,S08000025,Male,all_ages,9886,NHS Orkney
+2005,S08000026,All,all_ages,22250,NHS Shetland
+2005,S08000026,Female,all_ages,11075,NHS Shetland
+2005,S08000026,Male,all_ages,11175,NHS Shetland
+2005,S08000028,All,all_ages,26930,NHS Western Isles
+2005,S08000028,Female,all_ages,13670,NHS Western Isles
+2005,S08000028,Male,all_ages,13260,NHS Western Isles
+2005,S08000029,All,all_ages,355460,NHS Fife
+2005,S08000029,Female,all_ages,184356,NHS Fife
+2005,S08000029,Male,all_ages,171104,NHS Fife
+2005,S08000030,All,all_ages,393000,NHS Tayside
+2005,S08000030,Female,all_ages,204334,NHS Tayside
+2005,S08000030,Male,all_ages,188666,NHS Tayside
+2005,S08000031,All,all_ages,1110810,NHS Greater Glasgow and Clyde
+2005,S08000031,Female,all_ages,582016,NHS Greater Glasgow and Clyde
+2005,S08000031,Male,all_ages,528794,NHS Greater Glasgow and Clyde
+2005,S08000032,All,all_ages,633990,NHS Lanarkshire
+2005,S08000032,Female,all_ages,330034,NHS Lanarkshire
+2005,S08000032,Male,all_ages,303956,NHS Lanarkshire
+2006,S92000003,All,all_ages,5133000,Scotland
+2006,S92000003,Female,all_ages,2657936,Scotland
+2006,S92000003,Male,all_ages,2475064,Scotland
+2006,S08000015,All,all_ages,369330,NHS Ayrshire and Arran
+2006,S08000015,Female,all_ages,193087,NHS Ayrshire and Arran
+2006,S08000015,Male,all_ages,176243,NHS Ayrshire and Arran
+2006,S08000016,All,all_ages,110860,NHS Borders
+2006,S08000016,Female,all_ages,57185,NHS Borders
+2006,S08000016,Male,all_ages,53675,NHS Borders
+2006,S08000017,All,all_ages,149770,NHS Dumfries and Galloway
+2006,S08000017,Female,all_ages,77301,NHS Dumfries and Galloway
+2006,S08000017,Male,all_ages,72469,NHS Dumfries and Galloway
+2006,S08000019,All,all_ages,288720,NHS Forth Valley
+2006,S08000019,Female,all_ages,149371,NHS Forth Valley
+2006,S08000019,Male,all_ages,139349,NHS Forth Valley
+2006,S08000020,All,all_ages,541590,NHS Grampian
+2006,S08000020,Female,all_ages,274083,NHS Grampian
+2006,S08000020,Male,all_ages,267507,NHS Grampian
+2006,S08000022,All,all_ages,311640,NHS Highland
+2006,S08000022,Female,all_ages,158984,NHS Highland
+2006,S08000022,Male,all_ages,152656,NHS Highland
+2006,S08000024,All,all_ages,792990,NHS Lothian
+2006,S08000024,Female,all_ages,410461,NHS Lothian
+2006,S08000024,Male,all_ages,382529,NHS Lothian
+2006,S08000025,All,all_ages,20340,NHS Orkney
+2006,S08000025,Female,all_ages,10327,NHS Orkney
+2006,S08000025,Male,all_ages,10013,NHS Orkney
+2006,S08000026,All,all_ages,22210,NHS Shetland
+2006,S08000026,Female,all_ages,11065,NHS Shetland
+2006,S08000026,Male,all_ages,11145,NHS Shetland
+2006,S08000028,All,all_ages,27060,NHS Western Isles
+2006,S08000028,Female,all_ages,13716,NHS Western Isles
+2006,S08000028,Male,all_ages,13344,NHS Western Isles
+2006,S08000029,All,all_ages,357260,NHS Fife
+2006,S08000029,Female,all_ages,185001,NHS Fife
+2006,S08000029,Male,all_ages,172259,NHS Fife
+2006,S08000030,All,all_ages,395240,NHS Tayside
+2006,S08000030,Female,all_ages,205411,NHS Tayside
+2006,S08000030,Male,all_ages,189829,NHS Tayside
+2006,S08000031,All,all_ages,1108800,NHS Greater Glasgow and Clyde
+2006,S08000031,Female,all_ages,580604,NHS Greater Glasgow and Clyde
+2006,S08000031,Male,all_ages,528196,NHS Greater Glasgow and Clyde
+2006,S08000032,All,all_ages,637190,NHS Lanarkshire
+2006,S08000032,Female,all_ages,331340,NHS Lanarkshire
+2006,S08000032,Male,all_ages,305850,NHS Lanarkshire
+2007,S92000003,All,all_ages,5170000,Scotland
+2007,S92000003,Female,all_ages,2673441,Scotland
+2007,S92000003,Male,all_ages,2496559,Scotland
+2007,S08000015,All,all_ages,370750,NHS Ayrshire and Arran
+2007,S08000015,Female,all_ages,193724,NHS Ayrshire and Arran
+2007,S08000015,Male,all_ages,177026,NHS Ayrshire and Arran
+2007,S08000016,All,all_ages,112200,NHS Borders
+2007,S08000016,Female,all_ages,57845,NHS Borders
+2007,S08000016,Male,all_ages,54355,NHS Borders
+2007,S08000017,All,all_ages,150370,NHS Dumfries and Galloway
+2007,S08000017,Female,all_ages,77502,NHS Dumfries and Galloway
+2007,S08000017,Male,all_ages,72868,NHS Dumfries and Galloway
+2007,S08000019,All,all_ages,291350,NHS Forth Valley
+2007,S08000019,Female,all_ages,150419,NHS Forth Valley
+2007,S08000019,Male,all_ages,140931,NHS Forth Valley
+2007,S08000020,All,all_ages,548300,NHS Grampian
+2007,S08000020,Female,all_ages,277323,NHS Grampian
+2007,S08000020,Male,all_ages,270977,NHS Grampian
+2007,S08000022,All,all_ages,314790,NHS Highland
+2007,S08000022,Female,all_ages,160536,NHS Highland
+2007,S08000022,Male,all_ages,154254,NHS Highland
+2007,S08000024,All,all_ages,801450,NHS Lothian
+2007,S08000024,Female,all_ages,413760,NHS Lothian
+2007,S08000024,Male,all_ages,387690,NHS Lothian
+2007,S08000025,All,all_ages,20580,NHS Orkney
+2007,S08000025,Female,all_ages,10426,NHS Orkney
+2007,S08000025,Male,all_ages,10154,NHS Orkney
+2007,S08000026,All,all_ages,22350,NHS Shetland
+2007,S08000026,Female,all_ages,11108,NHS Shetland
+2007,S08000026,Male,all_ages,11242,NHS Shetland
+2007,S08000028,All,all_ages,27210,NHS Western Isles
+2007,S08000028,Female,all_ages,13809,NHS Western Isles
+2007,S08000028,Male,all_ages,13401,NHS Western Isles
+2007,S08000029,All,all_ages,358740,NHS Fife
+2007,S08000029,Female,all_ages,185555,NHS Fife
+2007,S08000029,Male,all_ages,173185,NHS Fife
+2007,S08000030,All,all_ages,398380,NHS Tayside
+2007,S08000030,Female,all_ages,206843,NHS Tayside
+2007,S08000030,Male,all_ages,191537,NHS Tayside
+2007,S08000031,All,all_ages,1112000,NHS Greater Glasgow and Clyde
+2007,S08000031,Female,all_ages,581409,NHS Greater Glasgow and Clyde
+2007,S08000031,Male,all_ages,530591,NHS Greater Glasgow and Clyde
+2007,S08000032,All,all_ages,641530,NHS Lanarkshire
+2007,S08000032,Female,all_ages,333182,NHS Lanarkshire
+2007,S08000032,Male,all_ages,308348,NHS Lanarkshire
+2008,S92000003,All,all_ages,5202900,Scotland
+2008,S92000003,Female,all_ages,2687602,Scotland
+2008,S92000003,Male,all_ages,2515298,Scotland
+2008,S08000015,All,all_ages,372120,NHS Ayrshire and Arran
+2008,S08000015,Female,all_ages,194246,NHS Ayrshire and Arran
+2008,S08000015,Male,all_ages,177874,NHS Ayrshire and Arran
+2008,S08000016,All,all_ages,113360,NHS Borders
+2008,S08000016,Female,all_ages,58508,NHS Borders
+2008,S08000016,Male,all_ages,54852,NHS Borders
+2008,S08000017,All,all_ages,151010,NHS Dumfries and Galloway
+2008,S08000017,Female,all_ages,77843,NHS Dumfries and Galloway
+2008,S08000017,Male,all_ages,73167,NHS Dumfries and Galloway
+2008,S08000019,All,all_ages,293020,NHS Forth Valley
+2008,S08000019,Female,all_ages,151121,NHS Forth Valley
+2008,S08000019,Male,all_ages,141899,NHS Forth Valley
+2008,S08000020,All,all_ages,553690,NHS Grampian
+2008,S08000020,Female,all_ages,279542,NHS Grampian
+2008,S08000020,Male,all_ages,274148,NHS Grampian
+2008,S08000022,All,all_ages,316880,NHS Highland
+2008,S08000022,Female,all_ages,161495,NHS Highland
+2008,S08000022,Male,all_ages,155385,NHS Highland
+2008,S08000024,All,all_ages,808940,NHS Lothian
+2008,S08000024,Female,all_ages,417195,NHS Lothian
+2008,S08000024,Male,all_ages,391745,NHS Lothian
+2008,S08000025,All,all_ages,20740,NHS Orkney
+2008,S08000025,Female,all_ages,10512,NHS Orkney
+2008,S08000025,Male,all_ages,10228,NHS Orkney
+2008,S08000026,All,all_ages,22480,NHS Shetland
+2008,S08000026,Female,all_ages,11129,NHS Shetland
+2008,S08000026,Male,all_ages,11351,NHS Shetland
+2008,S08000028,All,all_ages,27280,NHS Western Isles
+2008,S08000028,Female,all_ages,13837,NHS Western Isles
+2008,S08000028,Male,all_ages,13443,NHS Western Isles
+2008,S08000029,All,all_ages,360040,NHS Fife
+2008,S08000029,Female,all_ages,186176,NHS Fife
+2008,S08000029,Male,all_ages,173864,NHS Fife
+2008,S08000030,All,all_ages,401910,NHS Tayside
+2008,S08000030,Female,all_ages,208413,NHS Tayside
+2008,S08000030,Male,all_ages,193497,NHS Tayside
+2008,S08000031,All,all_ages,1116840,NHS Greater Glasgow and Clyde
+2008,S08000031,Female,all_ages,582949,NHS Greater Glasgow and Clyde
+2008,S08000031,Male,all_ages,533891,NHS Greater Glasgow and Clyde
+2008,S08000032,All,all_ages,644590,NHS Lanarkshire
+2008,S08000032,Female,all_ages,334636,NHS Lanarkshire
+2008,S08000032,Male,all_ages,309954,NHS Lanarkshire
+2009,S92000003,All,all_ages,5231900,Scotland
+2009,S92000003,Female,all_ages,2699931,Scotland
+2009,S92000003,Male,all_ages,2531969,Scotland
+2009,S08000015,All,all_ages,372430,NHS Ayrshire and Arran
+2009,S08000015,Female,all_ages,194288,NHS Ayrshire and Arran
+2009,S08000015,Male,all_ages,178142,NHS Ayrshire and Arran
+2009,S08000016,All,all_ages,113590,NHS Borders
+2009,S08000016,Female,all_ages,58679,NHS Borders
+2009,S08000016,Male,all_ages,54911,NHS Borders
+2009,S08000017,All,all_ages,151160,NHS Dumfries and Galloway
+2009,S08000017,Female,all_ages,77981,NHS Dumfries and Galloway
+2009,S08000017,Male,all_ages,73179,NHS Dumfries and Galloway
+2009,S08000019,All,all_ages,294190,NHS Forth Valley
+2009,S08000019,Female,all_ages,151620,NHS Forth Valley
+2009,S08000019,Male,all_ages,142570,NHS Forth Valley
+2009,S08000020,All,all_ages,559200,NHS Grampian
+2009,S08000020,Female,all_ages,282399,NHS Grampian
+2009,S08000020,Male,all_ages,276801,NHS Grampian
+2009,S08000022,All,all_ages,318200,NHS Highland
+2009,S08000022,Female,all_ages,162216,NHS Highland
+2009,S08000022,Male,all_ages,155984,NHS Highland
+2009,S08000024,All,all_ages,816510,NHS Lothian
+2009,S08000024,Female,all_ages,420347,NHS Lothian
+2009,S08000024,Male,all_ages,396163,NHS Lothian
+2009,S08000025,All,all_ages,20940,NHS Orkney
+2009,S08000025,Female,all_ages,10609,NHS Orkney
+2009,S08000025,Male,all_ages,10331,NHS Orkney
+2009,S08000026,All,all_ages,22800,NHS Shetland
+2009,S08000026,Female,all_ages,11288,NHS Shetland
+2009,S08000026,Male,all_ages,11512,NHS Shetland
+2009,S08000028,All,all_ages,27420,NHS Western Isles
+2009,S08000028,Female,all_ages,13920,NHS Western Isles
+2009,S08000028,Male,all_ages,13500,NHS Western Isles
+2009,S08000029,All,all_ages,361420,NHS Fife
+2009,S08000029,Female,all_ages,186806,NHS Fife
+2009,S08000029,Male,all_ages,174614,NHS Fife
+2009,S08000030,All,all_ages,404370,NHS Tayside
+2009,S08000030,Female,all_ages,209437,NHS Tayside
+2009,S08000030,Male,all_ages,194933,NHS Tayside
+2009,S08000031,All,all_ages,1122330,NHS Greater Glasgow and Clyde
+2009,S08000031,Female,all_ages,584614,NHS Greater Glasgow and Clyde
+2009,S08000031,Male,all_ages,537716,NHS Greater Glasgow and Clyde
+2009,S08000032,All,all_ages,647340,NHS Lanarkshire
+2009,S08000032,Female,all_ages,335727,NHS Lanarkshire
+2009,S08000032,Male,all_ages,311613,NHS Lanarkshire
+2010,S92000003,All,all_ages,5262200,Scotland
+2010,S92000003,Female,all_ages,2713982,Scotland
+2010,S92000003,Male,all_ages,2548218,Scotland
+2010,S08000015,All,all_ages,372810,NHS Ayrshire and Arran
+2010,S08000015,Female,all_ages,194511,NHS Ayrshire and Arran
+2010,S08000015,Male,all_ages,178299,NHS Ayrshire and Arran
+2010,S08000016,All,all_ages,113700,NHS Borders
+2010,S08000016,Female,all_ages,58759,NHS Borders
+2010,S08000016,Male,all_ages,54941,NHS Borders
+2010,S08000017,All,all_ages,151100,NHS Dumfries and Galloway
+2010,S08000017,Female,all_ages,77919,NHS Dumfries and Galloway
+2010,S08000017,Male,all_ages,73181,NHS Dumfries and Galloway
+2010,S08000019,All,all_ages,296010,NHS Forth Valley
+2010,S08000019,Female,all_ages,152420,NHS Forth Valley
+2010,S08000019,Male,all_ages,143590,NHS Forth Valley
+2010,S08000020,All,all_ages,564850,NHS Grampian
+2010,S08000020,Female,all_ages,285341,NHS Grampian
+2010,S08000020,Male,all_ages,279509,NHS Grampian
+2010,S08000022,All,all_ages,319350,NHS Highland
+2010,S08000022,Female,all_ages,163184,NHS Highland
+2010,S08000022,Male,all_ages,156166,NHS Highland
+2010,S08000024,All,all_ages,825520,NHS Lothian
+2010,S08000024,Female,all_ages,424425,NHS Lothian
+2010,S08000024,Male,all_ages,401095,NHS Lothian
+2010,S08000025,All,all_ages,21220,NHS Orkney
+2010,S08000025,Female,all_ages,10749,NHS Orkney
+2010,S08000025,Male,all_ages,10471,NHS Orkney
+2010,S08000026,All,all_ages,23060,NHS Shetland
+2010,S08000026,Female,all_ages,11381,NHS Shetland
+2010,S08000026,Male,all_ages,11679,NHS Shetland
+2010,S08000028,All,all_ages,27600,NHS Western Isles
+2010,S08000028,Female,all_ages,13994,NHS Western Isles
+2010,S08000028,Male,all_ages,13606,NHS Western Isles
+2010,S08000029,All,all_ages,362610,NHS Fife
+2010,S08000029,Female,all_ages,187412,NHS Fife
+2010,S08000029,Male,all_ages,175198,NHS Fife
+2010,S08000030,All,all_ages,407070,NHS Tayside
+2010,S08000030,Female,all_ages,210510,NHS Tayside
+2010,S08000030,Male,all_ages,196560,NHS Tayside
+2010,S08000031,All,all_ages,1127840,NHS Greater Glasgow and Clyde
+2010,S08000031,Female,all_ages,586688,NHS Greater Glasgow and Clyde
+2010,S08000031,Male,all_ages,541152,NHS Greater Glasgow and Clyde
+2010,S08000032,All,all_ages,649460,NHS Lanarkshire
+2010,S08000032,Female,all_ages,336689,NHS Lanarkshire
+2010,S08000032,Male,all_ages,312771,NHS Lanarkshire
+2011,S92000003,All,all_ages,5299900,Scotland
+2011,S92000003,Female,all_ages,2729600,Scotland
+2011,S92000003,Male,all_ages,2570300,Scotland
+2011,S08000015,All,all_ages,373760,NHS Ayrshire and Arran
+2011,S08000015,Female,all_ages,194865,NHS Ayrshire and Arran
+2011,S08000015,Male,all_ages,178895,NHS Ayrshire and Arran
+2011,S08000016,All,all_ages,113880,NHS Borders
+2011,S08000016,Female,all_ages,58685,NHS Borders
+2011,S08000016,Male,all_ages,55195,NHS Borders
+2011,S08000017,All,all_ages,151410,NHS Dumfries and Galloway
+2011,S08000017,Female,all_ages,78031,NHS Dumfries and Galloway
+2011,S08000017,Male,all_ages,73379,NHS Dumfries and Galloway
+2011,S08000019,All,all_ages,298080,NHS Forth Valley
+2011,S08000019,Female,all_ages,153340,NHS Forth Valley
+2011,S08000019,Male,all_ages,144740,NHS Forth Valley
+2011,S08000020,All,all_ages,569580,NHS Grampian
+2011,S08000020,Female,all_ages,287808,NHS Grampian
+2011,S08000020,Male,all_ages,281772,NHS Grampian
+2011,S08000022,All,all_ages,321660,NHS Highland
+2011,S08000022,Female,all_ages,164052,NHS Highland
+2011,S08000022,Male,all_ages,157608,NHS Highland
+2011,S08000024,All,all_ages,836610,NHS Lothian
+2011,S08000024,Female,all_ages,429422,NHS Lothian
+2011,S08000024,Male,all_ages,407188,NHS Lothian
+2011,S08000025,All,all_ages,21420,NHS Orkney
+2011,S08000025,Female,all_ages,10810,NHS Orkney
+2011,S08000025,Male,all_ages,10610,NHS Orkney
+2011,S08000026,All,all_ages,23240,NHS Shetland
+2011,S08000026,Female,all_ages,11452,NHS Shetland
+2011,S08000026,Male,all_ages,11788,NHS Shetland
+2011,S08000028,All,all_ages,27690,NHS Western Isles
+2011,S08000028,Female,all_ages,14038,NHS Western Isles
+2011,S08000028,Male,all_ages,13652,NHS Western Isles
+2011,S08000029,All,all_ages,365300,NHS Fife
+2011,S08000029,Female,all_ages,188325,NHS Fife
+2011,S08000029,Male,all_ages,176975,NHS Fife
+2011,S08000030,All,all_ages,410250,NHS Tayside
+2011,S08000030,Female,all_ages,211607,NHS Tayside
+2011,S08000030,Male,all_ages,198643,NHS Tayside
+2011,S08000031,All,all_ages,1135400,NHS Greater Glasgow and Clyde
+2011,S08000031,Female,all_ages,589736,NHS Greater Glasgow and Clyde
+2011,S08000031,Male,all_ages,545664,NHS Greater Glasgow and Clyde
+2011,S08000032,All,all_ages,651620,NHS Lanarkshire
+2011,S08000032,Female,all_ages,337429,NHS Lanarkshire
+2011,S08000032,Male,all_ages,314191,NHS Lanarkshire
+2012,S92000003,All,all_ages,5313600,Scotland
+2012,S92000003,Female,all_ages,2736310,Scotland
+2012,S92000003,Male,all_ages,2577290,Scotland
+2012,S08000015,All,all_ages,373220,NHS Ayrshire and Arran
+2012,S08000015,Female,all_ages,194546,NHS Ayrshire and Arran
+2012,S08000015,Male,all_ages,178674,NHS Ayrshire and Arran
+2012,S08000016,All,all_ages,113720,NHS Borders
+2012,S08000016,Female,all_ages,58537,NHS Borders
+2012,S08000016,Male,all_ages,55183,NHS Borders
+2012,S08000017,All,all_ages,150840,NHS Dumfries and Galloway
+2012,S08000017,Female,all_ages,77628,NHS Dumfries and Galloway
+2012,S08000017,Male,all_ages,73212,NHS Dumfries and Galloway
+2012,S08000019,All,all_ages,299090,NHS Forth Valley
+2012,S08000019,Female,all_ages,153730,NHS Forth Valley
+2012,S08000019,Male,all_ages,145360,NHS Forth Valley
+2012,S08000020,All,all_ages,573400,NHS Grampian
+2012,S08000020,Female,all_ages,289772,NHS Grampian
+2012,S08000020,Male,all_ages,283628,NHS Grampian
+2012,S08000022,All,all_ages,319800,NHS Highland
+2012,S08000022,Female,all_ages,163584,NHS Highland
+2012,S08000022,Male,all_ages,156216,NHS Highland
+2012,S08000024,All,all_ages,843740,NHS Lothian
+2012,S08000024,Female,all_ages,433391,NHS Lothian
+2012,S08000024,Male,all_ages,410349,NHS Lothian
+2012,S08000025,All,all_ages,21530,NHS Orkney
+2012,S08000025,Female,all_ages,10837,NHS Orkney
+2012,S08000025,Male,all_ages,10693,NHS Orkney
+2012,S08000026,All,all_ages,23210,NHS Shetland
+2012,S08000026,Female,all_ages,11440,NHS Shetland
+2012,S08000026,Male,all_ages,11770,NHS Shetland
+2012,S08000028,All,all_ages,27560,NHS Western Isles
+2012,S08000028,Female,all_ages,13954,NHS Western Isles
+2012,S08000028,Male,all_ages,13606,NHS Western Isles
+2012,S08000029,All,all_ages,366210,NHS Fife
+2012,S08000029,Female,all_ages,188762,NHS Fife
+2012,S08000029,Male,all_ages,177448,NHS Fife
+2012,S08000030,All,all_ages,411740,NHS Tayside
+2012,S08000030,Female,all_ages,212142,NHS Tayside
+2012,S08000030,Male,all_ages,199598,NHS Tayside
+2012,S08000031,All,all_ages,1137320,NHS Greater Glasgow and Clyde
+2012,S08000031,Female,all_ages,590326,NHS Greater Glasgow and Clyde
+2012,S08000031,Male,all_ages,546994,NHS Greater Glasgow and Clyde
+2012,S08000032,All,all_ages,652220,NHS Lanarkshire
+2012,S08000032,Female,all_ages,337661,NHS Lanarkshire
+2012,S08000032,Male,all_ages,314559,NHS Lanarkshire
+2013,S92000003,All,all_ages,5327700,Scotland
+2013,S92000003,Female,all_ages,2741020,Scotland
+2013,S92000003,Male,all_ages,2586680,Scotland
+2013,S08000015,All,all_ages,372240,NHS Ayrshire and Arran
+2013,S08000015,Female,all_ages,193999,NHS Ayrshire and Arran
+2013,S08000015,Male,all_ages,178241,NHS Ayrshire and Arran
+2013,S08000016,All,all_ages,113880,NHS Borders
+2013,S08000016,Female,all_ages,58569,NHS Borders
+2013,S08000016,Male,all_ages,55311,NHS Borders
+2013,S08000017,All,all_ages,150280,NHS Dumfries and Galloway
+2013,S08000017,Female,all_ages,77300,NHS Dumfries and Galloway
+2013,S08000017,Male,all_ages,72980,NHS Dumfries and Galloway
+2013,S08000019,All,all_ages,299670,NHS Forth Valley
+2013,S08000019,Female,all_ages,153879,NHS Forth Valley
+2013,S08000019,Male,all_ages,145791,NHS Forth Valley
+2013,S08000020,All,all_ages,579200,NHS Grampian
+2013,S08000020,Female,all_ages,292015,NHS Grampian
+2013,S08000020,Male,all_ages,287185,NHS Grampian
+2013,S08000022,All,all_ages,320980,NHS Highland
+2013,S08000022,Female,all_ages,163497,NHS Highland
+2013,S08000022,Male,all_ages,157483,NHS Highland
+2013,S08000024,All,all_ages,849720,NHS Lothian
+2013,S08000024,Female,all_ages,436772,NHS Lothian
+2013,S08000024,Male,all_ages,412948,NHS Lothian
+2013,S08000025,All,all_ages,21560,NHS Orkney
+2013,S08000025,Female,all_ages,10837,NHS Orkney
+2013,S08000025,Male,all_ages,10723,NHS Orkney
+2013,S08000026,All,all_ages,23200,NHS Shetland
+2013,S08000026,Female,all_ages,11429,NHS Shetland
+2013,S08000026,Male,all_ages,11771,NHS Shetland
+2013,S08000028,All,all_ages,27400,NHS Western Isles
+2013,S08000028,Female,all_ages,13881,NHS Western Isles
+2013,S08000028,Male,all_ages,13519,NHS Western Isles
+2013,S08000029,All,all_ages,366900,NHS Fife
+2013,S08000029,Female,all_ages,188929,NHS Fife
+2013,S08000029,Male,all_ages,177971,NHS Fife
+2013,S08000030,All,all_ages,412160,NHS Tayside
+2013,S08000030,Female,all_ages,212162,NHS Tayside
+2013,S08000030,Male,all_ages,199998,NHS Tayside
+2013,S08000031,All,all_ages,1137920,NHS Greater Glasgow and Clyde
+2013,S08000031,Female,all_ages,590076,NHS Greater Glasgow and Clyde
+2013,S08000031,Male,all_ages,547844,NHS Greater Glasgow and Clyde
+2013,S08000032,All,all_ages,652590,NHS Lanarkshire
+2013,S08000032,Female,all_ages,337675,NHS Lanarkshire
+2013,S08000032,Male,all_ages,314915,NHS Lanarkshire
+2014,S92000003,All,all_ages,5347600,Scotland
+2014,S92000003,Female,all_ages,2751070,Scotland
+2014,S92000003,Male,all_ages,2596530,Scotland
+2014,S08000015,All,all_ages,371140,NHS Ayrshire and Arran
+2014,S08000015,Female,all_ages,193403,NHS Ayrshire and Arran
+2014,S08000015,Male,all_ages,177737,NHS Ayrshire and Arran
+2014,S08000016,All,all_ages,114040,NHS Borders
+2014,S08000016,Female,all_ages,58721,NHS Borders
+2014,S08000016,Male,all_ages,55319,NHS Borders
+2014,S08000017,All,all_ages,149960,NHS Dumfries and Galloway
+2014,S08000017,Female,all_ages,77135,NHS Dumfries and Galloway
+2014,S08000017,Male,all_ages,72825,NHS Dumfries and Galloway
+2014,S08000019,All,all_ages,300400,NHS Forth Valley
+2014,S08000019,Female,all_ages,154275,NHS Forth Valley
+2014,S08000019,Male,all_ages,146125,NHS Forth Valley
+2014,S08000020,All,all_ages,584220,NHS Grampian
+2014,S08000020,Female,all_ages,294605,NHS Grampian
+2014,S08000020,Male,all_ages,289615,NHS Grampian
+2014,S08000022,All,all_ages,320730,NHS Highland
+2014,S08000022,Female,all_ages,163265,NHS Highland
+2014,S08000022,Male,all_ages,157465,NHS Highland
+2014,S08000024,All,all_ages,858120,NHS Lothian
+2014,S08000024,Female,all_ages,441033,NHS Lothian
+2014,S08000024,Male,all_ages,417087,NHS Lothian
+2014,S08000025,All,all_ages,21580,NHS Orkney
+2014,S08000025,Female,all_ages,10851,NHS Orkney
+2014,S08000025,Male,all_ages,10729,NHS Orkney
+2014,S08000026,All,all_ages,23220,NHS Shetland
+2014,S08000026,Female,all_ages,11427,NHS Shetland
+2014,S08000026,Male,all_ages,11793,NHS Shetland
+2014,S08000028,All,all_ages,27250,NHS Western Isles
+2014,S08000028,Female,all_ages,13806,NHS Western Isles
+2014,S08000028,Male,all_ages,13444,NHS Western Isles
+2014,S08000029,All,all_ages,367250,NHS Fife
+2014,S08000029,Female,all_ages,189338,NHS Fife
+2014,S08000029,Male,all_ages,177912,NHS Fife
+2014,S08000030,All,all_ages,413800,NHS Tayside
+2014,S08000030,Female,all_ages,212927,NHS Tayside
+2014,S08000030,Male,all_ages,200873,NHS Tayside
+2014,S08000031,All,all_ages,1142590,NHS Greater Glasgow and Clyde
+2014,S08000031,Female,all_ages,592212,NHS Greater Glasgow and Clyde
+2014,S08000031,Male,all_ages,550378,NHS Greater Glasgow and Clyde
+2014,S08000032,All,all_ages,653300,NHS Lanarkshire
+2014,S08000032,Female,all_ages,338072,NHS Lanarkshire
+2014,S08000032,Male,all_ages,315228,NHS Lanarkshire
+2015,S92000003,All,all_ages,5373000,Scotland
+2015,S92000003,Female,all_ages,2762531,Scotland
+2015,S92000003,Male,all_ages,2610469,Scotland
+2015,S08000015,All,all_ages,370590,NHS Ayrshire and Arran
+2015,S08000015,Female,all_ages,193011,NHS Ayrshire and Arran
+2015,S08000015,Male,all_ages,177579,NHS Ayrshire and Arran
+2015,S08000016,All,all_ages,114030,NHS Borders
+2015,S08000016,Female,all_ages,58757,NHS Borders
+2015,S08000016,Male,all_ages,55273,NHS Borders
+2015,S08000017,All,all_ages,149670,NHS Dumfries and Galloway
+2015,S08000017,Female,all_ages,76979,NHS Dumfries and Galloway
+2015,S08000017,Male,all_ages,72691,NHS Dumfries and Galloway
+2015,S08000019,All,all_ages,302650,NHS Forth Valley
+2015,S08000019,Female,all_ages,155337,NHS Forth Valley
+2015,S08000019,Male,all_ages,147313,NHS Forth Valley
+2015,S08000020,All,all_ages,587820,NHS Grampian
+2015,S08000020,Female,all_ages,296045,NHS Grampian
+2015,S08000020,Male,all_ages,291775,NHS Grampian
+2015,S08000022,All,all_ages,321000,NHS Highland
+2015,S08000022,Female,all_ages,163348,NHS Highland
+2015,S08000022,Male,all_ages,157652,NHS Highland
+2015,S08000024,All,all_ages,867800,NHS Lothian
+2015,S08000024,Female,all_ages,446236,NHS Lothian
+2015,S08000024,Male,all_ages,421564,NHS Lothian
+2015,S08000025,All,all_ages,21670,NHS Orkney
+2015,S08000025,Female,all_ages,10885,NHS Orkney
+2015,S08000025,Male,all_ages,10785,NHS Orkney
+2015,S08000026,All,all_ages,23200,NHS Shetland
+2015,S08000026,Female,all_ages,11417,NHS Shetland
+2015,S08000026,Male,all_ages,11783,NHS Shetland
+2015,S08000028,All,all_ages,27070,NHS Western Isles
+2015,S08000028,Female,all_ages,13696,NHS Western Isles
+2015,S08000028,Male,all_ages,13374,NHS Western Isles
+2015,S08000029,All,all_ages,368080,NHS Fife
+2015,S08000029,Female,all_ages,190033,NHS Fife
+2015,S08000029,Male,all_ages,178047,NHS Fife
+2015,S08000030,All,all_ages,415040,NHS Tayside
+2015,S08000030,Female,all_ages,213254,NHS Tayside
+2015,S08000030,Male,all_ages,201786,NHS Tayside
+2015,S08000031,All,all_ages,1149890,NHS Greater Glasgow and Clyde
+2015,S08000031,Female,all_ages,595046,NHS Greater Glasgow and Clyde
+2015,S08000031,Male,all_ages,554844,NHS Greater Glasgow and Clyde
+2015,S08000032,All,all_ages,654490,NHS Lanarkshire
+2015,S08000032,Female,all_ages,338487,NHS Lanarkshire
+2015,S08000032,Male,all_ages,316003,NHS Lanarkshire
+2016,S92000003,All,all_ages,5404700,Scotland
+2016,S92000003,Female,all_ages,2777197,Scotland
+2016,S92000003,Male,all_ages,2627503,Scotland
+2016,S08000015,All,all_ages,370560,NHS Ayrshire and Arran
+2016,S08000015,Female,all_ages,192958,NHS Ayrshire and Arran
+2016,S08000015,Male,all_ages,177602,NHS Ayrshire and Arran
+2016,S08000016,All,all_ages,114530,NHS Borders
+2016,S08000016,Female,all_ages,59014,NHS Borders
+2016,S08000016,Male,all_ages,55516,NHS Borders
+2016,S08000017,All,all_ages,149520,NHS Dumfries and Galloway
+2016,S08000017,Female,all_ages,76987,NHS Dumfries and Galloway
+2016,S08000017,Male,all_ages,72533,NHS Dumfries and Galloway
+2016,S08000019,All,all_ages,304480,NHS Forth Valley
+2016,S08000019,Female,all_ages,156206,NHS Forth Valley
+2016,S08000019,Male,all_ages,148274,NHS Forth Valley
+2016,S08000020,All,all_ages,588100,NHS Grampian
+2016,S08000020,Female,all_ages,295955,NHS Grampian
+2016,S08000020,Male,all_ages,292145,NHS Grampian
+2016,S08000022,All,all_ages,321900,NHS Highland
+2016,S08000022,Female,all_ages,163735,NHS Highland
+2016,S08000022,Male,all_ages,158165,NHS Highland
+2016,S08000024,All,all_ages,880000,NHS Lothian
+2016,S08000024,Female,all_ages,452560,NHS Lothian
+2016,S08000024,Male,all_ages,427440,NHS Lothian
+2016,S08000025,All,all_ages,21850,NHS Orkney
+2016,S08000025,Female,all_ages,10970,NHS Orkney
+2016,S08000025,Male,all_ages,10880,NHS Orkney
+2016,S08000026,All,all_ages,23200,NHS Shetland
+2016,S08000026,Female,all_ages,11417,NHS Shetland
+2016,S08000026,Male,all_ages,11783,NHS Shetland
+2016,S08000028,All,all_ages,26900,NHS Western Isles
+2016,S08000028,Female,all_ages,13631,NHS Western Isles
+2016,S08000028,Male,all_ages,13269,NHS Western Isles
+2016,S08000029,All,all_ages,370330,NHS Fife
+2016,S08000029,Female,all_ages,190778,NHS Fife
+2016,S08000029,Male,all_ages,179552,NHS Fife
+2016,S08000030,All,all_ages,415470,NHS Tayside
+2016,S08000030,Female,all_ages,213307,NHS Tayside
+2016,S08000030,Male,all_ages,202163,NHS Tayside
+2016,S08000031,All,all_ages,1161370,NHS Greater Glasgow and Clyde
+2016,S08000031,Female,all_ages,600426,NHS Greater Glasgow and Clyde
+2016,S08000031,Male,all_ages,560944,NHS Greater Glasgow and Clyde
+2016,S08000032,All,all_ages,656490,NHS Lanarkshire
+2016,S08000032,Female,all_ages,339253,NHS Lanarkshire
+2016,S08000032,Male,all_ages,317237,NHS Lanarkshire
+2017,S92000003,All,all_ages,5424800,Scotland
+2017,S92000003,Female,all_ages,2784500,Scotland
+2017,S92000003,Male,all_ages,2640300,Scotland
+2017,S08000015,All,all_ages,370410,NHS Ayrshire and Arran
+2017,S08000015,Female,all_ages,192800,NHS Ayrshire and Arran
+2017,S08000015,Male,all_ages,177610,NHS Ayrshire and Arran
+2017,S08000016,All,all_ages,115020,NHS Borders
+2017,S08000016,Female,all_ages,59231,NHS Borders
+2017,S08000016,Male,all_ages,55789,NHS Borders
+2017,S08000017,All,all_ages,149200,NHS Dumfries and Galloway
+2017,S08000017,Female,all_ages,76776,NHS Dumfries and Galloway
+2017,S08000017,Male,all_ages,72424,NHS Dumfries and Galloway
+2017,S08000019,All,all_ages,305580,NHS Forth Valley
+2017,S08000019,Female,all_ages,156744,NHS Forth Valley
+2017,S08000019,Male,all_ages,148836,NHS Forth Valley
+2017,S08000020,All,all_ages,586380,NHS Grampian
+2017,S08000020,Female,all_ages,294723,NHS Grampian
+2017,S08000020,Male,all_ages,291657,NHS Grampian
+2017,S08000022,All,all_ages,321990,NHS Highland
+2017,S08000022,Female,all_ages,163684,NHS Highland
+2017,S08000022,Male,all_ages,158306,NHS Highland
+2017,S08000024,All,all_ages,889450,NHS Lothian
+2017,S08000024,Female,all_ages,456938,NHS Lothian
+2017,S08000024,Male,all_ages,432512,NHS Lothian
+2017,S08000025,All,all_ages,22000,NHS Orkney
+2017,S08000025,Female,all_ages,11055,NHS Orkney
+2017,S08000025,Male,all_ages,10945,NHS Orkney
+2017,S08000026,All,all_ages,23080,NHS Shetland
+2017,S08000026,Female,all_ages,11349,NHS Shetland
+2017,S08000026,Male,all_ages,11731,NHS Shetland
+2017,S08000028,All,all_ages,26950,NHS Western Isles
+2017,S08000028,Female,all_ages,13640,NHS Western Isles
+2017,S08000028,Male,all_ages,13310,NHS Western Isles
+2017,S08000029,All,all_ages,371410,NHS Fife
+2017,S08000029,Female,all_ages,191098,NHS Fife
+2017,S08000029,Male,all_ages,180312,NHS Fife
+2017,S08000030,All,all_ages,416090,NHS Tayside
+2017,S08000030,Female,all_ages,213523,NHS Tayside
+2017,S08000030,Male,all_ages,202567,NHS Tayside
+2017,S08000031,All,all_ages,1169110,NHS Greater Glasgow and Clyde
+2017,S08000031,Female,all_ages,603083,NHS Greater Glasgow and Clyde
+2017,S08000031,Male,all_ages,566027,NHS Greater Glasgow and Clyde
+2017,S08000032,All,all_ages,658130,NHS Lanarkshire
+2017,S08000032,Female,all_ages,339856,NHS Lanarkshire
+2017,S08000032,Male,all_ages,318274,NHS Lanarkshire
+2018,S92000003,All,all_ages,5438100,Scotland
+2018,S92000003,Female,all_ages,2789349,Scotland
+2018,S92000003,Male,all_ages,2648751,Scotland
+2018,S08000015,All,all_ages,369670,NHS Ayrshire and Arran
+2018,S08000015,Female,all_ages,192454,NHS Ayrshire and Arran
+2018,S08000015,Male,all_ages,177216,NHS Ayrshire and Arran
+2018,S08000016,All,all_ages,115270,NHS Borders
+2018,S08000016,Female,all_ages,59281,NHS Borders
+2018,S08000016,Male,all_ages,55989,NHS Borders
+2018,S08000017,All,all_ages,148790,NHS Dumfries and Galloway
+2018,S08000017,Female,all_ages,76469,NHS Dumfries and Galloway
+2018,S08000017,Male,all_ages,72321,NHS Dumfries and Galloway
+2018,S08000019,All,all_ages,306070,NHS Forth Valley
+2018,S08000019,Female,all_ages,156903,NHS Forth Valley
+2018,S08000019,Male,all_ages,149167,NHS Forth Valley
+2018,S08000020,All,all_ages,584550,NHS Grampian
+2018,S08000020,Female,all_ages,293822,NHS Grampian
+2018,S08000020,Male,all_ages,290728,NHS Grampian
+2018,S08000022,All,all_ages,321800,NHS Highland
+2018,S08000022,Female,all_ages,163493,NHS Highland
+2018,S08000022,Male,all_ages,158307,NHS Highland
+2018,S08000024,All,all_ages,897770,NHS Lothian
+2018,S08000024,Female,all_ages,460831,NHS Lothian
+2018,S08000024,Male,all_ages,436939,NHS Lothian
+2018,S08000025,All,all_ages,22190,NHS Orkney
+2018,S08000025,Female,all_ages,11151,NHS Orkney
+2018,S08000025,Male,all_ages,11039,NHS Orkney
+2018,S08000026,All,all_ages,22990,NHS Shetland
+2018,S08000026,Female,all_ages,11277,NHS Shetland
+2018,S08000026,Male,all_ages,11713,NHS Shetland
+2018,S08000028,All,all_ages,26830,NHS Western Isles
+2018,S08000028,Female,all_ages,13583,NHS Western Isles
+2018,S08000028,Male,all_ages,13247,NHS Western Isles
+2018,S08000029,All,all_ages,371910,NHS Fife
+2018,S08000029,Female,all_ages,191290,NHS Fife
+2018,S08000029,Male,all_ages,180620,NHS Fife
+2018,S08000030,All,all_ages,416080,NHS Tayside
+2018,S08000030,Female,all_ages,213394,NHS Tayside
+2018,S08000030,Male,all_ages,202686,NHS Tayside
+2018,S08000031,All,all_ages,1174980,NHS Greater Glasgow and Clyde
+2018,S08000031,Female,all_ages,605223,NHS Greater Glasgow and Clyde
+2018,S08000031,Male,all_ages,569757,NHS Greater Glasgow and Clyde
+2018,S08000032,All,all_ages,659200,NHS Lanarkshire
+2018,S08000032,Female,all_ages,340178,NHS Lanarkshire
+2018,S08000032,Male,all_ages,319022,NHS Lanarkshire
+2019,S92000003,All,all_ages,5463300,Scotland
+2019,S92000003,Female,all_ages,2800297,Scotland
+2019,S92000003,Male,all_ages,2663003,Scotland
+2019,S08000015,All,all_ages,369360,NHS Ayrshire and Arran
+2019,S08000015,Female,all_ages,192311,NHS Ayrshire and Arran
+2019,S08000015,Male,all_ages,177049,NHS Ayrshire and Arran
+2019,S08000016,All,all_ages,115510,NHS Borders
+2019,S08000016,Female,all_ages,59387,NHS Borders
+2019,S08000016,Male,all_ages,56123,NHS Borders
+2019,S08000017,All,all_ages,148860,NHS Dumfries and Galloway
+2019,S08000017,Female,all_ages,76425,NHS Dumfries and Galloway
+2019,S08000017,Male,all_ages,72435,NHS Dumfries and Galloway
+2019,S08000019,All,all_ages,306640,NHS Forth Valley
+2019,S08000019,Female,all_ages,157013,NHS Forth Valley
+2019,S08000019,Male,all_ages,149627,NHS Forth Valley
+2019,S08000020,All,all_ages,585700,NHS Grampian
+2019,S08000020,Female,all_ages,294417,NHS Grampian
+2019,S08000020,Male,all_ages,291283,NHS Grampian
+2019,S08000022,All,all_ages,321700,NHS Highland
+2019,S08000022,Female,all_ages,163389,NHS Highland
+2019,S08000022,Male,all_ages,158311,NHS Highland
+2019,S08000024,All,all_ages,907580,NHS Lothian
+2019,S08000024,Female,all_ages,465457,NHS Lothian
+2019,S08000024,Male,all_ages,442123,NHS Lothian
+2019,S08000025,All,all_ages,22270,NHS Orkney
+2019,S08000025,Female,all_ages,11184,NHS Orkney
+2019,S08000025,Male,all_ages,11086,NHS Orkney
+2019,S08000026,All,all_ages,22920,NHS Shetland
+2019,S08000026,Female,all_ages,11235,NHS Shetland
+2019,S08000026,Male,all_ages,11685,NHS Shetland
+2019,S08000028,All,all_ages,26720,NHS Western Isles
+2019,S08000028,Female,all_ages,13524,NHS Western Isles
+2019,S08000028,Male,all_ages,13196,NHS Western Isles
+2019,S08000029,All,all_ages,373550,NHS Fife
+2019,S08000029,Female,all_ages,192136,NHS Fife
+2019,S08000029,Male,all_ages,181414,NHS Fife
+2019,S08000030,All,all_ages,417470,NHS Tayside
+2019,S08000030,Female,all_ages,213889,NHS Tayside
+2019,S08000030,Male,all_ages,203581,NHS Tayside
+2019,S08000031,All,all_ages,1183120,NHS Greater Glasgow and Clyde
+2019,S08000031,Female,all_ages,608426,NHS Greater Glasgow and Clyde
+2019,S08000031,Male,all_ages,574694,NHS Greater Glasgow and Clyde
+2019,S08000032,All,all_ages,661900,NHS Lanarkshire
+2019,S08000032,Female,all_ages,341504,NHS Lanarkshire
+2019,S08000032,Male,all_ages,320396,NHS Lanarkshire
+2020,S92000003,All,all_ages,5464679,Scotland
+2020,S92000003,Female,all_ages,2800499,Scotland
+2020,S92000003,Male,all_ages,2664180,Scotland
+2020,S08000015,All,all_ages,368549,NHS Ayrshire and Arran
+2020,S08000015,Female,all_ages,191853,NHS Ayrshire and Arran
+2020,S08000015,Male,all_ages,176696,NHS Ayrshire and Arran
+2020,S08000016,All,all_ages,115472,NHS Borders
+2020,S08000016,Female,all_ages,59372,NHS Borders
+2020,S08000016,Male,all_ages,56100,NHS Borders
+2020,S08000017,All,all_ages,148140,NHS Dumfries and Galloway
+2020,S08000017,Female,all_ages,76074,NHS Dumfries and Galloway
+2020,S08000017,Male,all_ages,72066,NHS Dumfries and Galloway
+2020,S08000019,All,all_ages,308248,NHS Forth Valley
+2020,S08000019,Female,all_ages,157935,NHS Forth Valley
+2020,S08000019,Male,all_ages,150313,NHS Forth Valley
+2020,S08000020,All,all_ages,586466,NHS Grampian
+2020,S08000020,Female,all_ages,294515,NHS Grampian
+2020,S08000020,Male,all_ages,291951,NHS Grampian
+2020,S08000022,All,all_ages,321398,NHS Highland
+2020,S08000022,Female,all_ages,163274,NHS Highland
+2020,S08000022,Male,all_ages,158124,NHS Highland
+2020,S08000024,All,all_ages,912771,NHS Lothian
+2020,S08000024,Female,all_ages,468047,NHS Lothian
+2020,S08000024,Male,all_ages,444724,NHS Lothian
+2020,S08000025,All,all_ages,22272,NHS Orkney
+2020,S08000025,Female,all_ages,11193,NHS Orkney
+2020,S08000025,Male,all_ages,11079,NHS Orkney
+2020,S08000026,All,all_ages,22987,NHS Shetland
+2020,S08000026,Female,all_ages,11234,NHS Shetland
+2020,S08000026,Male,all_ages,11753,NHS Shetland
+2020,S08000028,All,all_ages,26535,NHS Western Isles
+2020,S08000028,Female,all_ages,13451,NHS Western Isles
+2020,S08000028,Male,all_ages,13084,NHS Western Isles
+2020,S08000029,All,all_ages,371882,NHS Fife
+2020,S08000029,Female,all_ages,190750,NHS Fife
+2020,S08000029,Male,all_ages,181132,NHS Fife
+2020,S08000030,All,all_ages,416770,NHS Tayside
+2020,S08000030,Female,all_ages,213608,NHS Tayside
+2020,S08000030,Male,all_ages,203162,NHS Tayside
+2020,S08000031,All,all_ages,1182138,NHS Greater Glasgow and Clyde
+2020,S08000031,Female,all_ages,608329,NHS Greater Glasgow and Clyde
+2020,S08000031,Male,all_ages,573809,NHS Greater Glasgow and Clyde
+2020,S08000032,All,all_ages,661051,NHS Lanarkshire
+2020,S08000032,Female,all_ages,340864,NHS Lanarkshire
+2020,S08000032,Male,all_ages,320187,NHS Lanarkshire
+2021,S92000003,All,all_ages,5475660,Scotland
+2021,S92000003,Female,all_ages,2804871,Scotland
+2021,S92000003,Male,all_ages,2670789,Scotland
+2021,S08000015,All,all_ages,367797,NHS Ayrshire and Arran
+2021,S08000015,Female,all_ages,191462,NHS Ayrshire and Arran
+2021,S08000015,Male,all_ages,176335,NHS Ayrshire and Arran
+2021,S08000016,All,all_ages,115588,NHS Borders
+2021,S08000016,Female,all_ages,59436,NHS Borders
+2021,S08000016,Male,all_ages,56152,NHS Borders
+2021,S08000017,All,all_ages,147742,NHS Dumfries and Galloway
+2021,S08000017,Female,all_ages,75854,NHS Dumfries and Galloway
+2021,S08000017,Male,all_ages,71888,NHS Dumfries and Galloway
+2021,S08000019,All,all_ages,309321,NHS Forth Valley
+2021,S08000019,Female,all_ages,158436,NHS Forth Valley
+2021,S08000019,Male,all_ages,150885,NHS Forth Valley
+2021,S08000020,All,all_ages,587212,NHS Grampian
+2021,S08000020,Female,all_ages,294648,NHS Grampian
+2021,S08000020,Male,all_ages,292564,NHS Grampian
+2021,S08000022,All,all_ages,321162,NHS Highland
+2021,S08000022,Female,all_ages,163142,NHS Highland
+2021,S08000022,Male,all_ages,158020,NHS Highland
+2021,S08000024,All,all_ages,919624,NHS Lothian
+2021,S08000024,Female,all_ages,471312,NHS Lothian
+2021,S08000024,Male,all_ages,448312,NHS Lothian
+2021,S08000025,All,all_ages,22295,NHS Orkney
+2021,S08000025,Female,all_ages,11195,NHS Orkney
+2021,S08000025,Male,all_ages,11100,NHS Orkney
+2021,S08000026,All,all_ages,22992,NHS Shetland
+2021,S08000026,Female,all_ages,11219,NHS Shetland
+2021,S08000026,Male,all_ages,11773,NHS Shetland
+2021,S08000028,All,all_ages,26375,NHS Western Isles
+2021,S08000028,Female,all_ages,13371,NHS Western Isles
+2021,S08000028,Male,all_ages,13004,NHS Western Isles
+2021,S08000029,All,all_ages,371856,NHS Fife
+2021,S08000029,Female,all_ages,190533,NHS Fife
+2021,S08000029,Male,all_ages,181323,NHS Fife
+2021,S08000030,All,all_ages,416792,NHS Tayside
+2021,S08000030,Female,all_ages,213576,NHS Tayside
+2021,S08000030,Male,all_ages,203216,NHS Tayside
+2021,S08000031,All,all_ages,1185013,NHS Greater Glasgow and Clyde
+2021,S08000031,Female,all_ages,609556,NHS Greater Glasgow and Clyde
+2021,S08000031,Male,all_ages,575457,NHS Greater Glasgow and Clyde
+2021,S08000032,All,all_ages,661891,NHS Lanarkshire
+2021,S08000032,Female,all_ages,341131,NHS Lanarkshire
+2021,S08000032,Male,all_ages,320760,NHS Lanarkshire
+2022,S92000003,All,all_ages,5485890,Scotland
+2022,S92000003,Female,all_ages,2808914,Scotland
+2022,S92000003,Male,all_ages,2676976,Scotland
+2022,S08000015,All,all_ages,366993,NHS Ayrshire and Arran
+2022,S08000015,Female,all_ages,191045,NHS Ayrshire and Arran
+2022,S08000015,Male,all_ages,175948,NHS Ayrshire and Arran
+2022,S08000016,All,all_ages,115769,NHS Borders
+2022,S08000016,Female,all_ages,59525,NHS Borders
+2022,S08000016,Male,all_ages,56244,NHS Borders
+2022,S08000017,All,all_ages,147316,NHS Dumfries and Galloway
+2022,S08000017,Female,all_ages,75603,NHS Dumfries and Galloway
+2022,S08000017,Male,all_ages,71713,NHS Dumfries and Galloway
+2022,S08000019,All,all_ages,310215,NHS Forth Valley
+2022,S08000019,Female,all_ages,158825,NHS Forth Valley
+2022,S08000019,Male,all_ages,151390,NHS Forth Valley
+2022,S08000020,All,all_ages,588165,NHS Grampian
+2022,S08000020,Female,all_ages,294866,NHS Grampian
+2022,S08000020,Male,all_ages,293299,NHS Grampian
+2022,S08000022,All,all_ages,320809,NHS Highland
+2022,S08000022,Female,all_ages,162939,NHS Highland
+2022,S08000022,Male,all_ages,157870,NHS Highland
+2022,S08000024,All,all_ages,926160,NHS Lothian
+2022,S08000024,Female,all_ages,474460,NHS Lothian
+2022,S08000024,Male,all_ages,451700,NHS Lothian
+2022,S08000025,All,all_ages,22318,NHS Orkney
+2022,S08000025,Female,all_ages,11207,NHS Orkney
+2022,S08000025,Male,all_ages,11111,NHS Orkney
+2022,S08000026,All,all_ages,22982,NHS Shetland
+2022,S08000026,Female,all_ages,11200,NHS Shetland
+2022,S08000026,Male,all_ages,11782,NHS Shetland
+2022,S08000028,All,all_ages,26203,NHS Western Isles
+2022,S08000028,Female,all_ages,13288,NHS Western Isles
+2022,S08000028,Male,all_ages,12915,NHS Western Isles
+2022,S08000029,All,all_ages,371901,NHS Fife
+2022,S08000029,Female,all_ages,190393,NHS Fife
+2022,S08000029,Male,all_ages,181508,NHS Fife
+2022,S08000030,All,all_ages,416803,NHS Tayside
+2022,S08000030,Female,all_ages,213559,NHS Tayside
+2022,S08000030,Male,all_ages,203244,NHS Tayside
+2022,S08000031,All,all_ages,1187525,NHS Greater Glasgow and Clyde
+2022,S08000031,Female,all_ages,610604,NHS Greater Glasgow and Clyde
+2022,S08000031,Male,all_ages,576921,NHS Greater Glasgow and Clyde
+2022,S08000032,All,all_ages,662731,NHS Lanarkshire
+2022,S08000032,Female,all_ages,341400,NHS Lanarkshire
+2022,S08000032,Male,all_ages,321331,NHS Lanarkshire
+2023,S92000003,All,all_ages,5495578,Scotland
+2023,S92000003,Female,all_ages,2812742,Scotland
+2023,S92000003,Male,all_ages,2682836,Scotland
+2023,S08000015,All,all_ages,366110,NHS Ayrshire and Arran
+2023,S08000015,Female,all_ages,190589,NHS Ayrshire and Arran
+2023,S08000015,Male,all_ages,175521,NHS Ayrshire and Arran
+2023,S08000016,All,all_ages,115873,NHS Borders
+2023,S08000016,Female,all_ages,59555,NHS Borders
+2023,S08000016,Male,all_ages,56318,NHS Borders
+2023,S08000017,All,all_ages,146886,NHS Dumfries and Galloway
+2023,S08000017,Female,all_ages,75350,NHS Dumfries and Galloway
+2023,S08000017,Male,all_ages,71536,NHS Dumfries and Galloway
+2023,S08000019,All,all_ages,311112,NHS Forth Valley
+2023,S08000019,Female,all_ages,159264,NHS Forth Valley
+2023,S08000019,Male,all_ages,151848,NHS Forth Valley
+2023,S08000020,All,all_ages,589278,NHS Grampian
+2023,S08000020,Female,all_ages,295179,NHS Grampian
+2023,S08000020,Male,all_ages,294099,NHS Grampian
+2023,S08000022,All,all_ages,320439,NHS Highland
+2023,S08000022,Female,all_ages,162733,NHS Highland
+2023,S08000022,Male,all_ages,157706,NHS Highland
+2023,S08000024,All,all_ages,932555,NHS Lothian
+2023,S08000024,Female,all_ages,477566,NHS Lothian
+2023,S08000024,Male,all_ages,454989,NHS Lothian
+2023,S08000025,All,all_ages,22338,NHS Orkney
+2023,S08000025,Female,all_ages,11212,NHS Orkney
+2023,S08000025,Male,all_ages,11126,NHS Orkney
+2023,S08000026,All,all_ages,22973,NHS Shetland
+2023,S08000026,Female,all_ages,11178,NHS Shetland
+2023,S08000026,Male,all_ages,11795,NHS Shetland
+2023,S08000028,All,all_ages,26025,NHS Western Isles
+2023,S08000028,Female,all_ages,13200,NHS Western Isles
+2023,S08000028,Male,all_ages,12825,NHS Western Isles
+2023,S08000029,All,all_ages,371858,NHS Fife
+2023,S08000029,Female,all_ages,190225,NHS Fife
+2023,S08000029,Male,all_ages,181633,NHS Fife
+2023,S08000030,All,all_ages,416817,NHS Tayside
+2023,S08000030,Female,all_ages,213547,NHS Tayside
+2023,S08000030,Male,all_ages,203270,NHS Tayside
+2023,S08000031,All,all_ages,1189829,NHS Greater Glasgow and Clyde
+2023,S08000031,Female,all_ages,611519,NHS Greater Glasgow and Clyde
+2023,S08000031,Male,all_ages,578310,NHS Greater Glasgow and Clyde
+2023,S08000032,All,all_ages,663485,NHS Lanarkshire
+2023,S08000032,Female,all_ages,341625,NHS Lanarkshire
+2023,S08000032,Male,all_ages,321860,NHS Lanarkshire
+2024,S92000003,All,all_ages,5504866,Scotland
+2024,S92000003,Female,all_ages,2816433,Scotland
+2024,S92000003,Male,all_ages,2688433,Scotland
+2024,S08000015,All,all_ages,365228,NHS Ayrshire and Arran
+2024,S08000015,Female,all_ages,190113,NHS Ayrshire and Arran
+2024,S08000015,Male,all_ages,175115,NHS Ayrshire and Arran
+2024,S08000016,All,all_ages,115985,NHS Borders
+2024,S08000016,Female,all_ages,59602,NHS Borders
+2024,S08000016,Male,all_ages,56383,NHS Borders
+2024,S08000017,All,all_ages,146442,NHS Dumfries and Galloway
+2024,S08000017,Female,all_ages,75091,NHS Dumfries and Galloway
+2024,S08000017,Male,all_ages,71351,NHS Dumfries and Galloway
+2024,S08000019,All,all_ages,312030,NHS Forth Valley
+2024,S08000019,Female,all_ages,159712,NHS Forth Valley
+2024,S08000019,Male,all_ages,152318,NHS Forth Valley
+2024,S08000020,All,all_ages,590374,NHS Grampian
+2024,S08000020,Female,all_ages,295470,NHS Grampian
+2024,S08000020,Male,all_ages,294904,NHS Grampian
+2024,S08000022,All,all_ages,320000,NHS Highland
+2024,S08000022,Female,all_ages,162507,NHS Highland
+2024,S08000022,Male,all_ages,157493,NHS Highland
+2024,S08000024,All,all_ages,938830,NHS Lothian
+2024,S08000024,Female,all_ages,480647,NHS Lothian
+2024,S08000024,Male,all_ages,458183,NHS Lothian
+2024,S08000025,All,all_ages,22341,NHS Orkney
+2024,S08000025,Female,all_ages,11203,NHS Orkney
+2024,S08000025,Male,all_ages,11138,NHS Orkney
+2024,S08000026,All,all_ages,22956,NHS Shetland
+2024,S08000026,Female,all_ages,11152,NHS Shetland
+2024,S08000026,Male,all_ages,11804,NHS Shetland
+2024,S08000028,All,all_ages,25855,NHS Western Isles
+2024,S08000028,Female,all_ages,13121,NHS Western Isles
+2024,S08000028,Male,all_ages,12734,NHS Western Isles
+2024,S08000029,All,all_ages,371824,NHS Fife
+2024,S08000029,Female,all_ages,190085,NHS Fife
+2024,S08000029,Male,all_ages,181739,NHS Fife
+2024,S08000030,All,all_ages,416759,NHS Tayside
+2024,S08000030,Female,all_ages,213494,NHS Tayside
+2024,S08000030,Male,all_ages,203265,NHS Tayside
+2024,S08000031,All,all_ages,1192016,NHS Greater Glasgow and Clyde
+2024,S08000031,Female,all_ages,612385,NHS Greater Glasgow and Clyde
+2024,S08000031,Male,all_ages,579631,NHS Greater Glasgow and Clyde
+2024,S08000032,All,all_ages,664226,NHS Lanarkshire
+2024,S08000032,Female,all_ages,341851,NHS Lanarkshire
+2024,S08000032,Male,all_ages,322375,NHS Lanarkshire
+2025,S92000003,All,all_ages,5513731,Scotland
+2025,S92000003,Female,all_ages,2819981,Scotland
+2025,S92000003,Male,all_ages,2693750,Scotland
+2025,S08000015,All,all_ages,364357,NHS Ayrshire and Arran
+2025,S08000015,Female,all_ages,189665,NHS Ayrshire and Arran
+2025,S08000015,Male,all_ages,174692,NHS Ayrshire and Arran
+2025,S08000016,All,all_ages,116113,NHS Borders
+2025,S08000016,Female,all_ages,59663,NHS Borders
+2025,S08000016,Male,all_ages,56450,NHS Borders
+2025,S08000017,All,all_ages,146009,NHS Dumfries and Galloway
+2025,S08000017,Female,all_ages,74843,NHS Dumfries and Galloway
+2025,S08000017,Male,all_ages,71166,NHS Dumfries and Galloway
+2025,S08000019,All,all_ages,312922,NHS Forth Valley
+2025,S08000019,Female,all_ages,160132,NHS Forth Valley
+2025,S08000019,Male,all_ages,152790,NHS Forth Valley
+2025,S08000020,All,all_ages,591282,NHS Grampian
+2025,S08000020,Female,all_ages,295713,NHS Grampian
+2025,S08000020,Male,all_ages,295569,NHS Grampian
+2025,S08000022,All,all_ages,319534,NHS Highland
+2025,S08000022,Female,all_ages,162210,NHS Highland
+2025,S08000022,Male,all_ages,157324,NHS Highland
+2025,S08000024,All,all_ages,944997,NHS Lothian
+2025,S08000024,Female,all_ages,483690,NHS Lothian
+2025,S08000024,Male,all_ages,461307,NHS Lothian
+2025,S08000025,All,all_ages,22344,NHS Orkney
+2025,S08000025,Female,all_ages,11197,NHS Orkney
+2025,S08000025,Male,all_ages,11147,NHS Orkney
+2025,S08000026,All,all_ages,22919,NHS Shetland
+2025,S08000026,Female,all_ages,11115,NHS Shetland
+2025,S08000026,Male,all_ages,11804,NHS Shetland
+2025,S08000028,All,all_ages,25689,NHS Western Isles
+2025,S08000028,Female,all_ages,13045,NHS Western Isles
+2025,S08000028,Male,all_ages,12644,NHS Western Isles
+2025,S08000029,All,all_ages,371799,NHS Fife
+2025,S08000029,Female,all_ages,189973,NHS Fife
+2025,S08000029,Male,all_ages,181826,NHS Fife
+2025,S08000030,All,all_ages,416670,NHS Tayside
+2025,S08000030,Female,all_ages,213447,NHS Tayside
+2025,S08000030,Male,all_ages,203223,NHS Tayside
+2025,S08000031,All,all_ages,1194206,NHS Greater Glasgow and Clyde
+2025,S08000031,Female,all_ages,613265,NHS Greater Glasgow and Clyde
+2025,S08000031,Male,all_ages,580941,NHS Greater Glasgow and Clyde
+2025,S08000032,All,all_ages,664890,NHS Lanarkshire
+2025,S08000032,Female,all_ages,342023,NHS Lanarkshire
+2025,S08000032,Male,all_ages,322867,NHS Lanarkshire
+2026,S92000003,All,all_ages,5522085,Scotland
+2026,S92000003,Female,all_ages,2823334,Scotland
+2026,S92000003,Male,all_ages,2698751,Scotland
+2026,S08000015,All,all_ages,363427,NHS Ayrshire and Arran
+2026,S08000015,Female,all_ages,189174,NHS Ayrshire and Arran
+2026,S08000015,Male,all_ages,174253,NHS Ayrshire and Arran
+2026,S08000016,All,all_ages,116253,NHS Borders
+2026,S08000016,Female,all_ages,59731,NHS Borders
+2026,S08000016,Male,all_ages,56522,NHS Borders
+2026,S08000017,All,all_ages,145529,NHS Dumfries and Galloway
+2026,S08000017,Female,all_ages,74568,NHS Dumfries and Galloway
+2026,S08000017,Male,all_ages,70961,NHS Dumfries and Galloway
+2026,S08000019,All,all_ages,313822,NHS Forth Valley
+2026,S08000019,Female,all_ages,160541,NHS Forth Valley
+2026,S08000019,Male,all_ages,153281,NHS Forth Valley
+2026,S08000020,All,all_ages,592107,NHS Grampian
+2026,S08000020,Female,all_ages,295950,NHS Grampian
+2026,S08000020,Male,all_ages,296157,NHS Grampian
+2026,S08000022,All,all_ages,319035,NHS Highland
+2026,S08000022,Female,all_ages,161914,NHS Highland
+2026,S08000022,Male,all_ages,157121,NHS Highland
+2026,S08000024,All,all_ages,950993,NHS Lothian
+2026,S08000024,Female,all_ages,486647,NHS Lothian
+2026,S08000024,Male,all_ages,464346,NHS Lothian
+2026,S08000025,All,all_ages,22340,NHS Orkney
+2026,S08000025,Female,all_ages,11186,NHS Orkney
+2026,S08000025,Male,all_ages,11154,NHS Orkney
+2026,S08000026,All,all_ages,22896,NHS Shetland
+2026,S08000026,Female,all_ages,11093,NHS Shetland
+2026,S08000026,Male,all_ages,11803,NHS Shetland
+2026,S08000028,All,all_ages,25524,NHS Western Isles
+2026,S08000028,Female,all_ages,12969,NHS Western Isles
+2026,S08000028,Male,all_ages,12555,NHS Western Isles
+2026,S08000029,All,all_ages,371717,NHS Fife
+2026,S08000029,Female,all_ages,189820,NHS Fife
+2026,S08000029,Male,all_ages,181897,NHS Fife
+2026,S08000030,All,all_ages,416566,NHS Tayside
+2026,S08000030,Female,all_ages,213379,NHS Tayside
+2026,S08000030,Male,all_ages,203187,NHS Tayside
+2026,S08000031,All,all_ages,1196441,NHS Greater Glasgow and Clyde
+2026,S08000031,Female,all_ages,614218,NHS Greater Glasgow and Clyde
+2026,S08000031,Male,all_ages,582223,NHS Greater Glasgow and Clyde
+2026,S08000032,All,all_ages,665435,NHS Lanarkshire
+2026,S08000032,Female,all_ages,342144,NHS Lanarkshire
+2026,S08000032,Male,all_ages,323291,NHS Lanarkshire
+2027,S92000003,All,all_ages,5529888,Scotland
+2027,S92000003,Female,all_ages,2826469,Scotland
+2027,S92000003,Male,all_ages,2703419,Scotland
+2027,S08000015,All,all_ages,362426,NHS Ayrshire and Arran
+2027,S08000015,Female,all_ages,188644,NHS Ayrshire and Arran
+2027,S08000015,Male,all_ages,173782,NHS Ayrshire and Arran
+2027,S08000016,All,all_ages,116344,NHS Borders
+2027,S08000016,Female,all_ages,59758,NHS Borders
+2027,S08000016,Male,all_ages,56586,NHS Borders
+2027,S08000017,All,all_ages,145046,NHS Dumfries and Galloway
+2027,S08000017,Female,all_ages,74305,NHS Dumfries and Galloway
+2027,S08000017,Male,all_ages,70741,NHS Dumfries and Galloway
+2027,S08000019,All,all_ages,314649,NHS Forth Valley
+2027,S08000019,Female,all_ages,160916,NHS Forth Valley
+2027,S08000019,Male,all_ages,153733,NHS Forth Valley
+2027,S08000020,All,all_ages,592849,NHS Grampian
+2027,S08000020,Female,all_ages,296142,NHS Grampian
+2027,S08000020,Male,all_ages,296707,NHS Grampian
+2027,S08000022,All,all_ages,318473,NHS Highland
+2027,S08000022,Female,all_ages,161592,NHS Highland
+2027,S08000022,Male,all_ages,156881,NHS Highland
+2027,S08000024,All,all_ages,956955,NHS Lothian
+2027,S08000024,Female,all_ages,489600,NHS Lothian
+2027,S08000024,Male,all_ages,467355,NHS Lothian
+2027,S08000025,All,all_ages,22331,NHS Orkney
+2027,S08000025,Female,all_ages,11164,NHS Orkney
+2027,S08000025,Male,all_ages,11167,NHS Orkney
+2027,S08000026,All,all_ages,22872,NHS Shetland
+2027,S08000026,Female,all_ages,11070,NHS Shetland
+2027,S08000026,Male,all_ages,11802,NHS Shetland
+2027,S08000028,All,all_ages,25347,NHS Western Isles
+2027,S08000028,Female,all_ages,12887,NHS Western Isles
+2027,S08000028,Male,all_ages,12460,NHS Western Isles
+2027,S08000029,All,all_ages,371591,NHS Fife
+2027,S08000029,Female,all_ages,189657,NHS Fife
+2027,S08000029,Male,all_ages,181934,NHS Fife
+2027,S08000030,All,all_ages,416436,NHS Tayside
+2027,S08000030,Female,all_ages,213315,NHS Tayside
+2027,S08000030,Male,all_ages,203121,NHS Tayside
+2027,S08000031,All,all_ages,1198586,NHS Greater Glasgow and Clyde
+2027,S08000031,Female,all_ages,615145,NHS Greater Glasgow and Clyde
+2027,S08000031,Male,all_ages,583441,NHS Greater Glasgow and Clyde
+2027,S08000032,All,all_ages,665983,NHS Lanarkshire
+2027,S08000032,Female,all_ages,342274,NHS Lanarkshire
+2027,S08000032,Male,all_ages,323709,NHS Lanarkshire
+2028,S92000003,All,all_ages,5537116,Scotland
+2028,S92000003,Female,all_ages,2829348,Scotland
+2028,S92000003,Male,all_ages,2707768,Scotland
+2028,S08000015,All,all_ages,361385,NHS Ayrshire and Arran
+2028,S08000015,Female,all_ages,188081,NHS Ayrshire and Arran
+2028,S08000015,Male,all_ages,173304,NHS Ayrshire and Arran
+2028,S08000016,All,all_ages,116435,NHS Borders
+2028,S08000016,Female,all_ages,59800,NHS Borders
+2028,S08000016,Male,all_ages,56635,NHS Borders
+2028,S08000017,All,all_ages,144575,NHS Dumfries and Galloway
+2028,S08000017,Female,all_ages,74049,NHS Dumfries and Galloway
+2028,S08000017,Male,all_ages,70526,NHS Dumfries and Galloway
+2028,S08000019,All,all_ages,315492,NHS Forth Valley
+2028,S08000019,Female,all_ages,161289,NHS Forth Valley
+2028,S08000019,Male,all_ages,154203,NHS Forth Valley
+2028,S08000020,All,all_ages,593475,NHS Grampian
+2028,S08000020,Female,all_ages,296269,NHS Grampian
+2028,S08000020,Male,all_ages,297206,NHS Grampian
+2028,S08000022,All,all_ages,317861,NHS Highland
+2028,S08000022,Female,all_ages,161253,NHS Highland
+2028,S08000022,Male,all_ages,156608,NHS Highland
+2028,S08000024,All,all_ages,962745,NHS Lothian
+2028,S08000024,Female,all_ages,492445,NHS Lothian
+2028,S08000024,Male,all_ages,470300,NHS Lothian
+2028,S08000025,All,all_ages,22311,NHS Orkney
+2028,S08000025,Female,all_ages,11146,NHS Orkney
+2028,S08000025,Male,all_ages,11165,NHS Orkney
+2028,S08000026,All,all_ages,22824,NHS Shetland
+2028,S08000026,Female,all_ages,11034,NHS Shetland
+2028,S08000026,Male,all_ages,11790,NHS Shetland
+2028,S08000028,All,all_ages,25181,NHS Western Isles
+2028,S08000028,Female,all_ages,12812,NHS Western Isles
+2028,S08000028,Male,all_ages,12369,NHS Western Isles
+2028,S08000029,All,all_ages,371430,NHS Fife
+2028,S08000029,Female,all_ages,189492,NHS Fife
+2028,S08000029,Male,all_ages,181938,NHS Fife
+2028,S08000030,All,all_ages,416267,NHS Tayside
+2028,S08000030,Female,all_ages,213226,NHS Tayside
+2028,S08000030,Male,all_ages,203041,NHS Tayside
+2028,S08000031,All,all_ages,1200718,NHS Greater Glasgow and Clyde
+2028,S08000031,Female,all_ages,616090,NHS Greater Glasgow and Clyde
+2028,S08000031,Male,all_ages,584628,NHS Greater Glasgow and Clyde
+2028,S08000032,All,all_ages,666417,NHS Lanarkshire
+2028,S08000032,Female,all_ages,342362,NHS Lanarkshire
+2028,S08000032,Male,all_ages,324055,NHS Lanarkshire
+2029,S92000003,All,all_ages,5543666,Scotland
+2029,S92000003,Female,all_ages,2831938,Scotland
+2029,S92000003,Male,all_ages,2711728,Scotland
+2029,S08000015,All,all_ages,360307,NHS Ayrshire and Arran
+2029,S08000015,Female,all_ages,187524,NHS Ayrshire and Arran
+2029,S08000015,Male,all_ages,172783,NHS Ayrshire and Arran
+2029,S08000016,All,all_ages,116502,NHS Borders
+2029,S08000016,Female,all_ages,59831,NHS Borders
+2029,S08000016,Male,all_ages,56671,NHS Borders
+2029,S08000017,All,all_ages,144071,NHS Dumfries and Galloway
+2029,S08000017,Female,all_ages,73760,NHS Dumfries and Galloway
+2029,S08000017,Male,all_ages,70311,NHS Dumfries and Galloway
+2029,S08000019,All,all_ages,316253,NHS Forth Valley
+2029,S08000019,Female,all_ages,161614,NHS Forth Valley
+2029,S08000019,Male,all_ages,154639,NHS Forth Valley
+2029,S08000020,All,all_ages,594000,NHS Grampian
+2029,S08000020,Female,all_ages,296366,NHS Grampian
+2029,S08000020,Male,all_ages,297634,NHS Grampian
+2029,S08000022,All,all_ages,317227,NHS Highland
+2029,S08000022,Female,all_ages,160888,NHS Highland
+2029,S08000022,Male,all_ages,156339,NHS Highland
+2029,S08000024,All,all_ages,968411,NHS Lothian
+2029,S08000024,Female,all_ages,495246,NHS Lothian
+2029,S08000024,Male,all_ages,473165,NHS Lothian
+2029,S08000025,All,all_ages,22288,NHS Orkney
+2029,S08000025,Female,all_ages,11130,NHS Orkney
+2029,S08000025,Male,all_ages,11158,NHS Orkney
+2029,S08000026,All,all_ages,22773,NHS Shetland
+2029,S08000026,Female,all_ages,10995,NHS Shetland
+2029,S08000026,Male,all_ages,11778,NHS Shetland
+2029,S08000028,All,all_ages,25011,NHS Western Isles
+2029,S08000028,Female,all_ages,12740,NHS Western Isles
+2029,S08000028,Male,all_ages,12271,NHS Western Isles
+2029,S08000029,All,all_ages,371229,NHS Fife
+2029,S08000029,Female,all_ages,189326,NHS Fife
+2029,S08000029,Male,all_ages,181903,NHS Fife
+2029,S08000030,All,all_ages,416087,NHS Tayside
+2029,S08000030,Female,all_ages,213136,NHS Tayside
+2029,S08000030,Male,all_ages,202951,NHS Tayside
+2029,S08000031,All,all_ages,1202696,NHS Greater Glasgow and Clyde
+2029,S08000031,Female,all_ages,616964,NHS Greater Glasgow and Clyde
+2029,S08000031,Male,all_ages,585732,NHS Greater Glasgow and Clyde
+2029,S08000032,All,all_ages,666811,NHS Lanarkshire
+2029,S08000032,Female,all_ages,342418,NHS Lanarkshire
+2029,S08000032,Male,all_ages,324393,NHS Lanarkshire
+2030,S92000003,All,all_ages,5549510,Scotland
+2030,S92000003,Female,all_ages,2834182,Scotland
+2030,S92000003,Male,all_ages,2715328,Scotland
+2030,S08000015,All,all_ages,359138,NHS Ayrshire and Arran
+2030,S08000015,Female,all_ages,186887,NHS Ayrshire and Arran
+2030,S08000015,Male,all_ages,172251,NHS Ayrshire and Arran
+2030,S08000016,All,all_ages,116553,NHS Borders
+2030,S08000016,Female,all_ages,59864,NHS Borders
+2030,S08000016,Male,all_ages,56689,NHS Borders
+2030,S08000017,All,all_ages,143543,NHS Dumfries and Galloway
+2030,S08000017,Female,all_ages,73469,NHS Dumfries and Galloway
+2030,S08000017,Male,all_ages,70074,NHS Dumfries and Galloway
+2030,S08000019,All,all_ages,317029,NHS Forth Valley
+2030,S08000019,Female,all_ages,161974,NHS Forth Valley
+2030,S08000019,Male,all_ages,155055,NHS Forth Valley
+2030,S08000020,All,all_ages,594401,NHS Grampian
+2030,S08000020,Female,all_ages,296391,NHS Grampian
+2030,S08000020,Male,all_ages,298010,NHS Grampian
+2030,S08000022,All,all_ages,316544,NHS Highland
+2030,S08000022,Female,all_ages,160500,NHS Highland
+2030,S08000022,Male,all_ages,156044,NHS Highland
+2030,S08000024,All,all_ages,973887,NHS Lothian
+2030,S08000024,Female,all_ages,497953,NHS Lothian
+2030,S08000024,Male,all_ages,475934,NHS Lothian
+2030,S08000025,All,all_ages,22256,NHS Orkney
+2030,S08000025,Female,all_ages,11104,NHS Orkney
+2030,S08000025,Male,all_ages,11152,NHS Orkney
+2030,S08000026,All,all_ages,22709,NHS Shetland
+2030,S08000026,Female,all_ages,10955,NHS Shetland
+2030,S08000026,Male,all_ages,11754,NHS Shetland
+2030,S08000028,All,all_ages,24836,NHS Western Isles
+2030,S08000028,Female,all_ages,12652,NHS Western Isles
+2030,S08000028,Male,all_ages,12184,NHS Western Isles
+2030,S08000029,All,all_ages,370942,NHS Fife
+2030,S08000029,Female,all_ages,189102,NHS Fife
+2030,S08000029,Male,all_ages,181840,NHS Fife
+2030,S08000030,All,all_ages,415833,NHS Tayside
+2030,S08000030,Female,all_ages,213024,NHS Tayside
+2030,S08000030,Male,all_ages,202809,NHS Tayside
+2030,S08000031,All,all_ages,1204716,NHS Greater Glasgow and Clyde
+2030,S08000031,Female,all_ages,617874,NHS Greater Glasgow and Clyde
+2030,S08000031,Male,all_ages,586842,NHS Greater Glasgow and Clyde
+2030,S08000032,All,all_ages,667123,NHS Lanarkshire
+2030,S08000032,Female,all_ages,342433,NHS Lanarkshire
+2030,S08000032,Male,all_ages,324690,NHS Lanarkshire
+2031,S92000003,All,all_ages,5554680,Scotland
+2031,S92000003,Female,all_ages,2836108,Scotland
+2031,S92000003,Male,all_ages,2718572,Scotland
+2031,S08000015,All,all_ages,357928,NHS Ayrshire and Arran
+2031,S08000015,Female,all_ages,186226,NHS Ayrshire and Arran
+2031,S08000015,Male,all_ages,171702,NHS Ayrshire and Arran
+2031,S08000016,All,all_ages,116582,NHS Borders
+2031,S08000016,Female,all_ages,59884,NHS Borders
+2031,S08000016,Male,all_ages,56698,NHS Borders
+2031,S08000017,All,all_ages,142998,NHS Dumfries and Galloway
+2031,S08000017,Female,all_ages,73167,NHS Dumfries and Galloway
+2031,S08000017,Male,all_ages,69831,NHS Dumfries and Galloway
+2031,S08000019,All,all_ages,317751,NHS Forth Valley
+2031,S08000019,Female,all_ages,162310,NHS Forth Valley
+2031,S08000019,Male,all_ages,155441,NHS Forth Valley
+2031,S08000020,All,all_ages,594719,NHS Grampian
+2031,S08000020,Female,all_ages,296378,NHS Grampian
+2031,S08000020,Male,all_ages,298341,NHS Grampian
+2031,S08000022,All,all_ages,315820,NHS Highland
+2031,S08000022,Female,all_ages,160077,NHS Highland
+2031,S08000022,Male,all_ages,155743,NHS Highland
+2031,S08000024,All,all_ages,979189,NHS Lothian
+2031,S08000024,Female,all_ages,500580,NHS Lothian
+2031,S08000024,Male,all_ages,478609,NHS Lothian
+2031,S08000025,All,all_ages,22239,NHS Orkney
+2031,S08000025,Female,all_ages,11095,NHS Orkney
+2031,S08000025,Male,all_ages,11144,NHS Orkney
+2031,S08000026,All,all_ages,22644,NHS Shetland
+2031,S08000026,Female,all_ages,10912,NHS Shetland
+2031,S08000026,Male,all_ages,11732,NHS Shetland
+2031,S08000028,All,all_ages,24650,NHS Western Isles
+2031,S08000028,Female,all_ages,12563,NHS Western Isles
+2031,S08000028,Male,all_ages,12087,NHS Western Isles
+2031,S08000029,All,all_ages,370658,NHS Fife
+2031,S08000029,Female,all_ages,188899,NHS Fife
+2031,S08000029,Male,all_ages,181759,NHS Fife
+2031,S08000030,All,all_ages,415543,NHS Tayside
+2031,S08000030,Female,all_ages,212860,NHS Tayside
+2031,S08000030,Male,all_ages,202683,NHS Tayside
+2031,S08000031,All,all_ages,1206597,NHS Greater Glasgow and Clyde
+2031,S08000031,Female,all_ages,618730,NHS Greater Glasgow and Clyde
+2031,S08000031,Male,all_ages,587867,NHS Greater Glasgow and Clyde
+2031,S08000032,All,all_ages,667362,NHS Lanarkshire
+2031,S08000032,Female,all_ages,342427,NHS Lanarkshire
+2031,S08000032,Male,all_ages,324935,NHS Lanarkshire
+2032,S92000003,All,all_ages,5559154,Scotland
+2032,S92000003,Female,all_ages,2837682,Scotland
+2032,S92000003,Male,all_ages,2721472,Scotland
+2032,S08000015,All,all_ages,356709,NHS Ayrshire and Arran
+2032,S08000015,Female,all_ages,185548,NHS Ayrshire and Arran
+2032,S08000015,Male,all_ages,171161,NHS Ayrshire and Arran
+2032,S08000016,All,all_ages,116582,NHS Borders
+2032,S08000016,Female,all_ages,59878,NHS Borders
+2032,S08000016,Male,all_ages,56704,NHS Borders
+2032,S08000017,All,all_ages,142452,NHS Dumfries and Galloway
+2032,S08000017,Female,all_ages,72862,NHS Dumfries and Galloway
+2032,S08000017,Male,all_ages,69590,NHS Dumfries and Galloway
+2032,S08000019,All,all_ages,318432,NHS Forth Valley
+2032,S08000019,Female,all_ages,162623,NHS Forth Valley
+2032,S08000019,Male,all_ages,155809,NHS Forth Valley
+2032,S08000020,All,all_ages,594940,NHS Grampian
+2032,S08000020,Female,all_ages,296305,NHS Grampian
+2032,S08000020,Male,all_ages,298635,NHS Grampian
+2032,S08000022,All,all_ages,315076,NHS Highland
+2032,S08000022,Female,all_ages,159675,NHS Highland
+2032,S08000022,Male,all_ages,155401,NHS Highland
+2032,S08000024,All,all_ages,984318,NHS Lothian
+2032,S08000024,Female,all_ages,503113,NHS Lothian
+2032,S08000024,Male,all_ages,481205,NHS Lothian
+2032,S08000025,All,all_ages,22199,NHS Orkney
+2032,S08000025,Female,all_ages,11072,NHS Orkney
+2032,S08000025,Male,all_ages,11127,NHS Orkney
+2032,S08000026,All,all_ages,22566,NHS Shetland
+2032,S08000026,Female,all_ages,10853,NHS Shetland
+2032,S08000026,Male,all_ages,11713,NHS Shetland
+2032,S08000028,All,all_ages,24477,NHS Western Isles
+2032,S08000028,Female,all_ages,12484,NHS Western Isles
+2032,S08000028,Male,all_ages,11993,NHS Western Isles
+2032,S08000029,All,all_ages,370251,NHS Fife
+2032,S08000029,Female,all_ages,188630,NHS Fife
+2032,S08000029,Male,all_ages,181621,NHS Fife
+2032,S08000030,All,all_ages,415183,NHS Tayside
+2032,S08000030,Female,all_ages,212661,NHS Tayside
+2032,S08000030,Male,all_ages,202522,NHS Tayside
+2032,S08000031,All,all_ages,1208460,NHS Greater Glasgow and Clyde
+2032,S08000031,Female,all_ages,619621,NHS Greater Glasgow and Clyde
+2032,S08000031,Male,all_ages,588839,NHS Greater Glasgow and Clyde
+2032,S08000032,All,all_ages,667509,NHS Lanarkshire
+2032,S08000032,Female,all_ages,342357,NHS Lanarkshire
+2032,S08000032,Male,all_ages,325152,NHS Lanarkshire
+2033,S92000003,All,all_ages,5562901,Scotland
+2033,S92000003,Female,all_ages,2838899,Scotland
+2033,S92000003,Male,all_ages,2724002,Scotland
+2033,S08000015,All,all_ages,355409,NHS Ayrshire and Arran
+2033,S08000015,Female,all_ages,184858,NHS Ayrshire and Arran
+2033,S08000015,Male,all_ages,170551,NHS Ayrshire and Arran
+2033,S08000016,All,all_ages,116554,NHS Borders
+2033,S08000016,Female,all_ages,59864,NHS Borders
+2033,S08000016,Male,all_ages,56690,NHS Borders
+2033,S08000017,All,all_ages,141894,NHS Dumfries and Galloway
+2033,S08000017,Female,all_ages,72547,NHS Dumfries and Galloway
+2033,S08000017,Male,all_ages,69347,NHS Dumfries and Galloway
+2033,S08000019,All,all_ages,319089,NHS Forth Valley
+2033,S08000019,Female,all_ages,162931,NHS Forth Valley
+2033,S08000019,Male,all_ages,156158,NHS Forth Valley
+2033,S08000020,All,all_ages,595089,NHS Grampian
+2033,S08000020,Female,all_ages,296218,NHS Grampian
+2033,S08000020,Male,all_ages,298871,NHS Grampian
+2033,S08000022,All,all_ages,314304,NHS Highland
+2033,S08000022,Female,all_ages,159246,NHS Highland
+2033,S08000022,Male,all_ages,155058,NHS Highland
+2033,S08000024,All,all_ages,989285,NHS Lothian
+2033,S08000024,Female,all_ages,505567,NHS Lothian
+2033,S08000024,Male,all_ages,483718,NHS Lothian
+2033,S08000025,All,all_ages,22169,NHS Orkney
+2033,S08000025,Female,all_ages,11054,NHS Orkney
+2033,S08000025,Male,all_ages,11115,NHS Orkney
+2033,S08000026,All,all_ages,22488,NHS Shetland
+2033,S08000026,Female,all_ages,10795,NHS Shetland
+2033,S08000026,Male,all_ages,11693,NHS Shetland
+2033,S08000028,All,all_ages,24298,NHS Western Isles
+2033,S08000028,Female,all_ages,12391,NHS Western Isles
+2033,S08000028,Male,all_ages,11907,NHS Western Isles
+2033,S08000029,All,all_ages,369799,NHS Fife
+2033,S08000029,Female,all_ages,188333,NHS Fife
+2033,S08000029,Male,all_ages,181466,NHS Fife
+2033,S08000030,All,all_ages,414787,NHS Tayside
+2033,S08000030,Female,all_ages,212447,NHS Tayside
+2033,S08000030,Male,all_ages,202340,NHS Tayside
+2033,S08000031,All,all_ages,1210171,NHS Greater Glasgow and Clyde
+2033,S08000031,Female,all_ages,620394,NHS Greater Glasgow and Clyde
+2033,S08000031,Male,all_ages,589777,NHS Greater Glasgow and Clyde
+2033,S08000032,All,all_ages,667565,NHS Lanarkshire
+2033,S08000032,Female,all_ages,342254,NHS Lanarkshire
+2033,S08000032,Male,all_ages,325311,NHS Lanarkshire
+2034,S92000003,All,all_ages,5565969,Scotland
+2034,S92000003,Female,all_ages,2839771,Scotland
+2034,S92000003,Male,all_ages,2726198,Scotland
+2034,S08000015,All,all_ages,354089,NHS Ayrshire and Arran
+2034,S08000015,Female,all_ages,184148,NHS Ayrshire and Arran
+2034,S08000015,Male,all_ages,169941,NHS Ayrshire and Arran
+2034,S08000016,All,all_ages,116513,NHS Borders
+2034,S08000016,Female,all_ages,59838,NHS Borders
+2034,S08000016,Male,all_ages,56675,NHS Borders
+2034,S08000017,All,all_ages,141331,NHS Dumfries and Galloway
+2034,S08000017,Female,all_ages,72232,NHS Dumfries and Galloway
+2034,S08000017,Male,all_ages,69099,NHS Dumfries and Galloway
+2034,S08000019,All,all_ages,319704,NHS Forth Valley
+2034,S08000019,Female,all_ages,163206,NHS Forth Valley
+2034,S08000019,Male,all_ages,156498,NHS Forth Valley
+2034,S08000020,All,all_ages,595166,NHS Grampian
+2034,S08000020,Female,all_ages,296101,NHS Grampian
+2034,S08000020,Male,all_ages,299065,NHS Grampian
+2034,S08000022,All,all_ages,313489,NHS Highland
+2034,S08000022,Female,all_ages,158795,NHS Highland
+2034,S08000022,Male,all_ages,154694,NHS Highland
+2034,S08000024,All,all_ages,994071,NHS Lothian
+2034,S08000024,Female,all_ages,507912,NHS Lothian
+2034,S08000024,Male,all_ages,486159,NHS Lothian
+2034,S08000025,All,all_ages,22139,NHS Orkney
+2034,S08000025,Female,all_ages,11043,NHS Orkney
+2034,S08000025,Male,all_ages,11096,NHS Orkney
+2034,S08000026,All,all_ages,22419,NHS Shetland
+2034,S08000026,Female,all_ages,10751,NHS Shetland
+2034,S08000026,Male,all_ages,11668,NHS Shetland
+2034,S08000028,All,all_ages,24130,NHS Western Isles
+2034,S08000028,Female,all_ages,12315,NHS Western Isles
+2034,S08000028,Male,all_ages,11815,NHS Western Isles
+2034,S08000029,All,all_ages,369270,NHS Fife
+2034,S08000029,Female,all_ages,187982,NHS Fife
+2034,S08000029,Male,all_ages,181288,NHS Fife
+2034,S08000030,All,all_ages,414352,NHS Tayside
+2034,S08000030,Female,all_ages,212218,NHS Tayside
+2034,S08000030,Male,all_ages,202134,NHS Tayside
+2034,S08000031,All,all_ages,1211714,NHS Greater Glasgow and Clyde
+2034,S08000031,Female,all_ages,621098,NHS Greater Glasgow and Clyde
+2034,S08000031,Male,all_ages,590616,NHS Greater Glasgow and Clyde
+2034,S08000032,All,all_ages,667582,NHS Lanarkshire
+2034,S08000032,Female,all_ages,342132,NHS Lanarkshire
+2034,S08000032,Male,all_ages,325450,NHS Lanarkshire
+2035,S92000003,All,all_ages,5568456,Scotland
+2035,S92000003,Female,all_ages,2840347,Scotland
+2035,S92000003,Male,all_ages,2728109,Scotland
+2035,S08000015,All,all_ages,352716,NHS Ayrshire and Arran
+2035,S08000015,Female,all_ages,183407,NHS Ayrshire and Arran
+2035,S08000015,Male,all_ages,169309,NHS Ayrshire and Arran
+2035,S08000016,All,all_ages,116476,NHS Borders
+2035,S08000016,Female,all_ages,59818,NHS Borders
+2035,S08000016,Male,all_ages,56658,NHS Borders
+2035,S08000017,All,all_ages,140764,NHS Dumfries and Galloway
+2035,S08000017,Female,all_ages,71915,NHS Dumfries and Galloway
+2035,S08000017,Male,all_ages,68849,NHS Dumfries and Galloway
+2035,S08000019,All,all_ages,320287,NHS Forth Valley
+2035,S08000019,Female,all_ages,163478,NHS Forth Valley
+2035,S08000019,Male,all_ages,156809,NHS Forth Valley
+2035,S08000020,All,all_ages,595119,NHS Grampian
+2035,S08000020,Female,all_ages,295900,NHS Grampian
+2035,S08000020,Male,all_ages,299219,NHS Grampian
+2035,S08000022,All,all_ages,312727,NHS Highland
+2035,S08000022,Female,all_ages,158400,NHS Highland
+2035,S08000022,Male,all_ages,154327,NHS Highland
+2035,S08000024,All,all_ages,998703,NHS Lothian
+2035,S08000024,Female,all_ages,510202,NHS Lothian
+2035,S08000024,Male,all_ages,488501,NHS Lothian
+2035,S08000025,All,all_ages,22115,NHS Orkney
+2035,S08000025,Female,all_ages,11031,NHS Orkney
+2035,S08000025,Male,all_ages,11084,NHS Orkney
+2035,S08000026,All,all_ages,22336,NHS Shetland
+2035,S08000026,Female,all_ages,10697,NHS Shetland
+2035,S08000026,Male,all_ages,11639,NHS Shetland
+2035,S08000028,All,all_ages,23961,NHS Western Isles
+2035,S08000028,Female,all_ages,12234,NHS Western Isles
+2035,S08000028,Male,all_ages,11727,NHS Western Isles
+2035,S08000029,All,all_ages,368702,NHS Fife
+2035,S08000029,Female,all_ages,187630,NHS Fife
+2035,S08000029,Male,all_ages,181072,NHS Fife
+2035,S08000030,All,all_ages,413847,NHS Tayside
+2035,S08000030,Female,all_ages,211921,NHS Tayside
+2035,S08000030,Male,all_ages,201926,NHS Tayside
+2035,S08000031,All,all_ages,1213154,NHS Greater Glasgow and Clyde
+2035,S08000031,Female,all_ages,621705,NHS Greater Glasgow and Clyde
+2035,S08000031,Male,all_ages,591449,NHS Greater Glasgow and Clyde
+2035,S08000032,All,all_ages,667549,NHS Lanarkshire
+2035,S08000032,Female,all_ages,342009,NHS Lanarkshire
+2035,S08000032,Male,all_ages,325540,NHS Lanarkshire
+2036,S92000003,All,all_ages,5570442,Scotland
+2036,S92000003,Female,all_ages,2840656,Scotland
+2036,S92000003,Male,all_ages,2729786,Scotland
+2036,S08000015,All,all_ages,351359,NHS Ayrshire and Arran
+2036,S08000015,Female,all_ages,182672,NHS Ayrshire and Arran
+2036,S08000015,Male,all_ages,168687,NHS Ayrshire and Arran
+2036,S08000016,All,all_ages,116428,NHS Borders
+2036,S08000016,Female,all_ages,59803,NHS Borders
+2036,S08000016,Male,all_ages,56625,NHS Borders
+2036,S08000017,All,all_ages,140195,NHS Dumfries and Galloway
+2036,S08000017,Female,all_ages,71602,NHS Dumfries and Galloway
+2036,S08000017,Male,all_ages,68593,NHS Dumfries and Galloway
+2036,S08000019,All,all_ages,320827,NHS Forth Valley
+2036,S08000019,Female,all_ages,163740,NHS Forth Valley
+2036,S08000019,Male,all_ages,157087,NHS Forth Valley
+2036,S08000020,All,all_ages,595010,NHS Grampian
+2036,S08000020,Female,all_ages,295661,NHS Grampian
+2036,S08000020,Male,all_ages,299349,NHS Grampian
+2036,S08000022,All,all_ages,311948,NHS Highland
+2036,S08000022,Female,all_ages,157977,NHS Highland
+2036,S08000022,Male,all_ages,153971,NHS Highland
+2036,S08000024,All,all_ages,1003186,NHS Lothian
+2036,S08000024,Female,all_ages,512373,NHS Lothian
+2036,S08000024,Male,all_ages,490813,NHS Lothian
+2036,S08000025,All,all_ages,22088,NHS Orkney
+2036,S08000025,Female,all_ages,11021,NHS Orkney
+2036,S08000025,Male,all_ages,11067,NHS Orkney
+2036,S08000026,All,all_ages,22253,NHS Shetland
+2036,S08000026,Female,all_ages,10646,NHS Shetland
+2036,S08000026,Male,all_ages,11607,NHS Shetland
+2036,S08000028,All,all_ages,23778,NHS Western Isles
+2036,S08000028,Female,all_ages,12146,NHS Western Isles
+2036,S08000028,Male,all_ages,11632,NHS Western Isles
+2036,S08000029,All,all_ages,368150,NHS Fife
+2036,S08000029,Female,all_ages,187298,NHS Fife
+2036,S08000029,Male,all_ages,180852,NHS Fife
+2036,S08000030,All,all_ages,413310,NHS Tayside
+2036,S08000030,Female,all_ages,211615,NHS Tayside
+2036,S08000030,Male,all_ages,201695,NHS Tayside
+2036,S08000031,All,all_ages,1214492,NHS Greater Glasgow and Clyde
+2036,S08000031,Female,all_ages,622286,NHS Greater Glasgow and Clyde
+2036,S08000031,Male,all_ages,592206,NHS Greater Glasgow and Clyde
+2036,S08000032,All,all_ages,667418,NHS Lanarkshire
+2036,S08000032,Female,all_ages,341816,NHS Lanarkshire
+2036,S08000032,Male,all_ages,325602,NHS Lanarkshire
+2037,S92000003,All,all_ages,5571993,Scotland
+2037,S92000003,Female,all_ages,2840723,Scotland
+2037,S92000003,Male,all_ages,2731270,Scotland
+2037,S08000015,All,all_ages,349938,NHS Ayrshire and Arran
+2037,S08000015,Female,all_ages,181903,NHS Ayrshire and Arran
+2037,S08000015,Male,all_ages,168035,NHS Ayrshire and Arran
+2037,S08000016,All,all_ages,116353,NHS Borders
+2037,S08000016,Female,all_ages,59775,NHS Borders
+2037,S08000016,Male,all_ages,56578,NHS Borders
+2037,S08000017,All,all_ages,139631,NHS Dumfries and Galloway
+2037,S08000017,Female,all_ages,71286,NHS Dumfries and Galloway
+2037,S08000017,Male,all_ages,68345,NHS Dumfries and Galloway
+2037,S08000019,All,all_ages,321347,NHS Forth Valley
+2037,S08000019,Female,all_ages,163994,NHS Forth Valley
+2037,S08000019,Male,all_ages,157353,NHS Forth Valley
+2037,S08000020,All,all_ages,594863,NHS Grampian
+2037,S08000020,Female,all_ages,295412,NHS Grampian
+2037,S08000020,Male,all_ages,299451,NHS Grampian
+2037,S08000022,All,all_ages,311229,NHS Highland
+2037,S08000022,Female,all_ages,157586,NHS Highland
+2037,S08000022,Male,all_ages,153643,NHS Highland
+2037,S08000024,All,all_ages,1007542,NHS Lothian
+2037,S08000024,Female,all_ages,514483,NHS Lothian
+2037,S08000024,Male,all_ages,493059,NHS Lothian
+2037,S08000025,All,all_ages,22057,NHS Orkney
+2037,S08000025,Female,all_ages,11006,NHS Orkney
+2037,S08000025,Male,all_ages,11051,NHS Orkney
+2037,S08000026,All,all_ages,22164,NHS Shetland
+2037,S08000026,Female,all_ages,10592,NHS Shetland
+2037,S08000026,Male,all_ages,11572,NHS Shetland
+2037,S08000028,All,all_ages,23605,NHS Western Isles
+2037,S08000028,Female,all_ages,12070,NHS Western Isles
+2037,S08000028,Male,all_ages,11535,NHS Western Isles
+2037,S08000029,All,all_ages,367572,NHS Fife
+2037,S08000029,Female,all_ages,186940,NHS Fife
+2037,S08000029,Male,all_ages,180632,NHS Fife
+2037,S08000030,All,all_ages,412712,NHS Tayside
+2037,S08000030,Female,all_ages,211269,NHS Tayside
+2037,S08000030,Male,all_ages,201443,NHS Tayside
+2037,S08000031,All,all_ages,1215728,NHS Greater Glasgow and Clyde
+2037,S08000031,Female,all_ages,622788,NHS Greater Glasgow and Clyde
+2037,S08000031,Male,all_ages,592940,NHS Greater Glasgow and Clyde
+2037,S08000032,All,all_ages,667252,NHS Lanarkshire
+2037,S08000032,Female,all_ages,341619,NHS Lanarkshire
+2037,S08000032,Male,all_ages,325633,NHS Lanarkshire
+2038,S92000003,All,all_ages,5573181,Scotland
+2038,S92000003,Female,all_ages,2840598,Scotland
+2038,S92000003,Male,all_ages,2732583,Scotland
+2038,S08000015,All,all_ages,348528,NHS Ayrshire and Arran
+2038,S08000015,Female,all_ages,181140,NHS Ayrshire and Arran
+2038,S08000015,Male,all_ages,167388,NHS Ayrshire and Arran
+2038,S08000016,All,all_ages,116306,NHS Borders
+2038,S08000016,Female,all_ages,59763,NHS Borders
+2038,S08000016,Male,all_ages,56543,NHS Borders
+2038,S08000017,All,all_ages,139086,NHS Dumfries and Galloway
+2038,S08000017,Female,all_ages,70989,NHS Dumfries and Galloway
+2038,S08000017,Male,all_ages,68097,NHS Dumfries and Galloway
+2038,S08000019,All,all_ages,321849,NHS Forth Valley
+2038,S08000019,Female,all_ages,164243,NHS Forth Valley
+2038,S08000019,Male,all_ages,157606,NHS Forth Valley
+2038,S08000020,All,all_ages,594683,NHS Grampian
+2038,S08000020,Female,all_ages,295158,NHS Grampian
+2038,S08000020,Male,all_ages,299525,NHS Grampian
+2038,S08000022,All,all_ages,310427,NHS Highland
+2038,S08000022,Female,all_ages,157161,NHS Highland
+2038,S08000022,Male,all_ages,153266,NHS Highland
+2038,S08000024,All,all_ages,1011757,NHS Lothian
+2038,S08000024,Female,all_ages,516519,NHS Lothian
+2038,S08000024,Male,all_ages,495238,NHS Lothian
+2038,S08000025,All,all_ages,22023,NHS Orkney
+2038,S08000025,Female,all_ages,10988,NHS Orkney
+2038,S08000025,Male,all_ages,11035,NHS Orkney
+2038,S08000026,All,all_ages,22073,NHS Shetland
+2038,S08000026,Female,all_ages,10536,NHS Shetland
+2038,S08000026,Male,all_ages,11537,NHS Shetland
+2038,S08000028,All,all_ages,23433,NHS Western Isles
+2038,S08000028,Female,all_ages,11994,NHS Western Isles
+2038,S08000028,Male,all_ages,11439,NHS Western Isles
+2038,S08000029,All,all_ages,366988,NHS Fife
+2038,S08000029,Female,all_ages,186574,NHS Fife
+2038,S08000029,Male,all_ages,180414,NHS Fife
+2038,S08000030,All,all_ages,412125,NHS Tayside
+2038,S08000030,Female,all_ages,210944,NHS Tayside
+2038,S08000030,Male,all_ages,201181,NHS Tayside
+2038,S08000031,All,all_ages,1216851,NHS Greater Glasgow and Clyde
+2038,S08000031,Female,all_ages,623195,NHS Greater Glasgow and Clyde
+2038,S08000031,Male,all_ages,593656,NHS Greater Glasgow and Clyde
+2038,S08000032,All,all_ages,667052,NHS Lanarkshire
+2038,S08000032,Female,all_ages,341394,NHS Lanarkshire
+2038,S08000032,Male,all_ages,325658,NHS Lanarkshire
+2039,S92000003,All,all_ages,5574058,Scotland
+2039,S92000003,Female,all_ages,2840286,Scotland
+2039,S92000003,Male,all_ages,2733772,Scotland
+2039,S08000015,All,all_ages,347114,NHS Ayrshire and Arran
+2039,S08000015,Female,all_ages,180387,NHS Ayrshire and Arran
+2039,S08000015,Male,all_ages,166727,NHS Ayrshire and Arran
+2039,S08000016,All,all_ages,116266,NHS Borders
+2039,S08000016,Female,all_ages,59754,NHS Borders
+2039,S08000016,Male,all_ages,56512,NHS Borders
+2039,S08000017,All,all_ages,138533,NHS Dumfries and Galloway
+2039,S08000017,Female,all_ages,70690,NHS Dumfries and Galloway
+2039,S08000017,Male,all_ages,67843,NHS Dumfries and Galloway
+2039,S08000019,All,all_ages,322342,NHS Forth Valley
+2039,S08000019,Female,all_ages,164486,NHS Forth Valley
+2039,S08000019,Male,all_ages,157856,NHS Forth Valley
+2039,S08000020,All,all_ages,594467,NHS Grampian
+2039,S08000020,Female,all_ages,294882,NHS Grampian
+2039,S08000020,Male,all_ages,299585,NHS Grampian
+2039,S08000022,All,all_ages,309671,NHS Highland
+2039,S08000022,Female,all_ages,156761,NHS Highland
+2039,S08000022,Male,all_ages,152910,NHS Highland
+2039,S08000024,All,all_ages,1015814,NHS Lothian
+2039,S08000024,Female,all_ages,518461,NHS Lothian
+2039,S08000024,Male,all_ages,497353,NHS Lothian
+2039,S08000025,All,all_ages,21982,NHS Orkney
+2039,S08000025,Female,all_ages,10970,NHS Orkney
+2039,S08000025,Male,all_ages,11012,NHS Orkney
+2039,S08000026,All,all_ages,21983,NHS Shetland
+2039,S08000026,Female,all_ages,10481,NHS Shetland
+2039,S08000026,Male,all_ages,11502,NHS Shetland
+2039,S08000028,All,all_ages,23253,NHS Western Isles
+2039,S08000028,Female,all_ages,11904,NHS Western Isles
+2039,S08000028,Male,all_ages,11349,NHS Western Isles
+2039,S08000029,All,all_ages,366415,NHS Fife
+2039,S08000029,Female,all_ages,186212,NHS Fife
+2039,S08000029,Male,all_ages,180203,NHS Fife
+2039,S08000030,All,all_ages,411569,NHS Tayside
+2039,S08000030,Female,all_ages,210621,NHS Tayside
+2039,S08000030,Male,all_ages,200948,NHS Tayside
+2039,S08000031,All,all_ages,1217847,NHS Greater Glasgow and Clyde
+2039,S08000031,Female,all_ages,623531,NHS Greater Glasgow and Clyde
+2039,S08000031,Male,all_ages,594316,NHS Greater Glasgow and Clyde
+2039,S08000032,All,all_ages,666802,NHS Lanarkshire
+2039,S08000032,Female,all_ages,341146,NHS Lanarkshire
+2039,S08000032,Male,all_ages,325656,NHS Lanarkshire
+2040,S92000003,All,all_ages,5574675,Scotland
+2040,S92000003,Female,all_ages,2839828,Scotland
+2040,S92000003,Male,all_ages,2734847,Scotland
+2040,S08000015,All,all_ages,345715,NHS Ayrshire and Arran
+2040,S08000015,Female,all_ages,179637,NHS Ayrshire and Arran
+2040,S08000015,Male,all_ages,166078,NHS Ayrshire and Arran
+2040,S08000016,All,all_ages,116229,NHS Borders
+2040,S08000016,Female,all_ages,59744,NHS Borders
+2040,S08000016,Male,all_ages,56485,NHS Borders
+2040,S08000017,All,all_ages,137969,NHS Dumfries and Galloway
+2040,S08000017,Female,all_ages,70379,NHS Dumfries and Galloway
+2040,S08000017,Male,all_ages,67590,NHS Dumfries and Galloway
+2040,S08000019,All,all_ages,322797,NHS Forth Valley
+2040,S08000019,Female,all_ages,164700,NHS Forth Valley
+2040,S08000019,Male,all_ages,158097,NHS Forth Valley
+2040,S08000020,All,all_ages,594267,NHS Grampian
+2040,S08000020,Female,all_ages,294608,NHS Grampian
+2040,S08000020,Male,all_ages,299659,NHS Grampian
+2040,S08000022,All,all_ages,308923,NHS Highland
+2040,S08000022,Female,all_ages,156363,NHS Highland
+2040,S08000022,Male,all_ages,152560,NHS Highland
+2040,S08000024,All,all_ages,1019830,NHS Lothian
+2040,S08000024,Female,all_ages,520380,NHS Lothian
+2040,S08000024,Male,all_ages,499450,NHS Lothian
+2040,S08000025,All,all_ages,21948,NHS Orkney
+2040,S08000025,Female,all_ages,10949,NHS Orkney
+2040,S08000025,Male,all_ages,10999,NHS Orkney
+2040,S08000026,All,all_ages,21884,NHS Shetland
+2040,S08000026,Female,all_ages,10418,NHS Shetland
+2040,S08000026,Male,all_ages,11466,NHS Shetland
+2040,S08000028,All,all_ages,23065,NHS Western Isles
+2040,S08000028,Female,all_ages,11818,NHS Western Isles
+2040,S08000028,Male,all_ages,11247,NHS Western Isles
+2040,S08000029,All,all_ages,365850,NHS Fife
+2040,S08000029,Female,all_ages,185856,NHS Fife
+2040,S08000029,Male,all_ages,179994,NHS Fife
+2040,S08000030,All,all_ages,410999,NHS Tayside
+2040,S08000030,Female,all_ages,210296,NHS Tayside
+2040,S08000030,Male,all_ages,200703,NHS Tayside
+2040,S08000031,All,all_ages,1218712,NHS Greater Glasgow and Clyde
+2040,S08000031,Female,all_ages,623815,NHS Greater Glasgow and Clyde
+2040,S08000031,Male,all_ages,594897,NHS Greater Glasgow and Clyde
+2040,S08000032,All,all_ages,666487,NHS Lanarkshire
+2040,S08000032,Female,all_ages,340865,NHS Lanarkshire
+2040,S08000032,Male,all_ages,325622,NHS Lanarkshire
+2041,S92000003,All,all_ages,5575012,Scotland
+2041,S92000003,Female,all_ages,2839204,Scotland
+2041,S92000003,Male,all_ages,2735808,Scotland
+2041,S08000015,All,all_ages,344275,NHS Ayrshire and Arran
+2041,S08000015,Female,all_ages,178865,NHS Ayrshire and Arran
+2041,S08000015,Male,all_ages,165410,NHS Ayrshire and Arran
+2041,S08000016,All,all_ages,116194,NHS Borders
+2041,S08000016,Female,all_ages,59738,NHS Borders
+2041,S08000016,Male,all_ages,56456,NHS Borders
+2041,S08000017,All,all_ages,137410,NHS Dumfries and Galloway
+2041,S08000017,Female,all_ages,70068,NHS Dumfries and Galloway
+2041,S08000017,Male,all_ages,67342,NHS Dumfries and Galloway
+2041,S08000019,All,all_ages,323239,NHS Forth Valley
+2041,S08000019,Female,all_ages,164892,NHS Forth Valley
+2041,S08000019,Male,all_ages,158347,NHS Forth Valley
+2041,S08000020,All,all_ages,594065,NHS Grampian
+2041,S08000020,Female,all_ages,294338,NHS Grampian
+2041,S08000020,Male,all_ages,299727,NHS Grampian
+2041,S08000022,All,all_ages,308156,NHS Highland
+2041,S08000022,Female,all_ages,155952,NHS Highland
+2041,S08000022,Male,all_ages,152204,NHS Highland
+2041,S08000024,All,all_ages,1023764,NHS Lothian
+2041,S08000024,Female,all_ages,522255,NHS Lothian
+2041,S08000024,Male,all_ages,501509,NHS Lothian
+2041,S08000025,All,all_ages,21908,NHS Orkney
+2041,S08000025,Female,all_ages,10927,NHS Orkney
+2041,S08000025,Male,all_ages,10981,NHS Orkney
+2041,S08000026,All,all_ages,21781,NHS Shetland
+2041,S08000026,Female,all_ages,10348,NHS Shetland
+2041,S08000026,Male,all_ages,11433,NHS Shetland
+2041,S08000028,All,all_ages,22889,NHS Western Isles
+2041,S08000028,Female,all_ages,11726,NHS Western Isles
+2041,S08000028,Male,all_ages,11163,NHS Western Isles
+2041,S08000029,All,all_ages,365285,NHS Fife
+2041,S08000029,Female,all_ages,185505,NHS Fife
+2041,S08000029,Male,all_ages,179780,NHS Fife
+2041,S08000030,All,all_ages,410461,NHS Tayside
+2041,S08000030,Female,all_ages,209995,NHS Tayside
+2041,S08000030,Male,all_ages,200466,NHS Tayside
+2041,S08000031,All,all_ages,1219452,NHS Greater Glasgow and Clyde
+2041,S08000031,Female,all_ages,624027,NHS Greater Glasgow and Clyde
+2041,S08000031,Male,all_ages,595425,NHS Greater Glasgow and Clyde
+2041,S08000032,All,all_ages,666133,NHS Lanarkshire
+2041,S08000032,Female,all_ages,340568,NHS Lanarkshire
+2041,S08000032,Male,all_ages,325565,NHS Lanarkshire
+2042,S92000003,All,all_ages,5575078,Scotland
+2042,S92000003,Female,all_ages,2838416,Scotland
+2042,S92000003,Male,all_ages,2736662,Scotland
+2042,S08000015,All,all_ages,342805,NHS Ayrshire and Arran
+2042,S08000015,Female,all_ages,178065,NHS Ayrshire and Arran
+2042,S08000015,Male,all_ages,164740,NHS Ayrshire and Arran
+2042,S08000016,All,all_ages,116162,NHS Borders
+2042,S08000016,Female,all_ages,59738,NHS Borders
+2042,S08000016,Male,all_ages,56424,NHS Borders
+2042,S08000017,All,all_ages,136841,NHS Dumfries and Galloway
+2042,S08000017,Female,all_ages,69738,NHS Dumfries and Galloway
+2042,S08000017,Male,all_ages,67103,NHS Dumfries and Galloway
+2042,S08000019,All,all_ages,323718,NHS Forth Valley
+2042,S08000019,Female,all_ages,165133,NHS Forth Valley
+2042,S08000019,Male,all_ages,158585,NHS Forth Valley
+2042,S08000020,All,all_ages,593849,NHS Grampian
+2042,S08000020,Female,all_ages,294056,NHS Grampian
+2042,S08000020,Male,all_ages,299793,NHS Grampian
+2042,S08000022,All,all_ages,307421,NHS Highland
+2042,S08000022,Female,all_ages,155552,NHS Highland
+2042,S08000022,Male,all_ages,151869,NHS Highland
+2042,S08000024,All,all_ages,1027543,NHS Lothian
+2042,S08000024,Female,all_ages,524055,NHS Lothian
+2042,S08000024,Male,all_ages,503488,NHS Lothian
+2042,S08000025,All,all_ages,21871,NHS Orkney
+2042,S08000025,Female,all_ages,10906,NHS Orkney
+2042,S08000025,Male,all_ages,10965,NHS Orkney
+2042,S08000026,All,all_ages,21681,NHS Shetland
+2042,S08000026,Female,all_ages,10286,NHS Shetland
+2042,S08000026,Male,all_ages,11395,NHS Shetland
+2042,S08000028,All,all_ages,22709,NHS Western Isles
+2042,S08000028,Female,all_ages,11637,NHS Western Isles
+2042,S08000028,Male,all_ages,11072,NHS Western Isles
+2042,S08000029,All,all_ages,364726,NHS Fife
+2042,S08000029,Female,all_ages,185158,NHS Fife
+2042,S08000029,Male,all_ages,179568,NHS Fife
+2042,S08000030,All,all_ages,409944,NHS Tayside
+2042,S08000030,Female,all_ages,209709,NHS Tayside
+2042,S08000030,Male,all_ages,200235,NHS Tayside
+2042,S08000031,All,all_ages,1220131,NHS Greater Glasgow and Clyde
+2042,S08000031,Female,all_ages,624184,NHS Greater Glasgow and Clyde
+2042,S08000031,Male,all_ages,595947,NHS Greater Glasgow and Clyde
+2042,S08000032,All,all_ages,665677,NHS Lanarkshire
+2042,S08000032,Female,all_ages,340199,NHS Lanarkshire
+2042,S08000032,Male,all_ages,325478,NHS Lanarkshire
+2043,S92000003,All,all_ages,5574819,Scotland
+2043,S92000003,Female,all_ages,2837427,Scotland
+2043,S92000003,Male,all_ages,2737392,Scotland
+2043,S08000015,All,all_ages,341317,NHS Ayrshire and Arran
+2043,S08000015,Female,all_ages,177246,NHS Ayrshire and Arran
+2043,S08000015,Male,all_ages,164071,NHS Ayrshire and Arran
+2043,S08000016,All,all_ages,116138,NHS Borders
+2043,S08000016,Female,all_ages,59738,NHS Borders
+2043,S08000016,Male,all_ages,56400,NHS Borders
+2043,S08000017,All,all_ages,136286,NHS Dumfries and Galloway
+2043,S08000017,Female,all_ages,69421,NHS Dumfries and Galloway
+2043,S08000017,Male,all_ages,66865,NHS Dumfries and Galloway
+2043,S08000019,All,all_ages,324159,NHS Forth Valley
+2043,S08000019,Female,all_ages,165350,NHS Forth Valley
+2043,S08000019,Male,all_ages,158809,NHS Forth Valley
+2043,S08000020,All,all_ages,593664,NHS Grampian
+2043,S08000020,Female,all_ages,293777,NHS Grampian
+2043,S08000020,Male,all_ages,299887,NHS Grampian
+2043,S08000022,All,all_ages,306702,NHS Highland
+2043,S08000022,Female,all_ages,155155,NHS Highland
+2043,S08000022,Male,all_ages,151547,NHS Highland
+2043,S08000024,All,all_ages,1031266,NHS Lothian
+2043,S08000024,Female,all_ages,525824,NHS Lothian
+2043,S08000024,Male,all_ages,505442,NHS Lothian
+2043,S08000025,All,all_ages,21828,NHS Orkney
+2043,S08000025,Female,all_ages,10884,NHS Orkney
+2043,S08000025,Male,all_ages,10944,NHS Orkney
+2043,S08000026,All,all_ages,21579,NHS Shetland
+2043,S08000026,Female,all_ages,10219,NHS Shetland
+2043,S08000026,Male,all_ages,11360,NHS Shetland
+2043,S08000028,All,all_ages,22542,NHS Western Isles
+2043,S08000028,Female,all_ages,11560,NHS Western Isles
+2043,S08000028,Male,all_ages,10982,NHS Western Isles
+2043,S08000029,All,all_ages,364164,NHS Fife
+2043,S08000029,Female,all_ages,184800,NHS Fife
+2043,S08000029,Male,all_ages,179364,NHS Fife
+2043,S08000030,All,all_ages,409348,NHS Tayside
+2043,S08000030,Female,all_ages,209371,NHS Tayside
+2043,S08000030,Male,all_ages,199977,NHS Tayside
+2043,S08000031,All,all_ages,1220659,NHS Greater Glasgow and Clyde
+2043,S08000031,Female,all_ages,624267,NHS Greater Glasgow and Clyde
+2043,S08000031,Male,all_ages,596392,NHS Greater Glasgow and Clyde
+2043,S08000032,All,all_ages,665167,NHS Lanarkshire
+2043,S08000032,Female,all_ages,339815,NHS Lanarkshire
+2043,S08000032,Male,all_ages,325352,NHS Lanarkshire
