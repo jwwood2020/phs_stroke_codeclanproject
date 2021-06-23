@@ -12,18 +12,20 @@ library(tidyverse)
 
 ```{r}
 # Read in stroke hospital data
-strokes_hb <- read_csv(here("data/clean/activity_hb.csv"))
-strokes_ca <- read_csv(here("data/clean/activity_ca.csv"))
+activity_hb <- read_csv(here("data/clean/activity_hb.csv")) %>% 
+  filter(admission_type == "All")
+activity_ca <- read_csv(here("data/clean/activity_ca.csv")) %>% 
+    filter(admission_type == "All")
 ```
 
 ```{r}
-strokes_hb %>% 
+activity_hb %>% 
   distinct(admission_type)
 
-strokes_hb %>% 
+activity_hb %>% 
   distinct(age_group)
 
-strokes_hb %>% 
+activity_hb %>% 
   distinct(diagnosis)
 
 ```
@@ -33,7 +35,7 @@ Possible sources of analysis:
 Unlikely to use by admission type.
 
 ```{r}
-strokes_hb %>% 
+activity_hb %>% 
   filter(hb_name == "Scotland" & 
            admission_type == "All" &
            age_group =="All" & 
@@ -45,7 +47,7 @@ strokes_hb %>%
 ```
 
 ```{r}
-strokes_hb %>% 
+activity_hb %>% 
   filter(hb_name == "Scotland"  & 
            admission_type == "All" &
            age_group =="All" & 
@@ -56,7 +58,7 @@ strokes_hb %>%
 ```
 
 ```{r}
-strokes_hb %>% 
+activity_hb %>% 
   filter(hb_name == "Scotland"  & 
            admission_type == "All" & 
            year == "2018") %>% 
@@ -67,9 +69,10 @@ strokes_hb %>%
 Initial plots to see shape of data:
 
 ```{r}
-strokes_hb %>% 
+activity_hb %>% 
   skim()
 ```
+
 ```{r}
 mortality_ca <- read_csv(here("data/clean/mortality_ca.csv"))
 skim(mortality_ca)
@@ -83,21 +86,6 @@ mortality_hb %>%
   distinct(hb_name)
 ```
 
-```{r}
-population_hb <- read_csv(here("data/clean/population_hb.csv"))
-```
-
-
-```{r}
-population_proj_hb <- read_csv(here("data/clean/population_proj_hb.csv")) 
-
-skim(population_proj_hb)
-```
-
-```{r}
-population_proj_hb %>% 
-  distinct(year)
-```
 
 ```{r}
 activity_hb %>% 
@@ -138,3 +126,211 @@ mortality_hb %>%
 ```
  
  
+ #-------------------------------
+ High-level summary of data - discharges
+  - look at totals for Scotland for 2018
+  - first: by type of diagnosis (include CVD)
+  - exclude CVD: 
+    -show by sex
+    -show by age band
+ 
+ 
+```{r}
+# Total discharges split by diagnosis, 2018
+activity_hb %>% 
+  filter(hb_name == "Scotland"
+           & age_group =="All" 
+           & sex == "All" 
+           & year == "2018"
+         ) %>% 
+  group_by(diagnosis
+           ) %>% 
+  summarise(discharges = sum(number_of_discharges)) %>% 
+  ggplot(aes(x = reorder(diagnosis, discharges),
+             y = discharges
+             )
+         ) +
+  geom_col() +
+  coord_flip()
+```
+ 
+```{r}
+# Total discharges by sex, diagnosis
+activity_hb %>% 
+  filter(hb_name == "Scotland"
+           & age_group =="All" 
+           & sex != "All" 
+           & year == "2018"
+         ) %>% 
+  group_by(diagnosis, 
+           sex
+           ) %>% 
+  summarise(discharges = sum(number_of_discharges)) %>% 
+  ggplot(aes(x = reorder(diagnosis, discharges),
+             y = discharges,
+             fill = sex
+             )
+         ) +
+  geom_col(position = "dodge") +
+  coord_flip()
+```
+ 
+```{r}
+# Total discharges by sex, diagnosis, age_group
+activity_hb %>% 
+  filter(hb_name == "Scotland"
+           & !age_group %in% c("All", "under75 years") 
+           & sex != "All"
+           & year == "2018"
+         ) %>% 
+  group_by(diagnosis, 
+           sex,
+           age_group
+           ) %>% 
+  summarise(discharges = sum(number_of_discharges)) %>% 
+  ggplot(aes(x = age_group,
+             y = discharges,
+             fill = sex
+             )
+         ) +
+  geom_col(position = "dodge") +
+  coord_flip() +
+  facet_wrap(~ diagnosis)
+    
+  
+```
+ 
+  #-------------------------------
+ High-level summary of data - deaths
+  - look at totals for Scotland for 2018
+  - first: by type of diagnosis (include CVD)
+  - exclude CVD: 
+    -show by sex
+    -show by age band
+    
+    
+```{r}
+# Mortality by diagnosis
+mortality_hb %>% 
+  filter(hb_name == "Scotland"
+           & age_group =="All" 
+           & sex == "All" 
+           & year == "2018"
+         ) %>% 
+  group_by(diagnosis
+           ) %>% 
+  summarise(deaths = sum(number_of_deaths)) %>% 
+  ggplot(aes(x = reorder(diagnosis, deaths),
+             y = deaths
+             )
+         ) +
+  geom_col() 
+```
+
+```{r}
+mortality_hb %>% 
+  filter(hb_name == "Scotland"
+           & age_group =="All" 
+           & sex != "All" 
+           & year == "2018"
+         ) %>% 
+  group_by(diagnosis,
+           sex
+           ) %>% 
+  summarise(deaths = sum(number_of_deaths)) %>% 
+  ggplot(aes(x = reorder(diagnosis, deaths),
+             y = deaths,
+             fill = sex
+             )
+         ) +
+  geom_col(position = "dodge") 
+```
+
+```{r}
+mortality_hb %>% 
+  filter(hb_name == "Scotland"
+           & !age_group  %in% c("All", "under75 years")
+           & sex != "All" 
+           & year == "2018"
+         ) %>% 
+  group_by(diagnosis,
+           sex,
+           age_group
+           ) %>% 
+  summarise(deaths = sum(number_of_deaths)) %>% 
+  ggplot(aes(x = age_group,
+             y = deaths,
+             fill = sex
+             )
+         ) +
+  geom_col(position = "dodge") +
+ 
+  facet_wrap(~ diagnosis)
+```
+
+# Analysis of mortality rates for Scotland
+- Overall mortality rates
+- by sex
+- by age and sex
+
+```{r}
+# Mortality rates
+mortality_hb %>% 
+  filter(hb_name == "Scotland"
+           & !age_group  %in% c("All", "under75 years") 
+           & sex != "All" 
+           & year == "2018"
+         ) %>% 
+  ggplot(aes(x = age_group,
+             y = easr,
+             colour = sex)) +
+  geom_point() +
+  facet_wrap(~ diagnosis, scales = "free_y")
+```
+
+```{r}
+# Health Board comparison
+
+mortality_hb %>% 
+  filter(age_group == "All"
+           & sex == "All" 
+           & year == "2018"
+           & diagnosis == "Stroke"
+         ) %>% 
+  ggplot(aes(x = reorder(hb_name, easr),
+             y = easr,
+             colour = hb_name)) +
+  coord_flip() +
+  geom_point() 
+```
+
+```{r}
+# Health Board comparison - stroke only
+mortality_hb %>% 
+  filter(diagnosis == "Stroke"
+           & age_group == "75plus years" 
+           & sex == "All" 
+           & year == "2018"
+         ) %>% 
+  ggplot(aes(x = reorder(hb_name, easr),
+             y = easr,
+             colour = hb_name)) +
+  geom_point() +
+  coord_flip()
+```
+
+
+```{r}
+mortality_ca %>% 
+  filter(diagnosis == "Stroke"
+           & age_group != "All" 
+           & sex == "All" 
+           & year == "2018"
+         ) %>% 
+  ggplot(aes(x = ca_name,
+             y = easr,
+             colour = ca_name)) +
+  geom_point() +
+  facet_wrap(~ age_group, scales = "free_y")
+```
+
