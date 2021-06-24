@@ -1,0 +1,84 @@
+---
+title: "Time series work"
+output: html_notebook
+---
+
+```{r}
+# Load libraries
+library(here)
+library(tidyverse)
+library(tsibble)
+library(feasts)
+```
+ 
+```{r}
+# Read in HB data
+activity_hb <- read_csv(here("data/clean/activity_hb.csv")) %>% 
+  filter(admission_type == "All")
+mortality_hb <- read_csv(here("data/clean/mortality_hb.csv"))
+```
+ 
+```{r}
+#Make Scotland activoty data into a tsibble
+activity_ts_sco <- activity_hb %>% 
+  filter(hb_name == "Scotland" 
+         & sex != "All"
+         & !age_group %in% c("under75 years", "All")
+         & diagnosis == "Stroke")
+
+activity_ts_sco <- as_tsibble(activity_ts_sco, key = c(age_group, sex), index = year)
+activity_ts_sco
+```
+
+```{r}
+activity_ts_sco %>% 
+  ggplot() +
+  aes(x = year,
+      y = number_of_discharges,
+      colour = sex) +
+  geom_line() +
+  facet_wrap(~ age_group, scales = "free")
+
+```
+
+```{r}
+activity_ts_sco %>% 
+  ggplot() +
+  aes(x = year,
+      y = crude_rate,
+      colour = sex) +
+  geom_line() +
+  facet_wrap(~ age_group, scales = "free")
+```
+
+```{r}
+# Make Scotland mortality data into a tsibble
+mortality_ts_sco <- mortality_hb %>% 
+  filter(hb_name == "Scotland" 
+         & sex != "All"
+         & !age_group %in% c("under75 years", "All")
+         & diagnosis == "Stroke")
+
+mortality_ts_sco <- as_tsibble(mortality_ts_sco, key = c(age_group, sex), index = year)
+```
+
+```{r}
+mortality_ts_sco %>% 
+  ggplot() +
+  aes(x = year,
+      y = number_of_deaths,
+      colour = sex) +
+  geom_line() +
+  facet_wrap(~ age_group, scales = "free")
+```
+
+```{r}
+mortality_ts_sco %>% 
+  ggplot() +
+  aes(x = year,
+      y = crude_rate,
+      colour = sex) +
+  geom_line() +
+  facet_wrap(~ age_group, scales = "free")
+```
+

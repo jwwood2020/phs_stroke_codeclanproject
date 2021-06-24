@@ -322,15 +322,30 @@ mortality_hb %>%
 
 ```{r}
 mortality_ca %>% 
-  filter(diagnosis == "Stroke"
-           & age_group != "All" 
+    filter(diagnosis == "Stroke"
+           & age_group == "75plus years" 
            & sex == "All" 
            & year == "2018"
+           & hb_name == "NHS Greater Glasgow and Clyde"
          ) %>% 
-  ggplot(aes(x = ca_name,
+  ggplot(aes(x = reorder(ca_name, easr),
              y = easr,
              colour = ca_name)) +
   geom_point() +
-  facet_wrap(~ age_group, scales = "free_y")
+  coord_flip() 
+```
+
+```{r}
+mortality_ca %>% 
+    filter(diagnosis == "Stroke"
+           & age_group == "75plus years" 
+           & sex == "All" 
+           & year == "2018"
+         ) %>% 
+  ggplot(aes(x = reorder(hb_name, easr),
+             y = easr,
+             colour = ca_name)) +
+  geom_point() +
+  coord_flip() 
 ```
 
