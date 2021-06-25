@@ -1,0 +1,140 @@
+---
+title: "Forecast work"
+output: html_notebook
+---
+
+```{r}
+library(here)
+library(tidyverse)
+```
+
+```{r}
+population_ages <- read_csv(here("data/clean/population_ages_hb.csv"))
+activity_hb <- read_csv(here("data/clean/activity_hb.csv"))
+mortality_hb <- read_csv(here("data/clean/mortality_hb.csv"))
+```
+
+```{r}
+activity_scotland_rates_2018 <- activity_hb %>%
+    filter(hb_name == "Scotland"
+           & !age_group %in% c("under75 years") 
+           & sex != "All"
+           & diagnosis == "Stroke"
+           & admission_type == "All"
+           & year == 2018
+         ) %>% 
+  select(age_group, sex, crude_rate, easr) %>% 
+  rename(crude_rate_act = crude_rate,
+         easr_act = easr) 
+```
+
+```{r}
+activity_scotland_discharges <- activity_hb %>%
+    filter(hb_name == "Scotland"
+           & !age_group %in% c("under75 years") 
+           & sex != "All"
+           & diagnosis == "Stroke"
+           & admission_type == "All"
+         ) %>% 
+  select(year, age_group, sex, number_of_discharges)
+```
+
+
+```{r}
+mortality_scotland_rates_2018 <- mortality_hb %>% 
+  filter(hb_name == "Scotland" 
+           & !age_group %in% c("under75 years") 
+           & sex != "All"
+           & diagnosis == "Stroke"
+           & year == 2018) %>% 
+  select(age_group, sex, crude_rate, easr) %>% 
+  rename(crude_rate_mort = crude_rate,
+         easr_mort = easr)
+```
+
+```{r}
+mortality_scotland_deaths <- mortality_hb %>% 
+  filter(hb_name == "Scotland" 
+           & !age_group %in% c("under75 years") 
+           & sex != "All"
+           & diagnosis == "Stroke") %>% 
+  select(year, age_group, sex, number_of_deaths)
+```
+
+
+```{r}
+population_scotland <- population_ages %>% 
+  filter(hb_name == "Scotland" & sex != "All" & year >= 2009) %>% 
+  group_by(year, sex, age_band2) %>% 
+  summarise(population = sum(count))
+
+```
+
+```{r}
+population_scotland <- population_scotland %>% 
+  left_join(mortality_scotland_rates_2018,
+            by = c("sex", 
+                   "age_band2" = "age_group")) %>% 
+  left_join(activity_scotland_rates_2018,
+            by = c("sex", 
+                   "age_band2" = "age_group"))
+```
+
+```{r}
+population_scotland <- population_scotland %>% 
+  left_join(mortality_scotland_deaths,
+            by = c("year", "sex", 
+                   "age_band2" = "age_group")) %>% 
+  left_join(activity_scotland_discharges,
+            by = c("year", "sex", 
+                   "age_band2" = "age_group"))
+```
+
+
+```{r}
+population_scotland <- population_scotland %>% 
+  mutate(
+    deaths_forecast = if_else(year <= 2018,
+                              number_of_deaths,
+                              population/100000 * easr_mort),
+    cases_forecast = if_else(year <= 2018,
+                             number_of_discharges,
+                             population/100000 * easr_act),
+    type = if_else(year <= 2018, 
+                   "actual",
+                   "projection")
+  )
+```
+
+
+```{r}
+population_scotland %>%
+  ggplot() +
+  aes(x = year,
+      y = deaths_forecast,
+      colour = type) +
+  geom_line() +
+  facet_grid(age_band2 ~ sex, scales = "free")
+  
+```
+
+```{r}
+population_scotland %>%
+  ggplot() +
+  aes(x = year,
+      y = population,
+      colour = sex) +
+  geom_line() +
+  facet_wrap(~ age_band2, scales = "free")
+```
+
+```{r}
+population_scotland %>%
+  group_by(year) %>% 
+  summarise(deaths_forecast = sum(deaths_forecast)) %>% 
+  ggplot() +
+  aes(x = year,
+      y = deaths_forecast) +
+  geom_line() 
+```
+

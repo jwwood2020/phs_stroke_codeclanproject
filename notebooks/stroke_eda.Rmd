@@ -7,8 +7,17 @@ output: html_notebook
 # Load libraries
 library(skimr)
 library(here)
+library(ggthemes)
 library(tidyverse)
+
 ```
+
+```{r}
+#set plot themes
+#theme_set(theme_few)
+
+```
+
 
 ```{r}
 # Read in stroke hospital data
@@ -283,7 +292,7 @@ mortality_hb %>%
          ) %>% 
   ggplot(aes(x = age_group,
              y = easr,
-             colour = sex)) +
+             fill = sex)) +
   geom_point() +
   facet_wrap(~ diagnosis, scales = "free_y")
 ```
@@ -299,7 +308,7 @@ mortality_hb %>%
          ) %>% 
   ggplot(aes(x = reorder(hb_name, easr),
              y = easr,
-             colour = hb_name)) +
+             group = hb_name)) +
   coord_flip() +
   geom_point() 
 ```
@@ -314,7 +323,7 @@ mortality_hb %>%
          ) %>% 
   ggplot(aes(x = reorder(hb_name, easr),
              y = easr,
-             colour = hb_name)) +
+             group = hb_name)) +
   geom_point() +
   coord_flip()
 ```
