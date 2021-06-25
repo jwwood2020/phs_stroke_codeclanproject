@@ -9,7 +9,13 @@ library(here)
 library(tidyverse)
 library(tsibble)
 library(feasts)
+library(fable)
+library(fabletools)
 ```
+ 
+```{r}
+```
+ 
  
 ```{r}
 # Read in HB data
@@ -80,5 +86,30 @@ mortality_ts_sco %>%
       colour = sex) +
   geom_line() +
   facet_wrap(~ age_group, scales = "free")
+```
+
+```{r}
+fit <- mortality_ts_sco %>%
+  model(
+   ets = ETS(number_of_deaths),
+   arima = ARIMA(number_of_deaths),
+   lm = TSLM(number_of_deaths ~ trend() + season())
+  )
+fit
+```
+
+```{r}
+forecast_1 <- fit %>%
+  forecast(h = 20)
+forecast_1
+```
+
+```{r}
+forecast_1 %>%
+  autoplot(mortality_ts_sco) +
+  ggtitle("Forecasts ") +
+  xlab("Year") +
+  guides(colour = guide_legend(title = "Forecast")) +
+  facet_grid(~ sex)
 ```
 

@@ -1,0 +1,44 @@
+---
+title: "Forecast work"
+output: html_notebook
+---
+
+```{r}
+library(here)
+library(tidyverse)
+```
+
+```{r}
+population_ages <- read_csv(here("data/clean/population_ages_hb.csv"))
+activity_hb <- read_csv(here("data/clean/activity_hb.csv"))
+mortality_hb <- read_csv(here("data/clean/mortality_hb.csv"))
+```
+
+```{r}
+activity_scotland <- activity_hb %>%
+    filter(hb_name == "Scotland"
+           & !age_group %in% c("All", "under75 years") 
+           & sex != "All"
+           & year == "2018"
+           & diagnosis == "Stroke"
+           & admission_type == "All"
+         ) 
+```
+
+```{r}
+mortality_scotland <- mortality_hb %>% 
+  filter(hb_name == "Scotland" 
+           & !age_group %in% c("All", "under75 years") 
+           & sex != "All"
+           & year == "2018"
+           & diagnosis == "Stroke")
+```
+
+```{r}
+population_scotland <- population_ages %>% 
+  filter(hb_name == "Scotland" & sex != "All") %>% 
+  group_by(year, sex, age_band2) %>% 
+  summarise(population = sum(count))
+
+```
+
