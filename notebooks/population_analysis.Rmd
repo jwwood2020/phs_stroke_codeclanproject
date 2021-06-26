@@ -194,11 +194,12 @@ animate(pyramid, nframes = 200)
 
 ```{r}
 # Could also change this to percentage of total to show progression
-pop_by_ages_hb %>% 
+pop_ages_hb %>% 
   filter(sex == "All" & hb_name == "Scotland") %>% 
   group_by(year, age_band2) %>% 
   summarise(population = sum(count)) %>% 
   ggplot(aes(x = year, y = population, fill = age_band2)) + 
+  guides(fill = guide_legend(reverse = TRUE)) +
   geom_area()
 ```
 
