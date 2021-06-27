@@ -75,7 +75,7 @@ activity_hb %>%
   ggplot() +
   aes(x = reorder(diagnosis, discharges), 
       y = discharges) +
-  geom_col(fill = "darkblue") +
+  geom_col(fill = "seagreen") +
   labs(title = "Total number of discharges in Scotland, 2018") +
   theme(axis.title = element_blank(),
         axis.line = element_blank(),
@@ -99,7 +99,7 @@ mortality_hb %>%
   ggplot() +
   aes(x = reorder(diagnosis, deaths), 
       y = deaths) +
-  geom_col(fill = "darkblue") +
+  geom_col(fill = "seagreen") +
   labs(title = "Total number of deaths in Scotland, 2018") +
   theme(axis.title = element_blank(),
         axis.line = element_blank(),
@@ -211,13 +211,16 @@ pop_ages_hb %>%
   theme(axis.title = element_blank(),
         axis.line = element_blank(),
         axis.ticks.y = element_blank(),
+        panel.grid.major.x = element_line(linetype = "solid"),
         legend.position = "bottom",
         legend.title = element_blank()
         ) +
   labs(title = "Population of Scotland, 2018") +
   scale_fill_manual(values = c("Male" = "darkblue","Female" = "skyblue")) +
-  scale_y_continuous(breaks = c(-200000, -100000, 0, 100000, 200000),
-                     labels = c("200k", "100k", "0", "100k", "200k")) +
+  scale_y_continuous(breaks = c(-200000, -150000, -100000, -50000, 0,
+                                50000, 100000, 150000, 200000),
+                     labels = c("200k", "150k", "100k", "50k", "0",
+                                "50k", "100k", "150k", "200k")) +
   guides(fill = guide_legend(reverse = TRUE)) +
   coord_flip() 
 ```
@@ -235,7 +238,7 @@ mortality_hb %>%
              colour = sex)) +
   geom_point(fill = "white",
              size = 4,
-             alpha = 0.7) +
+             alpha = 0.8) +
   coord_flip() +
   theme(axis.title = element_blank(),
         axis.line = element_blank(),
@@ -268,7 +271,7 @@ pop_total_hb %>%
   labs(title = "Health board populations, 2018") +
   scale_y_continuous(labels = scales::comma,
                      limits = c(0,1300000)) +
-  geom_col(fill = "darkblue") +
+  geom_col(fill = "seagreen") +
   coord_flip()
 ```
 
@@ -286,7 +289,7 @@ mortality_hb %>%
              y = easr,
              group = hb_name)) +
   geom_point(size = 3,
-             colour = "darkblue") +
+             colour = "seagreen") +
   geom_segment(aes(x = reorder(hb_name, easr), 
                    xend = reorder(hb_name, easr), 
                    y = 0, 
@@ -303,31 +306,24 @@ mortality_hb %>%
 ```
 
 ```{r}
-# Health Board comparison
-
-mortality_ca %>% 
+mortality_hb %>% 
   filter(age_group == "75plus years"
            & sex == "All" 
-           & year == "2018"
            & diagnosis == "Stroke"
-           & hb_name == "NHS Greater Glasgow and Clyde"
          ) %>% 
-  ggplot(aes(x = reorder(ca_name, easr),
+ ggplot(aes(x = reorder(hb_name, easr),
              y = easr,
-             group = ca_name)) +
+             group = hb_name)) +
   geom_point(size = 3,
-             colour = "darkblue") +
-  geom_segment(aes(x = reorder(ca_name, easr), 
-                   xend = reorder(ca_name, easr), 
-                   y = 0, 
-                   yend = easr),
-                   linetype="dashed", 
-                   size = 0.1) +
+             colour = "seagreen",
+             alpha = 0.5) +
   theme(axis.title = element_blank(),
         axis.line = element_blank(),
-        axis.ticks.y = element_blank()
+        axis.ticks.y = element_blank(),
+        panel.grid.major.y = element_line(linetype = "solid", size = 1.5),
         ) +
-  labs(title = "Standardised stroke mortality rates, age 75+ 2018",
+  scale_y_continuous(limits = c(0, NA)) +
+  labs(title = "Standardised stroke mortality rates, age 75+, 2009 - 2018",
        subtitle = "deaths per 100,000, using European Standard Population") +
   coord_flip() 
 ```
@@ -357,6 +353,7 @@ mortality_ca %>%
 ```
 
 ```{r}
+# Health Board comparison
 mortality_ca %>% 
   filter(age_group == "75plus years"
            & sex == "All" 
@@ -366,18 +363,45 @@ mortality_ca %>%
          ) %>% 
   ggplot(aes(x = reorder(ca_name, easr),
              y = easr,
-             colour = ca_name)) +
-  geom_point(size = 3) +
+             group = ca_name)) +
+  geom_point(size = 3,
+             colour = "seagreen") +
+  geom_segment(aes(x = reorder(ca_name, easr), 
+                   xend = reorder(ca_name, easr), 
+                   y = 0, 
+                   yend = easr),
+                   linetype="dashed", 
+                   size = 0.1) +
   theme(axis.title = element_blank(),
         axis.line = element_blank(),
-        panel.grid.major.y = element_line(linetype = "solid", size = 1.5),
-        axis.ticks.y = element_blank(),
-        legend.position = "none"
+        axis.ticks.y = element_blank()
         ) +
-  scale_y_continuous(labels = scales::comma,
-                     limits = c(0, NA)) +
   labs(title = "Standardised stroke mortality rates, age 75+ 2018",
        subtitle = "deaths per 100,000, using European Standard Population") +
-  coord_flip()
+  coord_flip() 
+```
+
+```{r}
+mortality_ca %>% 
+  filter(age_group == "75plus years"
+           & sex == "All" 
+           & diagnosis == "Stroke"
+           & hb_name == "NHS Greater Glasgow and Clyde"
+         ) %>% 
+ ggplot(aes(x = reorder(ca_name, easr),
+             y = easr,
+             group = ca_name)) +
+  geom_point(size = 3,
+             colour = "seagreen",
+             alpha = 0.5) +
+  theme(axis.title = element_blank(),
+        axis.line = element_blank(),
+        axis.ticks.y = element_blank(),
+        panel.grid.major.y = element_line(linetype = "solid", size = 1.5),
+        ) +
+  scale_y_continuous(limits = c(0, NA)) +
+  labs(title = "Standardised stroke mortality rates, age 75+, 2009 - 2018",
+       subtitle = "deaths per 100,000, using European Standard Population") +
+  coord_flip() 
 ```
 
