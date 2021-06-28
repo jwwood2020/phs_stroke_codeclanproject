@@ -424,6 +424,7 @@ mortality_ca %>%
   coord_flip()
 ```
 
+Forecasting work - rates
 
 ```{r}
 #Make Scotland activoty data into a tsibble
@@ -434,10 +435,10 @@ activity_ts_sco <- activity_hb %>%
          & diagnosis == "Stroke")
 
 activity_ts_sco <- as_tsibble(activity_ts_sco, key = c(age_group, sex), index = year)
-activity_ts_sco
 ```
 
 ```{r}
+# Plot rates over time
 activity_ts_sco %>% 
   ggplot() +
   aes(x = year,
@@ -468,6 +469,7 @@ mortality_ts_sco <- as_tsibble(mortality_ts_sco, key = c(age_group, sex), index 
 ```
 
 ```{r}
+# Plot rates over time
 mortality_ts_sco %>% 
   ggplot() +
   aes(x = year,
@@ -487,6 +489,7 @@ mortality_ts_sco %>%
 ```
 
 ```{r}
+# Fit model to forecast mortality rates
 fit <- mortality_ts_sco %>%
   filter(age_group == "75plus years") %>% 
   model(
@@ -503,5 +506,220 @@ forecast_1 %>%
   autoplot(mortality_ts_sco) +
   ggtitle("Forecasts of standardised mortality rates (age 75+)") +
   facet_grid(~ sex)
+```
+
+Use population projection to forecast discharges/deaths
+
+```{r}
+# Get discharge rates for 2018
+activity_scotland_rates_2018 <- activity_hb %>%
+    filter(age_group != "under75 years"
+           & sex != "All"
+           & diagnosis == "Stroke"
+           & admission_type == "All"
+           & year == 2018
+         ) %>% 
+  select(hb_name, age_group, sex, crude_rate, easr) %>% 
+  rename(crude_rate_act = crude_rate,
+         easr_act = easr) 
+```
+
+```{r}
+# Get historic number of discharges
+activity_scotland_discharges <- activity_hb %>%
+    filter(age_group != "under75 years"
+           & sex != "All"
+           & diagnosis == "Stroke"
+           & admission_type == "All"
+         ) %>% 
+  select(hb_name, year, age_group, sex, number_of_discharges)
+```
+
+
+```{r}
+# Get mortality rates for 2018
+mortality_scotland_rates_2018 <- mortality_hb %>% 
+  filter(age_group != "under75 years"
+           & sex != "All"
+           & diagnosis == "Stroke"
+           & year == 2018) %>% 
+  select(hb_name, age_group, sex, crude_rate, easr) %>% 
+  rename(crude_rate_mort = crude_rate,
+         easr_mort = easr)
+```
+
+```{r}
+# Get historic number of deaths
+mortality_scotland_deaths <- mortality_hb %>% 
+  filter(age_group != "under75 years"
+           & sex != "All"
+           & diagnosis == "Stroke") %>% 
+  select(hb_name, year, age_group, sex, number_of_deaths)
+```
+
+
+```{r}
+# Population estimates/projections
+# Filter out years for which stroke data is not available
+population_scotland <- pop_ages_hb %>% 
+  filter(sex != "All" & year >= 2009) %>% 
+  group_by(hb_name, year, sex, age_band2) %>% 
+  summarise(population = sum(count))
+
+```
+
+```{r}
+# Add 2018 mortality/discharge rates 
+population_scotland <- population_scotland %>% 
+  left_join(mortality_scotland_rates_2018,
+            by = c("hb_name",
+                   "sex", 
+                   "age_band2" = "age_group")) %>% 
+  left_join(activity_scotland_rates_2018,
+            by = c("hb_name",
+                   "sex", 
+                   "age_band2" = "age_group"))
+```
+
+```{r}
+# Add number of deaths/discharges
+# Will be blank for years > 2018
+population_scotland <- population_scotland %>% 
+  left_join(mortality_scotland_deaths,
+            by = c("hb_name", 
+                   "year",
+                   "sex", 
+                   "age_band2" = "age_group")) %>% 
+  left_join(activity_scotland_discharges,
+            by = c("hb_name", 
+                   "year",
+                   "sex", 
+                   "age_band2" = "age_group"))
+```
+
+
+```{r}
+# Use rates to get projected number of deaths/discharges
+population_scotland <- population_scotland %>% 
+  mutate(
+    deaths_forecast = if_else(year <= 2018,
+                              number_of_deaths,
+                              population/100000 * easr_mort),
+    cases_forecast = if_else(year <= 2018,
+                             number_of_discharges,
+                             population/100000 * easr_act),
+    type = if_else(year <= 2018, 
+                   "actual",
+                   "projection")
+  )
+```
+
+```{r}
+# Plot population forecast
+pop_forecast_ageband <- population_scotland %>%
+  group_by(hb_name, year, age_band2,) %>% 
+  summarise(pop_ageband = sum(population),
+            deaths_ageband = sum(deaths_forecast),
+            discharges_ageband = sum(cases_forecast)) 
+```
+
+```{r}
+pop_forecasts <- population_scotland %>%
+  group_by(hb_name, year) %>% 
+  summarise(pop_total = sum(population),
+            deaths_total = sum(deaths_forecast),
+            discharges_total = sum(cases_forecast)) 
+```
+
+```{r}
+pop_forecast_ageband <- pop_forecast_ageband%>% 
+  left_join(pop_forecasts, by = c("hb_name", "year")) %>% 
+  mutate(ageband_pct = pop_ageband/pop_total)
+```
+
+```{r}
+pop_ages_hb %>%
+  filter(sex != "All" 
+         & hb_name == "Scotland"
+         & year >= 2009) %>%
+  group_by(year) %>%
+  summarise(total_pop = sum(count)) %>% 
+  ggplot() +
+  aes(x = year, y = total_pop) +
+  geom_line() +
+   theme(
+    panel.grid.major.y = element_line(linetype = "solid")
+  ) +
+  scale_y_continuous(limits = c(4000000, 6000000),
+                     labels = scales::comma) +
+  labs(title = "Population forecast")
+```
+
+
+
+
+```{r}
+pop_ages_hb %>%
+  filter(year %in% c("1981", "2001", "2021", "2041")
+         & sex != "All" 
+         & hb_name == "Scotland") %>%
+  group_by(year, sex, age_band1) %>%
+  summarise(total_pop = sum(count)) %>%
+  ggplot(aes(
+    x = age_band1,
+    fill = sex,
+    y = ifelse(test = sex == "Male",
+      yes = -total_pop,
+      no = total_pop
+    )
+  )) +
+  geom_bar(stat = "identity") +
+  theme(
+    panel.grid.major.x = element_line(linetype = "solid"),
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    axis.text.y = element_blank()
+  ) +
+  labs(title = "Age structure of Scotland") +
+  scale_fill_manual(values = c("Male" = "darkblue", "Female" = "skyblue")) +
+  scale_y_continuous(
+    breaks = c(
+      -200000, -150000, -100000, -50000, 0,
+      50000, 100000, 150000, 200000
+    ),
+    labels = c(
+      "200k", "150k", "100k", "50k", "0",
+      "50k", "100k", "150k", "200k"
+    )
+  ) +
+  guides(fill = guide_legend(reverse = TRUE)) +
+  coord_flip() +
+  facet_wrap(~ year)
+```
+
+```{r}
+pop_forecasts %>% 
+  filter(hb_name == "Scotland") %>% 
+  ggplot() +
+  aes(x = year, y = deaths_total) %>% 
+  geom_line() +
+   theme(
+    panel.grid.major.y = element_line(linetype = "solid")
+  ) +
+  scale_y_continuous(limits = c(0, 4000)) +
+  labs(title = "Projection of stroke deaths")
+```
+
+```{r}
+pop_forecasts %>% 
+  filter(hb_name == "Scotland") %>% 
+  ggplot() +
+  aes(x = year, y = discharges_total) %>% 
+  geom_line() +
+   theme(
+    panel.grid.major.y = element_line(linetype = "solid")
+  ) +
+  scale_y_continuous(limits = c(10000, 40000)) +
+  labs(title = "Projection of stroke discharges")
 ```
 
