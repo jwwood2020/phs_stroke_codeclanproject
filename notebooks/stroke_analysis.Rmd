@@ -678,7 +678,7 @@ pop_ages_hb %>%
     panel.grid.major.x = element_line(linetype = "solid"),
     legend.position = "bottom",
     legend.title = element_blank(),
-    axis.text.y = element_blank()
+    #axis.text.y = element_blank()
   ) +
   labs(title = "Age structure of Scotland") +
   scale_fill_manual(values = c("Male" = "darkblue", "Female" = "skyblue")) +
@@ -694,7 +694,8 @@ pop_ages_hb %>%
   ) +
   guides(fill = guide_legend(reverse = TRUE)) +
   coord_flip() +
-  facet_wrap(~ year)
+  facet_wrap(~ year
+             )
 ```
 
 ```{r}
