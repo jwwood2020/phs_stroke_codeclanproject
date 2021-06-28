@@ -10,21 +10,35 @@ output:
 ```{r include = FALSE}
 # Load libraries & set plot theme
 library(here)
-library(tidyverse)
 library(ggpol)
+library(tsibble)
+library(feasts)
+library(fable)
+library(fabletools)
+library(tidyverse)
 ```
 
 ```{r include = FALSE}
-# Set theme for plots
-theme_set(theme_classic())
+# Set custom theme for plots
+theme_strokes <- function() {
+  theme_classic() %+replace%
+    theme(
+      axis.title = element_blank(),
+      axis.line = element_blank(),
+      axis.ticks.y = element_blank(),
+      plot.title = element_text(face = "bold", size = 14, hjust = 0, vjust = 0.5)
+    )
+}
+
+theme_set(theme_strokes())
 ```
 
 ```{r include = FALSE}
 # Read in cleaned stroke data
-activity_hb <- read_csv(here("data/clean/activity_hb.csv")) %>% 
+activity_hb <- read_csv(here("data/clean/activity_hb.csv")) %>%
   filter(admission_type == "All")
-activity_ca <- read_csv(here("data/clean/activity_ca.csv")) %>% 
-    filter(admission_type == "All")
+activity_ca <- read_csv(here("data/clean/activity_ca.csv")) %>%
+  filter(admission_type == "All")
 mortality_hb <- read_csv(here("data/clean/mortality_hb.csv"))
 mortality_ca <- read_csv(here("data/clean/mortality_ca.csv"))
 ```
@@ -41,100 +55,93 @@ pop_ages_ca <- read_csv(here("data/clean/population_ages_ca.csv"))
 
 ```{r}
 # Summary of total number of stroke discharges by type
-activity_hb %>% 
-  filter(hb_name == "Scotland"
-         & admission_type == "All"
-         & age_group =="All" 
-         & sex == "All" 
-         & year == 2018 ) %>% 
-  group_by(diagnosis, sex, age_group) %>% 
+activity_hb %>%
+  filter(hb_name == "Scotland" &
+           admission_type == "All" &
+           age_group == "All" &
+           sex == "All" &
+           year == 2018) %>%
+  group_by(diagnosis, sex, age_group) %>%
   summarise(discharges = sum(number_of_discharges))
 ```
 
 ```{r}
 # Summary of total number of stroke deaths by type
-mortality_hb %>% 
-  filter(hb_name == "Scotland" 
-         & age_group == "All"
-         & sex == "All"
-         & year == 2018) %>% 
-  group_by(year, sex, diagnosis) %>% 
+mortality_hb %>%
+  filter(hb_name == "Scotland" &
+           age_group == "All" &
+           sex == "All" &
+           year == 2018) %>%
+  group_by(year, sex, diagnosis) %>%
   summarise(total_deaths = sum(number_of_deaths))
 ```
 
 ```{r}
 # Total discharges split by diagnosis, 2018
-activity_hb %>% 
-  filter(hb_name == "Scotland"
-           & age_group =="All" 
-           & sex == "All" 
-           & year == "2018"
-         ) %>% 
-  group_by(diagnosis) %>% 
-  summarise(discharges = sum(number_of_discharges)) %>% 
+activity_hb %>%
+  filter(hb_name == "Scotland" 
+         & age_group == "All"
+         & sex == "All"
+         & year == "2018") %>%
+  group_by(diagnosis) %>%
+  summarise(discharges = sum(number_of_discharges)) %>%
   ggplot() +
-  aes(x = reorder(diagnosis, discharges), 
-      y = discharges) +
-  geom_col(fill = "seagreen") +
+  aes(
+    x = reorder(diagnosis, discharges),
+    y = discharges
+  ) +
+  geom_col(fill = "violetred4") +
   labs(title = "Total number of discharges in Scotland, 2018") +
-  theme(axis.title = element_blank(),
-        axis.line = element_blank(),
-        axis.ticks.y = element_blank()
-        ) +
-  scale_y_continuous(labels = scales::comma,
-                     limits = c(0, 35000)) +
+  scale_y_continuous(
+    labels = scales::comma,
+    limits = c(0, 35000)
+  ) +
   coord_flip()
 ```
 
 ```{r}
 # Total discharges split by diagnosis, 2018
-mortality_hb %>% 
-  filter(hb_name == "Scotland"
-           & age_group =="All" 
-           & sex == "All" 
-           & year == "2018"
-         ) %>% 
-  group_by(diagnosis) %>% 
-  summarise(deaths = sum(number_of_deaths)) %>% 
+mortality_hb %>%
+  filter(hb_name == "Scotland" &
+    age_group == "All" &
+    sex == "All" &
+    year == "2018") %>%
+  group_by(diagnosis) %>%
+  summarise(deaths = sum(number_of_deaths)) %>%
   ggplot() +
-  aes(x = reorder(diagnosis, deaths), 
-      y = deaths) +
-  geom_col(fill = "seagreen") +
+  aes(
+    x = reorder(diagnosis, deaths),
+    y = deaths
+  ) +
+  geom_col(fill = "violetred4") +
   labs(title = "Total number of deaths in Scotland, 2018") +
-  theme(axis.title = element_blank(),
-        axis.line = element_blank(),
-        axis.ticks.y = element_blank()
-        )  +
-  scale_y_continuous(labels = scales::comma,
-                     limits = c(0, 4500)) +
+  scale_y_continuous(
+    labels = scales::comma,
+    limits = c(0, 4500)
+  ) +
   coord_flip()
 ```
 
 ```{r}
 # Total discharges by sex, diagnosis, age_group
-activity_hb %>% 
-  filter(hb_name == "Scotland"
-           & !age_group %in% c("All", "under75 years") 
-           & sex != "All"
-           & year == "2018"
-         ) %>% 
-  group_by(diagnosis, 
-           sex,
-           age_group
-           ) %>% 
-  summarise(discharges = sum(number_of_discharges)) %>% 
-  ggplot(aes(x = age_group,
-             y = discharges,
-             fill = sex
-             )
-         ) +
+activity_hb %>%
+  filter(hb_name == "Scotland" 
+         & !age_group %in% c("All", "under75 years")
+         & sex != "All"
+         & year == "2018") %>%
+  group_by(diagnosis, sex, age_group) %>%
+  summarise(discharges = sum(number_of_discharges)) %>%
+  ggplot() +
+  aes(
+    x = age_group,
+    y = discharges,
+    fill = sex
+  ) +
   geom_col(position = "dodge") +
-  theme(axis.title.x = element_blank(),
-        axis.title.y = element_blank(),
-        axis.ticks.y = element_blank(),
-        legend.position = "bottom",
-        legend.title = element_blank()
-        ) +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank()
+  ) +
   labs(title = "Total number of discharges in Scotland, 2018") +
   scale_y_continuous(labels = scales::comma) +
   scale_fill_manual(
@@ -142,40 +149,35 @@ activity_hb %>%
       "Male" = "darkblue",
       "Female" = "skyblue"
     )
-    ) +
-   theme(axis.title = element_blank(),
-        axis.line = element_blank()        
-        ) +
+  ) +
+  theme(
+    axis.title = element_blank(),
+    axis.line = element_blank()
+  ) +
   coord_flip() +
-  facet_wrap(~ diagnosis)
-    
+  facet_wrap(~diagnosis)
 ```
 
 ```{r}
 # Total deaths by sex, diagnosis, age_group
-mortality_hb %>% 
-  filter(hb_name == "Scotland"
-           & !age_group %in% c("All", "under75 years") 
-           & sex != "All"
-           & year == "2018"
-         ) %>% 
-  group_by(diagnosis, 
-           sex,
-           age_group
-           ) %>% 
-  summarise(deaths = sum(number_of_deaths)) %>% 
-  ggplot(aes(x = age_group,
-             y = deaths,
-             fill = sex
-             )
-         ) +
+mortality_hb %>%
+  filter(hb_name == "Scotland" 
+         & !age_group %in% c("All", "under75 years") 
+         & sex != "All" 
+         & year == "2018") %>%
+  group_by(diagnosis, sex, age_group) %>%
+  summarise(deaths = sum(number_of_deaths)) %>%
+  ggplot() +
+  aes(
+    x = age_group,
+    y = deaths,
+    fill = sex
+  ) +
   geom_col(position = "dodge") +
-  theme(axis.title.x = element_blank(),
-        axis.title.y = element_blank(),
-        axis.ticks.y = element_blank(),
-        legend.position = "bottom",
-        legend.title = element_blank()
-        ) +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank()
+  ) +
   labs(title = "Total number of deaths in Scotland, 2018") +
   scale_y_continuous(labels = scales::comma) +
   scale_fill_manual(
@@ -183,95 +185,99 @@ mortality_hb %>%
       "Male" = "darkblue",
       "Female" = "skyblue"
     )
-    ) +
-   theme(axis.title = element_blank(),
-        axis.line = element_blank()        
-        ) +
+  ) +
   coord_flip() +
-  facet_wrap(~ diagnosis,
-             ncol = 2)
+  facet_wrap(~ diagnosis, ncol = 2)
 ```
 
 
 ```{r}
-pop_ages_hb %>% 
-  filter(year == 2018 
-         & sex != "All" 
-         & hb_name == "Scotland") %>% 
-  group_by(sex, age_band1) %>% 
-  summarise(total_pop = sum(count)) %>% 
-  ggplot(aes(x = age_band1,
-             fill = sex,
-             y = ifelse(test = sex == "Male",
-                        yes = -total_pop,
-                        no = total_pop)
-             )
-         ) + 
+pop_ages_hb %>%
+  filter(year == 2018 &
+    sex != "All" &
+    hb_name == "Scotland") %>%
+  group_by(sex, age_band1) %>%
+  summarise(total_pop = sum(count)) %>%
+  ggplot(aes(
+    x = age_band1,
+    fill = sex,
+    y = ifelse(test = sex == "Male",
+      yes = -total_pop,
+      no = total_pop
+    )
+  )) +
   geom_bar(stat = "identity") +
-  theme(axis.title = element_blank(),
-        axis.line = element_blank(),
-        axis.ticks.y = element_blank(),
-        panel.grid.major.x = element_line(linetype = "solid"),
-        legend.position = "bottom",
-        legend.title = element_blank()
-        ) +
+  theme(
+    panel.grid.major.x = element_line(linetype = "solid"),
+    legend.position = "bottom",
+    legend.title = element_blank()
+  ) +
   labs(title = "Population of Scotland, 2018") +
-  scale_fill_manual(values = c("Male" = "darkblue","Female" = "skyblue")) +
-  scale_y_continuous(breaks = c(-200000, -150000, -100000, -50000, 0,
-                                50000, 100000, 150000, 200000),
-                     labels = c("200k", "150k", "100k", "50k", "0",
-                                "50k", "100k", "150k", "200k")) +
+  scale_fill_manual(values = c("Male" = "darkblue", "Female" = "skyblue")) +
+  scale_y_continuous(
+    breaks = c(
+      -200000, -150000, -100000, -50000, 0,
+      50000, 100000, 150000, 200000
+    ),
+    labels = c(
+      "200k", "150k", "100k", "50k", "0",
+      "50k", "100k", "150k", "200k"
+    )
+  ) +
   guides(fill = guide_legend(reverse = TRUE)) +
-  coord_flip() 
+  coord_flip()
 ```
 
 ```{r}
 # Mortality rates
-mortality_hb %>% 
-  filter(hb_name == "Scotland"
-           & !age_group  %in% c("All", "under75 years") 
-           & sex != "All" 
-           & year == "2018"
-         ) %>% 
-  ggplot(aes(x = age_group,
-             y = easr,
-             colour = sex)) +
-  geom_point(fill = "white",
-             size = 4,
-             alpha = 0.8) +
+mortality_hb %>%
+  filter(hb_name == "Scotland" &
+    !age_group %in% c("All", "under75 years") &
+    sex != "All" &
+    year == "2018") %>%
+  ggplot(aes(
+    x = age_group,
+    y = easr,
+    colour = sex
+  )) +
+  geom_point(
+    fill = "white",
+    size = 4,
+    alpha = 0.8
+  ) +
   coord_flip() +
-  theme(axis.title = element_blank(),
-        axis.line = element_blank(),
-        axis.ticks.y = element_blank(),
-        legend.position = "bottom",
-        legend.title = element_blank()
-        ) +
-  scale_colour_manual(values = c("Male" = "darkblue","Female" = "skyblue")) +
-  labs(title = "Standardised Mortality Rates, Scotland 2018",
-       subtitle = "deaths per 100,000, using European Standard Population") +
-  facet_wrap(~ diagnosis, scales = "free_y", ncol = 2)
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank()
+  ) +
+  scale_colour_manual(values = c("Male" = "darkblue", "Female" = "skyblue")) +
+  labs(
+    title = "Standardised Mortality Rates, Scotland 2018",
+    subtitle = "deaths per 100,000, using European Standard Population"
+  ) +
+  facet_wrap(~diagnosis, scales = "free_y", ncol = 2)
 ```
 
 
 ```{r}
 # Health board population
-pop_total_hb %>% 
-  filter(year == 2018 
-         & sex == "All" 
-         & age == "all_ages"
-         & hb_name != "Scotland") %>% 
-  group_by(hb_name) %>% 
-  summarise(total_pop = sum(count)) %>% 
-  ggplot(aes(x = reorder(hb_name, total_pop),
-             y = total_pop)) +
-  theme(axis.title = element_blank(),
-        axis.line = element_blank(),
-        axis.ticks.y = element_blank()
-        ) +
+pop_total_hb %>%
+  filter(year == 2018 &
+    sex == "All" &
+    age == "all_ages" &
+    hb_name != "Scotland") %>%
+  group_by(hb_name) %>%
+  summarise(total_pop = sum(count)) %>%
+  ggplot(aes(
+    x = reorder(hb_name, total_pop),
+    y = total_pop
+  )) +
   labs(title = "Health board populations, 2018") +
-  scale_y_continuous(labels = scales::comma,
-                     limits = c(0,1300000)) +
-  geom_col(fill = "seagreen") +
+  scale_y_continuous(
+    labels = scales::comma,
+    limits = c(0, 1300000)
+  ) +
+  geom_col(fill = "violetred4") +
   coord_flip()
 ```
 
@@ -279,129 +285,223 @@ pop_total_hb %>%
 ```{r}
 # Health Board comparison
 
-mortality_hb %>% 
-  filter(age_group == "75plus years"
-           & sex == "All" 
-           & year == "2018"
-           & diagnosis == "Stroke"
-         ) %>% 
-  ggplot(aes(x = reorder(hb_name, easr),
-             y = easr,
-             group = hb_name)) +
-  geom_point(size = 3,
-             colour = "seagreen") +
-  geom_segment(aes(x = reorder(hb_name, easr), 
-                   xend = reorder(hb_name, easr), 
-                   y = 0, 
-                   yend = easr),
-                   linetype="dashed", 
-                   size = 0.1) +
-  theme(axis.title = element_blank(),
-        axis.line = element_blank(),
-        axis.ticks.y = element_blank()
-        ) +
-  labs(title = "Standardised stroke mortality rates, age 75+ 2018",
-       subtitle = "deaths per 100,000, using European Standard Population") +
-  coord_flip() 
+mortality_hb %>%
+  filter(age_group == "75plus years" &
+    sex == "All" &
+    year == "2018" &
+    diagnosis == "Stroke") %>%
+  ggplot(aes(
+    x = reorder(hb_name, easr),
+    y = easr,
+    group = hb_name
+  )) +
+  geom_point(
+    size = 3,
+    colour = "violetred4"
+  ) +
+  geom_segment(aes(
+    x = reorder(hb_name, easr),
+    xend = reorder(hb_name, easr),
+    y = 0,
+    yend = easr
+  ),
+  linetype = "dashed",
+  size = 0.1
+  ) +
+  labs(
+    title = "Standardised stroke mortality rates, age 75+ 2018",
+    subtitle = "deaths per 100,000, using European Standard Population"
+  ) +
+  coord_flip()
 ```
 
 ```{r}
-mortality_hb %>% 
-  filter(age_group == "75plus years"
-           & sex == "All" 
-           & diagnosis == "Stroke"
-         ) %>% 
- ggplot(aes(x = reorder(hb_name, easr),
-             y = easr,
-             group = hb_name)) +
-  geom_point(size = 3,
-             colour = "seagreen",
-             alpha = 0.5) +
-  theme(axis.title = element_blank(),
-        axis.line = element_blank(),
-        axis.ticks.y = element_blank(),
-        panel.grid.major.y = element_line(linetype = "solid", size = 1.5),
-        ) +
+mortality_hb %>%
+  filter(age_group == "75plus years" &
+    sex == "All" &
+    diagnosis == "Stroke") %>%
+  ggplot(aes(
+    x = reorder(hb_name, easr),
+    y = easr,
+    group = hb_name
+  )) +
+  geom_point(
+    size = 3,
+    colour = "violetred4",
+    alpha = 0.4
+  ) +
+  theme(panel.grid.major.y = element_line(linetype = "solid")) +
   scale_y_continuous(limits = c(0, NA)) +
-  labs(title = "Standardised stroke mortality rates, age 75+, 2009 - 2018",
-       subtitle = "deaths per 100,000, using European Standard Population") +
-  coord_flip() 
+  labs(
+    title = "Standardised stroke mortality rates, age 75+, 2009 - 2018",
+    subtitle = "deaths per 100,000, using European Standard Population"
+  ) +
+  coord_flip()
 ```
 
 ```{r}
-mortality_ca %>% 
-  filter(age_group == "75plus years"
-           & sex == "All" 
-           & year == "2018"
-           & diagnosis == "Stroke"
-         ) %>% 
-  ggplot(aes(x = reorder(hb_name, easr),
-             y = easr,
-             colour = hb_name)) +
-  geom_point(size = 3) +
-  theme(axis.title = element_blank(),
-        axis.line = element_blank(),
-        panel.grid.major.y = element_line(linetype = "solid", size = 1.5),
-        axis.ticks.y = element_blank(),
-        legend.position = "none"
-        ) +
-  scale_y_continuous(labels = scales::comma,
-                     limits = c(0, NA)) +
-  labs(title = "Standardised stroke mortality rates, age 75+ 2018",
-       subtitle = "deaths per 100,000, using European Standard Population") +
+mortality_ca %>%
+  filter(age_group == "75plus years" &
+    sex == "All" &
+    year == "2018" &
+    diagnosis == "Stroke") %>%
+  ggplot(aes(
+    x = reorder(hb_name, easr),
+    y = easr
+  )) +
+  geom_point(size = 3,
+             colour = "violetred4") +
+  theme(
+    panel.grid.major.y = element_line(linetype = "solid"),
+    legend.position = "none",
+  ) +
+  scale_y_continuous(
+    labels = scales::comma,
+    limits = c(0, NA)
+  ) +
+  labs(
+    title = "Standardised stroke mortality rates, age 75+ 2018",
+    subtitle = "deaths per 100,000, using European Standard Population"
+  ) +
   coord_flip()
 ```
 
 ```{r}
 # Health Board comparison
-mortality_ca %>% 
-  filter(age_group == "75plus years"
-           & sex == "All" 
-           & year == "2018"
-           & diagnosis == "Stroke"
-           & hb_name == "NHS Greater Glasgow and Clyde"
-         ) %>% 
-  ggplot(aes(x = reorder(ca_name, easr),
-             y = easr,
-             group = ca_name)) +
-  geom_point(size = 3,
-             colour = "seagreen") +
-  geom_segment(aes(x = reorder(ca_name, easr), 
-                   xend = reorder(ca_name, easr), 
-                   y = 0, 
-                   yend = easr),
-                   linetype="dashed", 
-                   size = 0.1) +
-  theme(axis.title = element_blank(),
-        axis.line = element_blank(),
-        axis.ticks.y = element_blank()
-        ) +
-  labs(title = "Standardised stroke mortality rates, age 75+ 2018",
-       subtitle = "deaths per 100,000, using European Standard Population") +
-  coord_flip() 
+mortality_ca %>%
+  filter(age_group == "75plus years" &
+    sex == "All" &
+    year == "2018" &
+    diagnosis == "Stroke" &
+    hb_name == "NHS Greater Glasgow and Clyde") %>%
+  ggplot(aes(
+    x = reorder(ca_name, easr),
+    y = easr,
+    group = ca_name
+  )) +
+  geom_point(
+    size = 3,
+    colour = "violetred4"
+  ) +
+  geom_segment(aes(
+    x = reorder(ca_name, easr),
+    xend = reorder(ca_name, easr),
+    y = 0,
+    yend = easr
+  ),
+  linetype = "dashed",
+  size = 0.1
+  ) +
+  labs(
+    title = "Standardised stroke mortality rates, age 75+ 2018",
+    subtitle = "deaths per 100,000, using European Standard Population"
+  ) +
+  coord_flip()
 ```
 
 ```{r}
-mortality_ca %>% 
-  filter(age_group == "75plus years"
-           & sex == "All" 
-           & diagnosis == "Stroke"
-           & hb_name == "NHS Greater Glasgow and Clyde"
-         ) %>% 
- ggplot(aes(x = reorder(ca_name, easr),
-             y = easr,
-             group = ca_name)) +
-  geom_point(size = 3,
-             colour = "seagreen",
-             alpha = 0.5) +
-  theme(axis.title = element_blank(),
-        axis.line = element_blank(),
-        axis.ticks.y = element_blank(),
-        panel.grid.major.y = element_line(linetype = "solid", size = 1.5),
-        ) +
+mortality_ca %>%
+  filter(age_group == "75plus years" &
+    sex == "All" &
+    diagnosis == "Stroke" &
+    hb_name == "NHS Greater Glasgow and Clyde") %>%
+  ggplot(aes(
+    x = reorder(ca_name, easr),
+    y = easr,
+    group = ca_name
+  )) +
+  geom_point(
+    size = 3,
+    colour = "violetred4",
+    alpha = 0.4
+  ) +
+  theme(panel.grid.major.y = element_line(linetype = "solid")) +
   scale_y_continuous(limits = c(0, NA)) +
-  labs(title = "Standardised stroke mortality rates, age 75+, 2009 - 2018",
-       subtitle = "deaths per 100,000, using European Standard Population") +
-  coord_flip() 
+  labs(
+    title = "Standardised stroke mortality rates, age 75+, 2009 - 2018",
+    subtitle = "deaths per 100,000, using European Standard Population"
+  ) +
+  coord_flip()
+```
+
+
+```{r}
+#Make Scotland activoty data into a tsibble
+activity_ts_sco <- activity_hb %>% 
+  filter(hb_name == "Scotland" 
+         & sex != "All"
+         & !age_group %in% c("under75 years", "All")
+         & diagnosis == "Stroke")
+
+activity_ts_sco <- as_tsibble(activity_ts_sco, key = c(age_group, sex), index = year)
+activity_ts_sco
+```
+
+```{r}
+activity_ts_sco %>% 
+  ggplot() +
+  aes(x = year,
+      y = easr,
+      colour = sex) +
+  geom_line() +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank()
+  ) +
+  scale_colour_manual(values = c("Male" = "darkblue", "Female" = "skyblue")) +
+  labs(
+    title = "Standardised Discharge Rates, Scotland 2009 - 2018",
+    subtitle = "discharges per 100,000, using European Standard Population"
+  ) +
+  facet_wrap(~ age_group, scales = "free")
+```
+
+```{r}
+# Make Scotland mortality data into a tsibble
+mortality_ts_sco <- mortality_hb %>% 
+  filter(hb_name == "Scotland" 
+         & sex != "All"
+         & !age_group %in% c("under75 years", "All")
+         & diagnosis == "Stroke")
+
+mortality_ts_sco <- as_tsibble(mortality_ts_sco, key = c(age_group, sex), index = year)
+```
+
+```{r}
+mortality_ts_sco %>% 
+  ggplot() +
+  aes(x = year,
+      y = easr,
+      colour = sex) +
+  geom_line() +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank()
+  ) +
+  scale_colour_manual(values = c("Male" = "darkblue", "Female" = "skyblue")) +
+  labs(
+    title = "Standardised Mortality Rates, Scotland 2009 - 2018",
+    subtitle = "discharges per 100,000, using European Standard Population"
+  ) +
+  facet_wrap(~ age_group, scales = "free")
+```
+
+```{r}
+fit <- mortality_ts_sco %>%
+  filter(age_group == "75plus years") %>% 
+  model(
+   ets = ETS(easr),
+   arima = ARIMA(easr)
+   )
+
+forecast_1 <- fit %>%
+  forecast(h = 20)
+```
+
+```{r}
+forecast_1 %>%
+  autoplot(mortality_ts_sco) +
+  ggtitle("Forecasts of standardised mortality rates (age 75+)") +
+  facet_grid(~ sex)
 ```
 
