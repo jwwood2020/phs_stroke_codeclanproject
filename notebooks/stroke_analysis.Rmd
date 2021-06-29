@@ -23,14 +23,16 @@ library(tidyverse)
 theme_strokes <- function() {
   theme_classic() %+replace%
     theme(
-      plot.title.position="plot",
-      strip.background=element_blank(), strip.text=element_text(face="bold"),
+      plot.title.position = "plot",
+      strip.background = element_blank(), 
+      strip.text = element_text(face="bold"),
       axis.title = element_blank(),
       axis.line = element_blank(),
       axis.ticks.y = element_blank(),
-      plot.title=element_text(face="bold", size=rel(1.2), hjust=0, margin=margin(0,0,5.5,0))
-    #  plot.title = element_text(face = "bold", size = 14, hjust = 0, vjust = 0.5)
-    )
+      plot.title=element_text(face = "bold", 
+                              size = rel(1.2),
+                              margin = margin(0, 0, 5, 5)
+    ))
 }
 
 theme_set(theme_strokes())
@@ -46,7 +48,7 @@ mortality_hb <- read_csv(here("data/clean/mortality_hb.csv"))
 mortality_ca <- read_csv(here("data/clean/mortality_ca.csv"))
 ```
 
-```{r}
+```{r include = FALSE}
 # Read in cleaned population data
 pop_total_hb <- read_csv(here("data/clean/population_total_hb.csv"))
 pop_ages_hb <- read_csv(here("data/clean/population_ages_hb.csv"))
@@ -56,7 +58,7 @@ pop_ages_ca <- read_csv(here("data/clean/population_ages_ca.csv"))
 
 
 
-```{r}
+```{r include = FALSE}
 # Summary of total number of stroke discharges by type
 activity_hb %>%
   filter(hb_name == "Scotland" &
@@ -68,7 +70,7 @@ activity_hb %>%
   summarise(discharges = sum(number_of_discharges))
 ```
 
-```{r}
+```{r include = FALSE}
 # Summary of total number of stroke deaths by type
 mortality_hb %>%
   filter(hb_name == "Scotland" &
@@ -79,7 +81,7 @@ mortality_hb %>%
   summarise(total_deaths = sum(number_of_deaths))
 ```
 
-```{r}
+```{r echo = FALSE}
 # Total discharges split by diagnosis, 2018
 activity_hb %>%
   filter(hb_name == "Scotland" 
@@ -94,10 +96,11 @@ activity_hb %>%
     y = discharges
   ) +
   geom_col(fill = "violetred4") +
-  labs(title = "Total number of discharges in Scotland, 2018") +
+  geom_text(aes(label = discharges, hjust = -0.2)) +
+  labs(title = "Total number of discharges (2018)") +
   scale_y_continuous(
     labels = scales::comma,
-    limits = c(0, 35000)
+    limits = c(0, 40000)
   ) +
   coord_flip()
 
@@ -119,7 +122,8 @@ mortality_hb %>%
     y = deaths
   ) +
   geom_col(fill = "violetred4") +
-  labs(title = "Total number of deaths in Scotland, 2018") +
+  geom_text(aes(label = deaths, hjust = -0.2)) +
+  labs(title = "Total number of deaths (2018)") +
   scale_y_continuous(
     labels = scales::comma,
     limits = c(0, 4500)
@@ -149,7 +153,7 @@ activity_hb %>%
     legend.position = "bottom",
     legend.title = element_blank()
   ) +
-  labs(title = "Total number of discharges in Scotland, 2018") +
+  labs(title = "Total number of discharges (2018)") +
   scale_y_continuous(labels = scales::comma) +
   scale_fill_manual(
     values = c(
@@ -189,7 +193,7 @@ mortality_hb %>%
     legend.title = element_blank(),
     panel.grid.major.x = element_line(linetype = "solid")
   ) +
-  labs(title = "Total number of deaths in Scotland, 2018") +
+  labs(title = "Total number of deaths (2018)") +
   scale_y_continuous(labels = scales::comma) +
   scale_fill_manual(
     values = c(
@@ -225,7 +229,7 @@ pop_ages_hb %>%
     legend.position = "bottom",
     legend.title = element_blank()
   ) +
-  labs(title = "Population of Scotland, 2018") +
+  labs(title = "Scottish population (estimated, 2018)") +
   scale_fill_manual(values = c("Male" = "darkblue", "Female" = "skyblue")) +
   scale_y_continuous(
     breaks = c(
@@ -268,8 +272,8 @@ mortality_hb %>%
   ) +
   scale_colour_manual(values = c("Male" = "darkblue", "Female" = "skyblue")) +
   labs(
-    title = "Standardised Mortality Rates, Scotland 2018",
-    subtitle = "deaths per 100,000, using European Standard Population"
+    title = "Mortality Rates (2018)",
+    caption = "deaths per 100,000, age standardised to European Standard Population"
   ) +
   facet_wrap(~diagnosis, scales = "free_y", ncol = 2)
 
@@ -290,7 +294,7 @@ pop_total_hb %>%
     x = reorder(hb_name, total_pop),
     y = total_pop
   )) +
-  labs(title = "Health board populations, 2018") +
+  labs(title = "Health board populations (2018)") +
   theme(panel.grid.major.x = element_line(linetype = "solid")) +
   scale_y_continuous(
     labels = scales::comma,
@@ -329,10 +333,10 @@ mortality_hb %>%
   linetype = "dashed",
   size = 0.1
   ) +
-  
+  scale_y_continuous(limits = c(0,500)) +
   labs(
-    title = "Standardised stroke mortality rates, age 75+ 2018",
-    subtitle = "deaths per 100,000, using European Standard Population"
+    title = "Stroke mortality rates, age 75+ (2018)",
+    caption = "deaths per 100,000, age standardised to European Standard Population"
   ) +
   coord_flip()
 
@@ -367,8 +371,8 @@ mortality_hb %>%
   theme(panel.grid.major.y = element_line(linetype = "solid")) +
   scale_y_continuous(limits = c(0, NA)) +
   labs(
-    title = "Standardised stroke mortality rates, age 75+, 2009 - 2018",
-    subtitle = "deaths per 100,000, using European Standard Population"
+    title = "Stroke mortality rates, age 75+ (2009 - 2018)",
+    caption = "deaths per 100,000, age standardised to European Standard Population"
   ) +
   coord_flip()
 
@@ -393,11 +397,11 @@ mortality_ca %>%
   ) +
   scale_y_continuous(
     labels = scales::comma,
-    limits = c(0, NA)
+    limits = c(0, 600)
   ) +
   labs(
-    title = "Standardised stroke mortality rates, age 75+ 2018",
-    subtitle = "deaths per 100,000, using European Standard Population"
+    title = "Stroke mortality rates, age 75+ (2018)",
+    caption = "deaths per 100,000, age standardised to European Standard Population"
   ) +
   coord_flip()
 
@@ -430,9 +434,10 @@ mortality_ca %>%
   linetype = "dashed",
   size = 0.1
   ) +
+  scale_y_continuous(limits = c(0,500)) +
   labs(
-    title = "Standardised stroke mortality rates, age 75+ 2018",
-    subtitle = "deaths per 100,000, using European Standard Population"
+    title = "Stroke mortality rates, age 75+ (2018)",
+    caption = "deaths per 100,000, age standardised to European Standard Population"
   ) +
   coord_flip()
 
@@ -471,8 +476,8 @@ mortality_ca %>%
   theme(panel.grid.major.y = element_line(linetype = "solid")) +
   scale_y_continuous(limits = c(0, NA)) +
   labs(
-    title = "Standardised stroke mortality rates, age 75+, 2009 - 2018",
-    subtitle = "deaths per 100,000, using European Standard Population"
+    title = "Stroke mortality rates, age 75+ (2009 - 2018)",
+    caption = "deaths per 100,000, age standardised to European Standard Population"
   ) +
   coord_flip()
 
@@ -508,8 +513,8 @@ activity_ts_sco %>%
   ) +
   scale_colour_manual(values = c("Male" = "darkblue", "Female" = "skyblue")) +
   labs(
-    title = "Standardised Discharge Rates, Scotland 2009 - 2018",
-    subtitle = "discharges per 100,000, using European Standard Population"
+    title = "Stroke Discharge Rates (2009 - 2018)",
+    caption = "discharges per 100,000,age standardised to European Standard Population"
   ) +
   facet_wrap(~ age_group, scales = "free")
 
@@ -543,8 +548,8 @@ mortality_ts_sco %>%
   ) +
   scale_colour_manual(values = c("Male" = "darkblue", "Female" = "skyblue")) +
   labs(
-    title = "Standardised Mortality Rates, Scotland 2009 - 2018",
-    subtitle = "discharges per 100,000, using European Standard Population"
+    title = "Stroke Mortality Rates (2009 - 2018)",
+    caption = "discharges per 100,000, age standardised to European Standard Population"
   ) +
   facet_wrap(~ age_group, scales = "free")
 
@@ -567,7 +572,7 @@ forecast_1 <- fit %>%
 ```{r}
 forecast_1 %>%
   autoplot(mortality_ts_sco) +
-  ggtitle("Forecasts of standardised mortality rates (age 75+)") +
+  ggtitle("Forecasts of standardised stroke mortality rates (age 75+)") +
   theme(axis.line.y = element_line(),
         panel.grid.major.y = element_line(linetype = "solid")) +
   facet_grid(~ sex)
@@ -730,7 +735,7 @@ pop_ages_hb %>%
   ) +
   scale_y_continuous(limits = c(4000000, 6000000),
                      labels = scales::comma) +
-  labs(title = "Population forecast")
+  labs(title = "Population projection")
 
 ggsave("forecast_pop.png", path = here("outputs"))
 ```
@@ -797,8 +802,7 @@ pop_forecasts %>%
     axis.line.y = element_line()
   ) +
   scale_y_continuous(limits = c(0, 4000)) +
-  labs(title = "Projection of stroke deaths")
-
+  labs(title = "Projection of stroke deaths") +
 ggsave("forecast_deaths.png", path = here("outputs"))
 ```
 
