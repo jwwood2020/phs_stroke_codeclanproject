@@ -372,7 +372,8 @@ mortality_hb %>%
   scale_y_continuous(limits = c(0, NA)) +
   labs(
     title = "Stroke mortality rates, age 75+ (2009 - 2018)",
-    caption = "deaths per 100,000, age standardised to European Standard Population"
+    caption = "deaths per 100,000, age standardised to European Standard Population
+    Filled point is 2018 rate"
   ) +
   coord_flip()
 
@@ -401,7 +402,8 @@ mortality_ca %>%
   ) +
   labs(
     title = "Stroke mortality rates, age 75+ (2018)",
-    caption = "deaths per 100,000, age standardised to European Standard Population"
+    caption = "deaths per 100,000, age standardised to European Standard Population
+    Points show rates for the councils which make up each health board"
   ) +
   coord_flip()
 
@@ -477,7 +479,8 @@ mortality_ca %>%
   scale_y_continuous(limits = c(0, NA)) +
   labs(
     title = "Stroke mortality rates, age 75+ (2009 - 2018)",
-    caption = "deaths per 100,000, age standardised to European Standard Population"
+    caption = "deaths per 100,000, age standardised to European Standard Population
+    Filled point is 2018 rate"
   ) +
   coord_flip()
 
@@ -802,7 +805,8 @@ pop_forecasts %>%
     axis.line.y = element_line()
   ) +
   scale_y_continuous(limits = c(0, 4000)) +
-  labs(title = "Projection of stroke deaths") +
+  labs(title = "Projection of stroke deaths") 
+
 ggsave("forecast_deaths.png", path = here("outputs"))
 ```
 
@@ -824,4 +828,5 @@ pop_forecasts %>%
 
 ggsave("forecast_discharges.png", path = here("outputs"))
 ```
+
 
