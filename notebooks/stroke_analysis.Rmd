@@ -15,6 +15,8 @@ library(tsibble)
 library(feasts)
 library(fable)
 library(fabletools)
+library(gganimate)
+library(gifski)
 library(tidyverse)
 ```
 
@@ -768,7 +770,7 @@ pop_ages_hb %>%
     legend.title = element_blank()
     
   ) +
-  labs(title = "Projected age structure of Scotland") +
+   ggtitle('Projected age structure of Scotland') +
   scale_fill_manual(values = c("Male" = "darkblue", "Female" = "skyblue")) +
   scale_y_continuous(
     breaks = c(
@@ -782,11 +784,58 @@ pop_ages_hb %>%
   ) +
   guides(fill = guide_legend(reverse = TRUE)) +
   coord_flip() +
-  facet_wrap(~ year
-             )
-
-ggsave("forecast_pyramid.png", path = here("outputs"))
+  facet_wrap(~ year)
+  
+  ggsave("forecast_pyramid.png", path = here("outputs"))
 ```
+
+
+```{r}
+pyramid <- pop_ages_hb %>%
+  filter(year %in% c("1981", "2001", "2021", "2041")
+         & sex != "All" 
+         & hb_name == "Scotland") %>%
+  group_by(year, sex, age_band1) %>%
+  summarise(total_pop = sum(count)) %>%
+  ggplot(aes(
+    x = age_band1,
+    fill = sex,
+    y = ifelse(test = sex == "Male",
+      yes = -total_pop,
+      no = total_pop
+    )
+  )) +
+  geom_bar(stat = "identity") +
+  theme(
+    panel.grid.major.x = element_line(linetype = "solid"),
+    legend.position = "bottom",
+    legend.title = element_blank()
+    
+  ) +
+   ggtitle('Projected age structure of Scotland',
+          subtitle = "Year: {as.integer(frame_time)}") +
+  scale_fill_manual(values = c("Male" = "darkblue", "Female" = "skyblue")) +
+  scale_y_continuous(
+    breaks = c(
+      -200000, -150000, -100000, -50000, 0,
+      50000, 100000, 150000, 200000
+    ),
+    labels = c(
+      "200k", "150k", "100k", "50k", "0",
+      "50k", "100k", "150k", "200k"
+    )
+  ) +
+  guides(fill = guide_legend(reverse = TRUE)) +
+  coord_flip() +
+  transition_time(year)
+```
+
+```{r}
+animate(pyramid, nframes = 200, renderer = gifski_renderer(loop = FALSE))
+anim_save("pyramid_animate.gif", path = here("outputs"))
+```
+
+
 
 ```{r}
 pop_forecasts_highlight <- pop_forecasts %>% 
